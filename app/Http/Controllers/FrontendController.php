@@ -50,4 +50,26 @@ class FrontendController extends Controller
             ]
         );
     }
+    public function reviews()
+    {
+        return view(
+            'frontend.pages.reviews.index',
+            [
+                'title' => 'Client Testimonials | Trademark Nova',
+                'description' => '',
+                'keywords' => ''
+            ]
+        );
+    }
+    public function contact()
+    {
+        return view(
+            'frontend.pages.contact.index',
+            [
+                'title' => 'Contact | Trademark Nova',
+                'description' => '',
+                'keywords' => ''
+            ]
+        );
+    }
 }

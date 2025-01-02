@@ -1,30 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php" ?>
-
-<!doctype html>
-
-<html lang="en">
-
-<head>
-
-   <?php include("../includes/compatibility.php") ?>
-
-   <title>Contact | Trademark Nova</title>
-
-   <meta name="description" content="" />
-
-   <meta name="keywords" content="" />
-
-   <!-- Google Fonts -->
-
-   <?php include("../includes/styles.php") ?>
-
-   <?php include("../includes/header.php") ?>
-
-</head>
-
-<body>
+@extends('frontend.layouts.web.master')
+@section('main-content')
 
    <div id="page" class="full-page">
 
@@ -66,19 +41,22 @@ include "../includes/var.php" ?>
 
                   <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                      <div class="formStyle">
-                        <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                        <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                         <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                         <div class="ribbon">
                            <p>Same Day Application Filing Available</p>
                         </div>
                         <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                        <?php include('../includes/lead-form.php') ?>
+
+                        @include ('includes/lead-form')
+
                      </div>
                   </div>
                </div>
             </div>
          </section>
-         <?php include '../includes/ind-leader.php'; ?>
+                      @include ('includes/ind-leader')
+
          <!-- home banner section html end -->
 
          <!-- contact form html start -->
@@ -145,8 +123,8 @@ include "../includes/var.php" ?>
 
                         <div class="contact-from-wrap">
 
-                           <?php include("../includes/contact_form.php"); ?>
-
+                             @include ('includes/contact_form')
+                             
                         </div>
 
                      </div>
@@ -169,6 +147,4 @@ include "../includes/var.php" ?>
 
       </main>
 
-      <?php include("../includes/footer.php") ?>
-
-      <?php include("../includes/scripts.php") ?>
+@endsection

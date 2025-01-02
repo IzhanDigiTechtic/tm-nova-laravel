@@ -1,24 +1,11 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>Client Testimonials | Trademark Nova</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
         }
     </style>
-</head>
+
 
 <body class="home">
     <div id="page" class="full-page">
@@ -43,13 +30,14 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+                                @include ('includes/lead-form')
+
                             </div>
                         </div>
                     </div>
@@ -65,20 +53,121 @@ include "../includes/var.php"
                             <p>At Trademark Nova, we take pride in the positive feedback we receive from our customers and we want to share their experiences with you. By discovering what our customers are saying, you can get an idea of the level of satisfaction that others have found in our offerings. We're confident that once you join our satisfied testimonial tribe, you'll be just as happy with our services as they are. </p>
                         </div>
 
-                        <?php
-                        $batch = mysqli_query($con, "Select t1." . $common3 . ",t1." . $table24Col1 . ",t1." . $common9 . ",t1." . $table34Col1 . "
-						,t1." . $table34Col3 . " From " . $table34 . " t1 where t1." . $common7 . "='1' and t1." . $table34Col2 . "='1' Order by " . $common2 . " DESC");
-                        while ($item = mysqli_fetch_array($batch)) {
-                        ?>
-                            <div class="col-md-6">
+                        <div class="col-md-6">
                                 <div class="testimonial-item">
                                     <div class="testimonial-content">
-                                        <p>"<?= $item[2] ?>"</p>
-                                        <h5>- <?= $item[0] ?> <span>( <?= $item[3] ?>)</span></h5>
+                                        <p>"I had a complex trademark issue that required extensive research and legal expertise. Their service exceeded my expectations.."</p>
+                                        <h5>- Jack Robinson   <span>( Business Development Manager at Beacon Partners)</span></h5>
                                     </div>
                                 </div>
                             </div>
-                        <?php } ?>
+                            <div class="col-md-6">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>"Absolutely amazing, it was a pleasure working with Trademark Nova. They did an amazing job guiding me through my questions.."</p>
+                                        <h5>- Henry Baker   <span>( CFO at Delta Enterprises)</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>"We had a clear communication, and Trademark Nova helped me understand the importance of trademark protection for my business. I'm so glad I decided to work with them."</p>
+                                        <h5>- Daniel Wright   <span>( Co-Founder at Zenith Sales)</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>"As a small business owner, I was hesitant to invest in trademark registration, but Trademark Nova made the process so easy and straightforward. They provided excellent customer service."</p>
+                                        <h5>- Alexander Green   <span>( CEO at Phi Innovations)</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>"A massive Thank You to the team for a very fast and efficient filing.I look forward to working with Trademark Nova on future projects. Brilliant effort!"</p>
+                                        <h5>- Mark Webster    <span> ( Co-Founder, Majesta Insurance)</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>"The promptness and accurate advice of Trademark Nova gave me every confidence in the service they provide and I will definitely be using them for legal matters again in the future."</p>
+                                        <h5>- Jonathan Reed<span> ( Founder, Alpine Associates)</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>"The team at Trademark Nova was always very thorough and clear in their explanations, and timely with sending reminders about renewals and next steps. 5/5"</p>
+                                        <h5>- Carl Mathews <span> ( Owner, Colour Crib)</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>"I had an amazing experience working with Trademark Nova. They were highly knowledgeable and helped me protect my brand that was both efficient and cost-effective."</p>
+                                        <h5>- Noah Thompson <span> ( IT Director at Titan Technologies)</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>"Great service. Waiting for approval for the trademark. I'll share my overall experience in detail then. Nice job till now."</p>
+                                        <h5>- Lucas White <span>  ( Owner at Visionary Corporation)</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>"At first I talked to Ryan, we had some miscommunication for which I thought to choose someone else. But they assigned Mark for my service and I am satisfied with the way he is working. Good"</p>
+                                        <h5>- Ethan Taylor <span>  ( Financial Analyst at Nexus Investments)</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>"Great experience with good customer service very professional. I appreciate your help and would definitely recommend to others."</p>
+                                        <h5>- William Hughes <span>  ( Marketing Director at Phoenix Enterprises)</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>"Made a great effort to help me to get my first brand registration. Thank you for honesty. It was great to work with the Trademark Nova"</p>
+                                        <h5>- Oliver Brown<span>  ( Executive at Horizon Enterprises)</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>"They kept me updated with all the necessary details, i would say it was an exceptional experienceâ€¦. Would come back for sure.!"</p>
+                                        <h5>- Benjamin Patel<span>  ( Operations Manager at Summit Solutions)</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <p>"Although I was a bit hesitant, Trademark Nova made sure that I was comfortable with each step. Any questions that I may have, they answer in a timely matter."</p>
+                                        <h5>- James Wilson<span>  ( CEO of Apex Industries)
+                                        </span></h5>
+                                    </div>
+                                </div>
+                            </div>
+
 
 
                     </div>
@@ -126,5 +215,4 @@ include "../includes/var.php"
 
         </main>
 
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+      @endsection
