@@ -1,0 +1,346 @@
+[24-Feb-2023 15:29:27 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/transfer-of-shares/index.php on line 2
+[24-Feb-2023 15:29:27 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/transfer-of-shares/index.php on line 2
+[24-Feb-2023 15:30:57 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/transfer-of-shares/index.php on line 2
+[24-Feb-2023 15:30:57 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/transfer-of-shares/index.php on line 2
+[24-Feb-2023 15:37:46 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/transfer-of-shares/index.php on line 2
+[24-Feb-2023 15:37:46 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/transfer-of-shares/index.php on line 2
+[28-Feb-2023 13:28:40 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[28-Feb-2023 13:28:40 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[28-Feb-2023 13:28:40 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 13:28:40 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 13:28:40 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 13:28:40 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 13:28:40 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[28-Feb-2023 13:28:40 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 13:28:40 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 13:28:40 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[28-Feb-2023 13:28:40 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 13:28:40 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 13:28:40 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 13:28:40 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 13:28:40 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 13:28:40 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 13:28:40 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 13:28:40 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[28-Feb-2023 13:28:42 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[28-Feb-2023 13:28:42 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[28-Feb-2023 13:28:42 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 13:28:42 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 13:28:42 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 13:28:42 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 13:28:42 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[28-Feb-2023 13:28:42 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 13:28:42 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 13:28:42 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[28-Feb-2023 13:28:42 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 13:28:42 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 13:28:42 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 13:28:42 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 13:28:42 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 13:28:42 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 13:28:42 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 13:28:42 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[28-Feb-2023 14:46:17 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[28-Feb-2023 14:46:17 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[28-Feb-2023 14:46:17 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 14:46:17 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 14:46:17 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 14:46:17 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 14:46:17 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[28-Feb-2023 14:46:17 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 14:46:17 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 14:46:17 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[28-Feb-2023 14:46:17 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 14:46:17 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 14:46:17 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 14:46:17 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 14:46:17 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 14:46:17 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 14:46:17 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 14:46:17 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[01-Mar-2023 15:14:58 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[01-Mar-2023 15:14:58 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[01-Mar-2023 15:14:58 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[01-Mar-2023 15:14:58 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 81
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[01-Mar-2023 15:14:58 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[01-Mar-2023 15:14:58 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[01-Mar-2023 15:14:58 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[01-Mar-2023 15:14:58 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[02-Mar-2023 02:18:06 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 02:18:06 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 02:18:06 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 02:18:06 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 81
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 02:18:06 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 02:18:06 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 02:18:06 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 02:18:06 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[02-Mar-2023 17:07:15 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 17:07:15 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 17:07:15 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 17:07:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 81
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 17:07:15 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 17:07:15 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 17:07:15 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 17:07:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[02-Mar-2023 20:58:15 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 20:58:15 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 20:58:15 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 20:58:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 81
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 20:58:15 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 20:58:15 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 20:58:15 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 20:58:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[02-Mar-2023 20:59:00 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 20:59:00 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 20:59:00 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 20:59:00 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 81
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 20:59:00 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 20:59:00 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 20:59:00 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 20:59:00 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[02-Mar-2023 21:00:23 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 21:00:23 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 21:00:23 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 21:00:23 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 81
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 21:00:23 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 21:00:23 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 21:00:23 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 21:00:23 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[02-Mar-2023 21:04:44 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 21:04:44 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 21:04:44 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 21:04:44 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 81
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 21:04:44 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 21:04:44 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 21:04:44 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 21:04:44 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[02-Mar-2023 21:05:37 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 21:05:37 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 21:05:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 21:05:37 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 81
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 21:05:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 21:05:37 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 21:05:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 21:05:37 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[02-Mar-2023 21:05:55 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 21:05:55 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 21:05:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 21:05:55 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 81
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 21:05:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 21:05:55 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 21:05:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 21:05:55 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[02-Mar-2023 21:08:23 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 21:08:23 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 21:08:23 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 21:08:23 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 81
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 21:08:23 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 21:08:23 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 21:08:23 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 21:08:23 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[02-Mar-2023 21:10:16 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 21:10:16 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/transfer-of-shares/index.php on line 2
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 21:10:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 21:10:16 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 81
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 21:10:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 21:10:16 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 21:10:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 21:10:16 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231

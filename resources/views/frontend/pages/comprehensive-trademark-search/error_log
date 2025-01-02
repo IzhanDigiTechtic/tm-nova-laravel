@@ -1,0 +1,290 @@
+[21-Feb-2023 14:50:30 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 14:50:30 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 14:56:50 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 14:56:50 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 14:57:03 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 14:57:03 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 14:57:23 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 14:57:23 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 15:03:07 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 15:03:07 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 15:04:55 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 15:04:55 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 15:04:55 UTC] PHP Warning:  include(../includes/testimonials.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 279
+[21-Feb-2023 15:04:55 UTC] PHP Warning:  include(): Failed opening '../includes/testimonials.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 279
+[21-Feb-2023 15:06:24 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 15:06:24 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 15:10:51 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 15:10:51 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 15:12:01 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 15:12:01 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 15:38:14 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[21-Feb-2023 15:38:14 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[22-Feb-2023 11:19:10 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[22-Feb-2023 11:19:10 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[22-Feb-2023 12:36:39 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[22-Feb-2023 12:36:39 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[22-Feb-2023 15:24:32 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[22-Feb-2023 15:24:32 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[22-Feb-2023 19:01:04 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[22-Feb-2023 19:01:04 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[23-Feb-2023 08:41:46 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[23-Feb-2023 08:41:46 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[24-Feb-2023 14:23:20 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[24-Feb-2023 14:23:20 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[27-Feb-2023 13:28:21 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[27-Feb-2023 13:28:21 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[27-Feb-2023 15:37:26 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[27-Feb-2023 15:37:26 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[27-Feb-2023 15:39:28 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[27-Feb-2023 15:39:28 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[27-Feb-2023 15:40:23 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[27-Feb-2023 15:40:23 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[27-Feb-2023 15:40:48 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[27-Feb-2023 15:40:48 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:12:12 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:12:12 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:12:59 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:12:59 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:13:11 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:13:11 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:14:57 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:14:57 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:15:44 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:15:44 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:17:05 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:17:05 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:17:21 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:17:21 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:17:32 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:17:32 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:17:52 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:17:52 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:19:32 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:19:32 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:20:26 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:20:26 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:20:47 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:20:47 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:22:34 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:22:34 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:22:47 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:22:47 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:23:51 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:23:51 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:24:52 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 07:24:52 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/h7jk49p5ezmg/public_html/tradeMarkNova.co.uk/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 13:27:53 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 13:27:53 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 13:27:53 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 13:27:53 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 13:27:53 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 13:27:53 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 13:27:53 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[28-Feb-2023 13:27:53 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 13:27:53 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 13:27:53 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[28-Feb-2023 13:27:53 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 13:27:53 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 13:27:53 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 13:27:53 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 13:27:53 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 13:27:53 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 13:27:53 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 13:27:53 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[28-Feb-2023 13:27:58 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 13:27:58 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 13:27:58 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 13:27:58 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 13:27:58 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 13:27:58 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 13:27:58 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[28-Feb-2023 13:27:58 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 13:27:58 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 13:27:58 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[28-Feb-2023 13:27:58 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 13:27:58 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 13:27:58 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 13:27:58 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 13:27:58 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 13:27:58 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 13:27:58 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 13:27:58 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[28-Feb-2023 15:30:38 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 15:30:38 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 15:30:38 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:30:38 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:30:38 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:30:38 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:30:38 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[28-Feb-2023 15:30:38 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 15:30:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 15:30:38 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[28-Feb-2023 15:30:38 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 15:30:38 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 15:30:38 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 15:30:38 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 15:30:38 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 15:30:38 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 15:30:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 15:30:38 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[28-Feb-2023 15:32:07 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 15:32:07 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 15:32:07 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:32:07 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:32:07 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:32:07 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:32:07 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[28-Feb-2023 15:32:07 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 15:32:07 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 15:32:07 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[28-Feb-2023 15:32:07 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 15:32:07 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 15:32:07 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 15:32:07 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 15:32:07 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 15:32:07 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 15:32:07 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 15:32:07 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[28-Feb-2023 15:39:52 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 15:39:52 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 15:39:52 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:39:52 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:39:52 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:39:52 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:39:52 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[28-Feb-2023 15:39:52 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 15:39:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 15:39:52 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[28-Feb-2023 15:39:52 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 15:39:52 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 15:39:52 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 15:39:52 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 15:39:52 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 15:39:52 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 15:39:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 15:39:52 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[28-Feb-2023 15:44:07 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 15:44:07 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 15:44:07 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:44:07 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:44:07 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:44:07 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:44:07 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[28-Feb-2023 15:44:07 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 15:44:07 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 15:44:07 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[28-Feb-2023 15:44:07 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 15:44:07 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 15:44:07 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 15:44:07 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 15:44:07 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 15:44:07 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 15:44:07 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 15:44:07 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[28-Feb-2023 15:44:47 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 15:44:47 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 15:44:47 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:44:47 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:44:47 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:44:47 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 15:44:47 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[28-Feb-2023 15:44:47 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 15:44:47 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 15:44:47 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[28-Feb-2023 15:44:47 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 15:44:47 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 15:44:47 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 15:44:47 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 15:44:47 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 15:44:47 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 15:44:47 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 15:44:47 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[28-Feb-2023 16:05:31 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 16:05:31 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 16:05:31 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 16:05:31 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 16:05:31 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 16:05:31 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 16:05:31 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[28-Feb-2023 16:05:31 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 16:05:31 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 16:05:31 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[28-Feb-2023 16:05:31 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 16:05:31 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 16:05:31 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 16:05:31 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 16:05:31 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 16:05:31 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 16:05:31 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 16:05:31 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[28-Feb-2023 16:16:36 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 16:16:36 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[28-Feb-2023 16:16:36 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 16:16:36 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 16:16:36 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 16:16:36 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[28-Feb-2023 16:16:36 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[28-Feb-2023 16:16:36 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 16:16:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[28-Feb-2023 16:16:36 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[28-Feb-2023 16:16:36 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 16:16:36 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 16:16:36 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[28-Feb-2023 16:16:36 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 16:16:36 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[28-Feb-2023 16:16:36 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 16:16:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[28-Feb-2023 16:16:36 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[01-Mar-2023 21:05:16 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[01-Mar-2023 21:05:16 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[01-Mar-2023 21:05:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[01-Mar-2023 21:05:16 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 81
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[01-Mar-2023 21:05:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[01-Mar-2023 21:05:16 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[01-Mar-2023 21:05:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[01-Mar-2023 21:05:16 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[02-Mar-2023 15:20:48 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[02-Mar-2023 15:20:48 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/comprehensive-trademark-search/index.php on line 2
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 78
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 79
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 15:20:48 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 80
+[02-Mar-2023 15:20:48 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/lead-form.php on line 81
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 15:20:48 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 15:20:48 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 15:20:48 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 15:20:48 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231

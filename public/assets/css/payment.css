@@ -1,0 +1,384 @@
+   html, body {
+    height: 100%;
+}
+/* Begin: Login CSS */
+.loginBody {
+    background: url(../img/dashboard-pattern-bg.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginWrap {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+        /*width: 25rem;*/
+}
+.detailWrap .heading {
+    background-image: linear-gradient(0deg, #675ef5, #675ef5);
+    padding: 1.125rem;
+    border-radius: 6px;
+}
+.loginWrap h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+.loginWrap label {
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.loginWrap .form-control {
+    border-radius: 4px;
+    height: 3.5rem;
+}
+.loginWrap .btn-style-1 {
+    width: 100%;
+}
+/* END: Login CSS */
+.btn-style-1 {
+    position: relative;
+    background-image: linear-gradient(to top, #675ef5, #675ef5, #675ef5, #675ef5, #675ef5);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0;
+    padding: 14px 25px;
+    z-index: 1;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    transition: ease all 0.5s;
+}
+.btn-style-1:hover, .btn-style-1:focus {
+    background-image: linear-gradient(to top, #2f2f2f, #383838, #424242, #4b4b4b, #555555);
+    color: #FFFFFF;
+}
+.btn-style-1:hover::before {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    left: -2px;
+    top: -2px;
+}
+/* Begin: Dashboard CSS */
+header {
+    padding: 10px 0;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header .logo h4 {
+    margin: 0 0 0 1rem;
+    padding-left: 1rem;
+    border-left: 1px solid #404040;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+header .btn-style-1 {
+    display: inline-block;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+.dashboardBanner {
+    background-color: #145857;
+    padding: 3rem 0 0;
+}
+.userProfileName {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.userProfileName img {
+    border-radius: 100px;
+    border: 4px solid #FFF;
+    width: 160px;
+    margin-bottom: -2rem;
+}
+.userProfileName h4 {
+    color: #fff;
+    font-size: 2rem;
+}
+.userProfileName h4 span {
+    font-weight: 300;
+}
+.dashboardBody {
+    background: url(../img/dashboard-pattern-bg.jpg) center/cover no-repeat;
+    padding: 8rem 0 0;
+    background-color:#223645;
+}
+.dashboardBody h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+.dashboardBody h4 a {
+    color: #f94452;
+    text-decoration: none;
+}
+.detailWrap {
+    background: #fff;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    padding: .5rem;
+    border-radius: 10px;
+    min-height: 18rem;
+    margin-bottom: 2rem;
+}
+.detailWrap .cusDetlList li strong {
+    width: 5rem;
+    display: inline-block;
+    color: var(--bs-black);
+}
+
+.detailWrap .cusDetlList li b {
+    width: 75%;
+    display: inline-block;
+    color: var(--bs-black);
+}
+
+.detailWrap h4 {
+    margin-bottom: 1rem;
+}
+.detailWrap ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 2.5;
+    color: #fff;
+}
+.detailWrap > ul {
+    padding: 0 2rem;
+}
+.detailWrap .cusDetlList li {
+    border-bottom: 1px solid #cccccc;
+    padding: 10px 0;
+    color: var(--bs-gray-600);
+}
+.detailWrap .cusDetlList li i {
+    color: #145857;
+}
+.accordionStyle {
+    padding: 0 2rem;
+}
+.accordionStyle .accordion-item {
+    border: 0;
+    background: transparent;
+}
+.accordionStyle .accordion-item .accordion-button {
+    background: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid #2c2c2c;
+    box-shadow: none;
+    color: var(--black);
+    font-weight: 700;
+    padding: 1rem 2rem 1rem 0;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.accordionStyle .accordion-item .accordion-button strong {
+    font-weight: 700;
+}
+.accordionStyle .accordion-item .accordion-button span {
+    font-weight: 500;
+}
+.accordionStyle .accordion-item .accordion-button[aria-expanded="true"]::after {
+    content: "\f056";
+    font-family: var(--fa-style-family,"Font Awesome 6 Free");
+    font-weight: var(--fa-style,900);
+    color: #f13d52;
+    background: none;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 0;
+}
+.accordionStyle .accordion-body {
+    padding: 1rem 0;
+}
+.accordionStyle .accordion-item .accordion-button[aria-expanded="false"]::after {
+    content: "\f055";
+    font-family: var(--fa-style-family,"Font Awesome 6 Free");
+    font-weight: var(--fa-style,900);
+    color: #f0a827;
+    background: none;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 0;
+}
+.accordionStyle .accordion-item .accordion-body ul {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+.accordionStyle .accordion-item .accordion-body ul li {
+    flex: 0 0 calc(50% - 2rem);
+    color: #a7a7a7;
+    font-size: 14px;
+}
+.billingDetailList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 3;
+}
+.detailWrap h5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0 0;
+    padding: 0 2rem;
+}
+
+.detailWrap h5 span {
+    color: #f94452;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.total {
+    background: #ffffff;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.total strong {
+    font-size: 1.25rem;
+}
+.total strong.pink {
+    color: #f94452;
+}
+.paymentWrap .form-control {
+    background: transparent;
+    color: #878787;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #4d4e55;
+    margin-bottom: 1.5rem;
+    font-size: 13px;
+    padding: 0;
+}
+.paymentWrap .form-control::placeholder {
+    color: #878787;
+}
+.paymentWrap labe {
+    font-size: 16px;
+    color: #cccccc;
+    font-weight: 600;
+}
+.loginWrap strong {
+    font-size: 15px;
+    font-weight: 600;
+        margin: 2rem 0 1rem;
+    display: block;
+}
+.loginWrap strong img {
+    margin-left: 1rem;
+}
+.loginWrap .load {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+}
+footer {
+    background: #000;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 4rem;
+}
+footer p, footer a {
+    color: #fff;
+    margin: 0;
+    font-size: 15px;
+    text-decoration: none;
+}
+footer a:hover,
+footer a:focus {
+    color: #f0a827;
+}
+/* END: Dashboard CSS */
+
+@media only screen and (max-width: 992px) {
+    html {
+        font-size: 15px;
+    }
+    .dashboardBanner {
+        padding: 2.5rem 0;
+    }
+    .userProfileName img {
+        width: 60px;
+    }
+    .detailWrap {
+        min-height: 18rem;
+    }
+    .userProfileName h4 {
+        font-size: 1.8rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .detailWrap {
+        min-height: 22rem;
+    }
+}
+@media only screen and (max-width: 576px) {
+    html {
+        font-size: 12px;
+    }
+    .detailWrap {
+        min-height: auto;
+    }
+    .dashboardBody {
+        padding: 2rem 0 0;
+    }
+    footer {
+        margin-top: 2rem;
+    }
+    header .logo {
+        justify-content: center;
+    }
+    header .btn-style-1 {
+        display: block;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .userProfileName img {
+        width: 40px;
+    }
+    .userProfileName h4 {
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width: 320px) {}
+
+ul.dotted li:last-child {
+    position: relative;
+    display: inline-block;
+    bottom: 0;
+    width: 100%;
+    border: 0;
+    left: 0;
+    border-top: 1px dotted;
+    margin: 0 auto;
+    padding:10px 20px;
+}
+    
+    
+.detailWrap{position:relative;}
+
+
+
+  

@@ -1,0 +1,1391 @@
+.site-identity .site-title {
+    margin: 20px 0
+}
+
+@media screen and (max-width:1600px) {
+    .calculatorWrap .head {
+        padding: 1rem 3rem
+    }
+
+    .calculatorWrap .head img {
+        width: 5rem
+    }
+
+    .calculatorWrap .boddy {
+        padding: 2rem 3rem
+    }
+
+    .calculatorWrap .boddy h2 {
+        font-size: 3rem
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .site-identity .site-title {
+        margin: 20px 0
+    }
+
+    .formStyle h4 {
+        font-size: 1.5rem
+    }
+
+    .site-footer .formStyle .targetedDown {
+        width: 5rem
+    }
+
+    .bottom-header .navbar-nav .nav-item .nav-link {
+        font-size: 13px
+    }
+
+    .header-btn a {
+        padding: 14px 10px;
+        font-weight: 400;
+        font-size: 13px
+    }
+
+    .home-subscribe {
+        background-position: top right
+    }
+
+    .subscribe-inner .subscribe-content h2 {
+        font-size: 2rem
+    }
+
+    .calculatorWrap .boddy h2 {
+        font-size: 2rem
+    }
+
+    .calculatorWrap .head img {
+        width: 4rem
+    }
+}
+
+@media screen and (max-width:1199px) {
+
+    h2,
+    .subscribe-inner .subscribe-content h2 {
+        font-size: 34px
+    }
+
+    .banner-content .banner-title {
+        font-size: 2.25rem
+    }
+
+    .regionCell img {
+        width: 6rem
+    }
+
+    .header-btn {
+        width: 100%;
+        text-align: center;
+        margin-left: 0
+    }
+
+    .bottom-header .navbar-nav {
+        margin-bottom: 1rem;
+        flex-flow: column;
+        gap: 0;
+        justify-content: center;
+        align-items: center
+    }
+
+    .bottom-header .navbar-nav .dropdown-menu {
+        position: relative;
+        text-align: center
+    }
+
+    .pricing-item .pricing-head .botom h2 {
+        font-size: 3rem
+    }
+
+    .pricing-item .pricing-head .botom h2 i {
+        font-size: 2.75rem
+    }
+
+    .accordion-content .card .card-header a {
+        font-size: 1rem
+    }
+
+    .registery .section-head h2 {
+        font-size: 1.5rem
+    }
+
+    .home-portfolio {
+        padding-top: 70px
+    }
+
+    .amazonWrap .title h2 {
+        font-size: 1.875rem
+    }
+
+    .formStyle .targetedDown {
+        right: 0
+    }
+
+    .home-about .progress-content {
+        padding: 30px 50px 60px 30px
+    }
+
+    .home-about .progress-wrapper h4 {
+        font-size: 18px
+    }
+
+    .home-about .progress-wrapper h4 span {
+        font-size: 12px;
+        width: 2rem;
+        height: 2rem
+    }
+
+    .trustedClient .arrowBg h4 {
+        font-size: 1.3rem
+    }
+
+    .testimonial-item {
+        padding: 20px
+    }
+
+    .testimonial-item .testimonial-content {
+        padding-left: 20px
+    }
+
+    .testimonial-item {
+        margin-bottom: 20px
+    }
+
+    .map-section iframe {
+        height: 300px
+    }
+
+    .site-footer {
+        padding-top: 50px
+    }
+
+    .schedule {
+        gap: 2rem
+    }
+
+    .schedule h2 {
+        font-size: 2rem;
+        flex: 0 0 40%
+    }
+
+    .domainservice {
+        padding: 3rem 0
+    }
+
+    .domainservice .schedule h2 {
+        font-size: 1.75rem
+    }
+
+    .home-testimonial {
+        background: #fafafa;
+        padding: 50px 0
+    }
+
+    .successRate {
+        padding: 10rem 20px 6rem
+    }
+
+    .about-page-section {
+        padding: 50px 0
+    }
+
+    .amazonWrap {
+        margin-top: 1rem
+    }
+
+    .calculatorWrap .head,
+    .calculatorWrap .boddy,
+    .calculatorWrap .calcDetal ul {
+        padding: 1rem
+    }
+
+    .calculatorWrap .boddy h2 {
+        font-size: 1.8rem
+    }
+
+    .calculatorWrap .boddy .calcDetal h2 {
+        font-size: 4rem;
+        line-height: 1.2
+    }
+
+    .calculatorWrap .calcDetal {
+        padding: 1rem;
+        margin-bottom: 1rem
+    }
+
+    .bottom-header {
+        padding: 10px 0
+    }
+
+    .bottom-header {
+        padding: 10px 0
+    }
+
+    .bottom-header .navbar-nav .nav-item .nav-link {
+        font-size: 15px;
+        padding: 10px 0
+    }
+
+    .header-btn a {
+        padding: 14px 2rem
+    }
+
+    .bottom-header .navbar-nav,
+    .bottom-header .navbar-nav .nav-item {
+        width: 100%
+    }
+
+    .bottom-header .navbar-nav .nav-item {
+        position: relative;
+        text-align: center
+    }
+
+    .bottom-header .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+        display: none
+    }
+
+    .bottom-header .navbar-nav .nav-item.dropdown .dropdown-menu.show {
+        display: block
+    }
+
+    .bottom-header .navbar-nav .nav-item.dropdown .dropdown-menu.large {
+        padding: 2rem 0;
+        text-align: left
+    }
+
+    .bottom-header .navbar-nav .dropdown-menu .schedule h2 {
+        font-size: 1.25rem
+    }
+    .trustSec .slick-slider .slick-next {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .portfolio-item {
+        min-height: 32rem;
+        margin-bottom: 2rem
+    }
+
+    .pricing-item {
+        margin-bottom: 2rem
+    }
+
+    .site-header.fixed-header .mob-logo {
+        display: block
+    }
+
+    .site-identity .site-title {
+        margin: 0
+    }
+
+    .fixed-header .mobile-menu-container {
+        padding: 1rem
+    }
+
+    .pricing-item .pricing-head h4 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #675ef5
+    }
+
+    .testimonial-item {
+        min-height: 20rem
+    }
+
+    .registery .section-head {
+        flex: 0 0 100%;
+        margin: 0;
+        border-right: 0;
+        margin-right: 0;
+        padding-right: 0
+    }
+
+    .registery p {
+        flex: 100%
+    }
+
+    .home-about .exp-date {
+        padding: 1.75rem 20px
+    }
+
+    .progress-wrapper h4 {
+        font-size: 20px
+    }
+
+    .iconbox-item-1 {
+        width: 100%
+    }
+
+    .regionCell h4,
+    .regionCell span,
+    .trademarkList h4 {
+        font-size: 1rem
+    }
+
+    .outline-round,
+    .button-round {
+        font-size: 12px
+    }
+
+    .site-header .hgroup-wrap {
+        flex-direction: column
+    }
+
+    h2 {
+        font-size: 35px
+    }
+
+    .sidebar {
+        margin-top: 50px
+    }
+
+    .home-about .progress-content {
+        padding: 2rem;
+        margin-left: 0
+    }
+
+    .home-about .about-head-wrap {
+        margin-bottom: 10px;
+        grid-template-columns: 1fr
+    }
+
+    .home-about,
+    .home-portfolio {
+        padding: 2rem 0
+    }
+
+    .pricing-item .pricing-head {
+        padding: 0
+    }
+
+    .pricing-item .pricing-head .botom h2 {
+        font-size: 3.125rem
+    }
+
+    .pricing-item .pricing-head .botom h2 i {
+        font-size: 2rem
+    }
+
+    .home-pricing-table .tab-content {
+        padding: 30px 0
+    }
+
+    .pricing-item .pricing-head .botom {
+        padding: 1rem
+    }
+
+    .pricing-item .pricing-body {
+        padding: 1rem;
+        min-height: 20rem
+    }
+
+    .formStyle .ribbon p {
+        font-size: .8rem
+    }
+
+    .formStyle .ribbon p span {
+        font-size: 1rem
+    }
+
+    .formStyle {
+        padding: 2rem 1rem 1rem
+    }
+
+    .formStyle .ribbon {
+        margin: 0 -1rem 1rem -1rem
+    }
+
+    .formStyle .targetedDown {
+        right: 0;
+        width: 5rem
+    }
+
+    .banner-content .banner-title {
+        font-size: 30px
+    }
+
+    .trustedClient .arrowBg {
+        background: no-repeat;
+        padding: 1rem 0
+    }
+
+    .trustedClient .arrowBg h4 {
+        font-size: 1.25rem
+    }
+
+    .header-contact-info ul li,
+    .header-contact-info ul li a {
+        font-size: 0
+    }
+
+    .header-contact-info ul li i {
+        font-size: 1rem
+    }
+
+    .home-about .progress-wrapper {
+        margin-top: 0
+    }
+
+    .registery {
+        flex-direction: column;
+        margin-bottom: 1rem
+    }
+
+    .testimonial-item {
+        min-height: 18rem
+    }
+
+    .scheduleSec .schedule {
+        flex-direction: column;
+        align-items: self-start
+    }
+
+    .schedule {
+        gap: 1rem
+    }
+
+    .schedule h2 {
+        font-size: 1.5rem
+    }
+
+    .faq-page-container {
+        padding: 50px 0
+    }
+
+    .selectCountryWrap {
+        margin-top: 2rem
+    }
+
+    .successRate h2 {
+        font-size: 8rem
+    }
+
+    .caseStudrReview {
+        flex-direction: column
+    }
+
+    .caseStudrReview .video {
+        margin-bottom: 1rem
+    }
+
+    .caseStudrReview .content {
+        padding-left: 0
+    }
+
+    .processRow .arrow,
+    .processRow .cell .circleBig .dot {
+        display: none
+    }
+
+    .processRow .cell .circleBig,
+    .processRow .cell .circleBig .circle {
+        width: 10rem;
+        height: 10rem
+    }
+
+    .processRow .cell .circleBig .circle {
+        width: 8rem;
+        height: 8rem
+    }
+
+    .processRow .cell h4 {
+        font-size: 1.125rem
+    }
+
+    .apartCell {
+        min-height: 10rem
+    }
+
+    .home-about .exp-date h2 {
+        font-size: 22px
+    }
+
+    .home-about .exp-date h4 {
+        font-size: 14px;
+        letter-spacing: 0
+    }
+
+    .bottom-header {
+        padding: 10px 0
+    }
+
+    .calculatorWrap .boddy {
+        background-repeat: repeat;
+        padding: 2rem 1rem
+    }
+
+    .calculatorWrap {
+        overflow-y: auto
+    }
+
+    .calculatorWrap .boddy .regionOpt {
+        margin-bottom: 2rem
+    }
+
+    .theRightSolution {
+        padding: 3rem 0 1rem
+    }
+
+    .theRightSolution .keywordList button {
+        font-size: 1rem;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        text-align: left
+    }
+
+    .whatDifferent {
+        padding: 3rem 0 0
+    }
+
+    .schedule.smal {
+        padding: 1.5rem;
+        border-radius: 10px
+    }
+
+    .schedule.smal h3 {
+        font-size: 1.5rem
+    }
+
+    .domainservice .schedule {
+        margin-top: 1.5rem
+    }
+
+    .renewalWrap .title h3 {
+        font-size: 1.125rem
+    }
+
+    .renewalWrap .body .right h2 {
+        font-size: 3.5rem
+    }
+
+    .renewalWrap .body .right h2 sup {
+        position: unset;
+        font-size: 1.5rem
+    }
+
+    .renewalWrap .body .right h2 small {
+        display: block
+    }
+
+    .whatDifferent h2 {
+        font-size: 1.5rem
+    }
+
+    .priceTable .title .price {
+        flex-direction: column;
+        gap: 0
+    }
+
+    .priceTable .title .price h2 {
+        font-size: 3rem
+    }
+
+    .priceTable .title .price h2 small {
+        display: block;
+        text-align: center
+    }
+
+    .priceTable .title .price h2 sup {
+        position: unset
+    }
+
+    .trademarkList strong {
+        font-size: 1rem;
+        margin: 0
+    }
+}
+
+@media screen and (max-width:767px) {
+    .post-navigation-wrap, .section-head p:last-child, .team-detail-section .progress-wrapper {
+        margin-top: 15px;
+    }
+    p {
+        margin: 0 0 15px;
+    }
+    .sequenceHeader .logo img {
+        margin: 1rem 0;
+    }
+    .sequenceHeader .sequenceNav {
+        padding: 1.5rem 0 0;
+    }
+    .sequenceFormSec {
+        padding: 1rem 0;
+    }
+    .declarationSec h2 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    ul.trademarkList {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        background: transparent
+    }
+
+    .trademarkList li {
+        background: #675ef5;
+    }
+
+    .trademarkList li:nth-child(2) {
+        border: 0
+    }
+
+    .trademarkList li a {
+        text-align: center;
+        background: #675ef5;
+        border-radius: 10px;
+        display: block;
+        padding: 1rem
+    }
+
+    .header-contact-info {
+        text-align: center;
+        line-height: 25px;
+        padding-bottom: 0
+    }
+
+    .mobile-menu-container {
+        display: block
+    }
+
+    .callback-inner .callback-img {
+        margin-top: 40px
+    }
+
+    .callback-inner img {
+        width: 100%
+    }
+
+    .faq-testimonial .testimonial-content {
+        margin-right: 0;
+        margin-top: -70px
+    }
+
+    .home-testimonial {
+        padding-bottom: 60px;
+        padding-top: 60px
+    }
+
+    .about-page-section .iconbox-container {
+        margin-bottom: 50px
+    }
+
+    .amazonPkgSec {
+        padding: 4rem 0
+    }
+
+    .pricing-item .pricing-body {
+        min-height: auto
+    }
+
+    .pricing-item .pricing-head .botom h2 {
+        font-size: 3rem;
+    }
+
+    .formStyle h4 {
+        font-size: 1.25rem
+    }
+
+    .formStyle p {
+        font-size: 13px
+    }
+
+    .formStyle {
+        padding: 1rem;
+        margin-top: 0;
+        margin-bottom: 1.25rem
+    }
+
+    .formStyle .ribbon {
+        margin: 0 -1rem 1rem -1rem
+    }
+
+    .formStyle .ribbon p span,
+    #calcBtn {
+        font-size: 1rem
+    }
+
+    h2 {
+        font-size: 30px
+    }
+
+    .home-banner {
+        background-image: linear-gradient(to right bottom, #968ff8, #847bf8, #7268f7, #5e53f5, #483df2) !important;
+        padding: 5rem 0 1rem;
+        height: 100vh;
+        display: flex;
+        align-items: center !important;
+        min-height:auto !important;
+        height: 100vh;
+    }
+    .home-banner.bannerlp {
+        height: calc(100vh - 4.75rem);
+        padding: 0;
+    }
+    .banner-content {
+        padding: 0;
+    }
+
+.banner-content .banner-subtitle {
+    font-size: 18px;
+    color: #ffcd15;
+    margin: 5px 0;
+}
+.bannerHome .banner-content .banner-title {
+    font-size: 28px;
+        line-height: 1.4;
+}
+    .banner-content .banner-text {
+        margin: 0;
+    }
+
+.banner-content .banner-text p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.3;
+    gap: 1rem;
+    margin: 8px 0;
+}
+
+    .banner-content .banner-text p i {
+        position: relative;
+        top: 4px;
+        margin: 0;
+         color: #FFCD15;
+    }
+
+    .regionsSec {
+        padding: 2rem 0 0
+    }
+
+    .home-pricing-table {
+        padding: 2rem 0
+    }
+
+    .trademarkList {
+        margin: 1rem 0 0
+    }
+
+    .home-portfolio {
+        padding: 3rem 0 1rem
+    }
+
+    .site-footer .bottom-footer .bottom-footer-content {
+        text-align: center
+    }
+
+    .testimonial-item {
+        margin-top: 1rem;
+        min-height: auto;
+        flex-direction: column;
+    }
+    .testimonial-item .testimonial-content {
+        padding-left: 0;
+    }
+
+    .contact-from-wrap {
+        margin: 2rem 0 0 0
+    }
+
+    .trustedClient {
+        padding-bottom: 1rem
+    }
+
+    .schedule {
+        padding: 1rem;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center
+    }
+
+    .scheduleSec .schedule {
+        align-items: center
+    }
+
+    .home-service .service-image {
+        display: none
+    }
+
+    .home-service .service-icon-box {
+        margin: 30px 0
+    }
+
+    .home-subscribe {
+        background-position: top left;
+        padding: 2rem 0
+    }
+
+    .subscribe-inner .subscribe-content h2 {
+        font-size: 24px
+    }
+
+    .successRate h2 {
+        font-size: 5rem
+    }
+
+    .processRow {
+        flex-direction: column
+    }
+
+    .processRow .cell {
+        width: 100%;
+        margin: 20px 0
+    }
+
+    .processRow .cell.center {
+        top: 0
+    }
+
+    .renewalWrap .body {
+        flex-direction: column
+    }
+
+    .renewalWrap .body .left,
+    .renewalWrap .body .right {
+        width: 100%;
+        border-right: 0
+    }
+
+    .renewalWrap .body ul li {
+        flex: 0 0 100%
+    }
+
+    .renewalWrap .body .right {
+        margin-top: 2rem
+    }
+
+    .home-subscribe .formStyle {
+        margin-top: 2rem
+    }
+
+    .engagingBusiness .body {
+        padding: 2rem
+    }
+
+    .engagingBusiness .body .cell {
+        flex-direction: column;
+        gap: 1rem
+    }
+
+    .engagingBusiness .body .cell h4 {
+        font-size: 1.5rem
+    }
+
+    .apartCell {
+        min-height: auto;
+        padding: 2rem 1rem;
+        margin-top: 1rem
+    }
+
+    .apartCell h4 {
+        font-size: 1rem
+    }
+
+    .calculatorWrap .boddy .calcDetal h2 {
+        font-size: 3rem
+    }
+
+    .priceTable .title {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center
+    }
+
+    .formStyle {
+        border-radius: 5px;
+        width: 100%;
+        padding: 0;
+        background: transparent
+    }
+
+    .formStyle .ribbon p {
+        font-size: 1rem
+    }
+
+    .readMoreText {
+        height: 5.5rem;
+        overflow: hidden
+    }
+
+    .readMoreText.open {
+        height: auto;
+        overflow: unset
+    }
+
+    .readMore {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #675ef5;
+        display: block
+    }
+
+    .regionCell {
+        margin: 10px
+    }
+
+    .trademarkList span {
+        display: none
+    }
+
+    .home-about .progress-content {
+        padding: 1rem;
+        margin: 0
+    }
+
+    .home-about .progress-wrapper h4 {
+        font-size: 16px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px
+    }
+
+    .home-about .progress-wrapper h4 span {
+        font-size: 10px;
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 5px
+    }
+
+    .about-video-banner {
+        min-height: 150px;
+        position: relative;
+        margin-top: 2rem
+    }
+
+    .about-video-banner:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(9deg, #060068, transparent);
+        opacity: .6
+    }
+
+    .about-video-banner:after {
+        content: '3 Easy Steps';
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+        width: 100%;
+        color: #fff;
+        font-size: 1.25rem
+    }
+
+    .iconbox-border {
+        margin: 10px;
+        width: 100%;
+        flex-direction: column
+    }
+
+    .iconbox-border .iconbox-content {
+        margin: 0;
+        width: 100%;
+        padding: 3rem 1rem 1rem;
+        text-align: center
+    }
+
+    .iconbox-border .iconbox-icon {
+        margin-bottom: -2rem
+    }
+
+    .portfolio-item {
+        margin: 10px
+    }
+
+    .homePage {
+        display: flex;
+        flex-direction: column
+    }
+
+    .homePage .home-banner {
+        order: 1;
+        padding: 3rem 0;
+        height: 100%;
+    }
+
+    .apartSec {
+        order: 2
+    }
+
+    .homePage .home-about {
+        order: 2
+    }
+
+    .homePage .home-pricing-table {
+        order: 3
+    }
+
+    .homePage .activementSec {
+        order: 4;
+        padding-bottom: 1rem;
+    }
+    .home-portfolio .image-overlay {
+        height: 420px;
+    }
+    .homePage .home-portfolio {
+        order: 5
+    }
+
+    .homePage .home-testimonial {
+        order: 6
+    }
+
+    .top-header,
+    .homePage .faq-page-section,
+    .homePage .home-subscribe,
+    .formStyle h4,
+    .formStyle p,
+    .formStyle .ribbon,
+    .formStyle #start_form label {
+        display: none
+    }
+
+    .site-header .bottom-header {
+        position: absolute;
+        top: .5rem;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        background: transparent;
+        border-bottom: 0;
+        padding-bottom: 0
+    }
+
+    .navbar-toggler {
+        color: #fff
+    }
+
+    .bottom-header .navbar-collapse {
+        background: #fff;
+        padding: 1rem 0;
+        box-shadow: 0 0 6px #0002
+    }
+
+    .iti__selected-flag {
+        height: 3rem;
+    }
+
+    .formStyle .input-group .form-control.phone2 {
+        transform: translate(0, 1px)
+    }
+
+      .formStyle .button-round {
+        font-size: 13px;
+        height: 3rem;
+    }
+
+    .formStyle .form-control::placeholder {
+        font-size: 15px
+    }
+
+    .cartItemCard h6 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 10px 0;
+        border-bottom: 1px solid #d7d7d7
+    }
+
+    .cartItemCard h6 span:first-child {
+        font-weight: 800
+    }
+
+    .cartItemCard h6 span:last-child {
+        text-align: end
+    }
+    .sequenceFormSec h2 {
+        font-size: 1.5rem;
+    }
+    .sequenceFormSec .formWrap {
+        position: relative;
+        top: 0;
+        margin-top: 1rem;
+        padding: 1rem 0;
+        border-radius: 5px;
+    }
+    .sequenceFormSec .formWrap label, .sequenceFormSec .formWrap input+label {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+    }
+    .sequenceFormSec .formWrap .form-control {
+        background: #fff;
+        height: 3rem;
+    }
+    .outline-round, .button-round{
+        height: 3rem;
+        width: 100%;
+        font-size: 14px;
+        margin-top: -12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            background: #1f3645;
+    }
+    .selectPkgWrap {
+        padding: 1.5rem 1rem 1rem;
+        height: auto;
+        min-height: auto;
+    }
+    .tmSrchPkg .form-check-input:checked + .selectPkgWrap {
+        transform: scale(1.03);
+    }
+    .selectPkgWrap .right h3 {
+        font-size: 1.5rem;
+    }
+    .selectPkgWrap label {
+        font-size: 1rem;
+    }
+    .home-pricing-table .section-head {
+        margin-bottom: 20px;
+    }
+    .home-pricing-table .section-head p {
+        margin: 1rem 0 0;
+    }
+    .pricing-item .pricing-body {
+        min-height: auto !important;
+    }
+    .pricing-item .pricing-head .botom {
+        padding: 5px 1rem;
+    }
+    .pricing-item .pricing-footer {
+        padding: 0 1rem;
+    }
+    .home-testimonial {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .btnSec {
+        flex-direction: column;
+    }
+    .trustSec {
+        padding: 1rem 0 0;
+    }
+    .rateBox-slider {
+        padding-left: 0;
+    }
+    .reviewBox {
+        margin: 0;
+    }
+ 
+    .btnSec a {
+        background: #213643;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .regionCell .button-round {
+        font-size: 12px;
+        padding: 10px;
+        margin: 4px 0;
+        height: 2rem;
+    }
+    #start_form {
+        display: none;
+    }
+    .btnSec {
+        margin-top: 2rem;
+    }
+    .sequenceFormSec .button-round, .sequenceFormSec .outline-round {
+        height: 3rem;
+        margin-top: 1rem;
+    }
+    .personalConsulting .content .telNum span {
+        display: block;
+        margin-top: 10px;
+    }
+    .thankyou {
+        min-height: 40rem !important;
+    }
+    .sequenceHeader {
+        background: linear-gradient(to right bottom, #968ff8, #847bf8, #7268f7, #5e53f5, #483df2) !important;
+        padding: 5rem 0 1rem;
+    }
+    .sequenceHeader .sequenceNav {
+        padding: 1rem;
+        margin: 0;
+    }
+    .sequenceNav h4 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+    .progress {
+        height: 20px;
+        font-size: 0.9em;
+    }
+    .sequenceFormSec .formWrap {
+        padding: 2rem 0rem;
+    }
+    .sequenceNavbar .button-round {
+        display: none;
+    }
+    .boxStyle {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .callback-inner {
+        padding-top: 70px;
+        padding-bottom: 70px
+    }
+
+    .callback-inner .circle-progressbar-wrap {
+        margin-top: 40px
+    }
+
+    .callback-inner .circle-progressbar {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 15px
+    }
+
+    .callback-inner .circle-progressbar .circle-bar .circle-number {
+        font-size: 14px;
+        line-height: 10rem
+    }
+
+    h2 {
+        font-size: 25px
+    }
+
+    #calcBtn {
+        transform: translate(0) scale(1);
+        writing-mode: horizontal-tb;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        padding: 10px
+    }
+
+    #calcBtn i {
+        transform: rotate(0deg)
+    }
+
+    .banner-content .banner-title {
+    font-size: 26px;
+    margin: 0;
+}
+    .formStyle .form-control {
+        height:3rem;
+    }
+
+    .regionCell img {
+        width: 4rem
+    }
+
+    .portfolio-item {
+        min-height: auto;
+        margin-bottom: 1rem
+    }
+
+    .amazonWrap .title h2 {
+        flex-direction: column;
+        text-align: center
+    }
+
+    .amazonWrap .body {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center
+    }
+
+    .portfolio-item .portfolio-img img {
+        height: 8rem
+    }
+
+    .header-contact-info {
+        text-align: left
+    }
+
+    .contact-form-inner {
+        padding: 50px 0
+    }
+
+    .map-section iframe {
+        height: 200px
+    }
+
+    .contact-from-wrap {
+        padding: 20px 20px 10px
+    }
+
+    .domainservice .schedule h2 {
+        font-size: 1.5rem
+    }
+
+    .amazonWrap .title h2 {
+        font-size: 1.25rem
+    }
+
+    .home-pricing-table .nav-tabs {
+        margin: 0
+    }
+
+    .home-pricing-table .nav-tabs li {
+        width: 100%;
+        margin: 10px 0
+    }
+
+    .home-pricing-table .nav-tabs li .nav-link {
+        width: 100%;
+        margin: 0
+    }
+
+    .ourProcess {
+        padding: 2rem 0
+    }
+
+    .calculatorWrap .calcDetal ul li {
+        padding: 5px 0;
+        font-size: 13px
+    }
+
+    .calculatorWrap .closeCalc {
+        width: 2rem;
+        height: 2rem
+    }
+
+    .calculatorWrap .closeCalc .bar {
+        width: 2rem
+    }
+
+    .calculatorWrap .head img {
+        width: 3rem
+    }
+
+    .calculatorWrap .boddy h2 {
+        font-size: 1.3rem
+    }
+
+    .calculatorWrap .head,
+    .calculatorWrap .boddy {
+        padding: 1rem 0
+    }
+    .home-portfolio .image-overlay {
+    background: linear-gradient(to right bottom, #968ff8, #847bf8, #7268f7, #5e53f5, #483df2) !important;
+}
+.howDoesWork h4 {
+    margin: 0;
+}
+
+.howDoesWork {
+    padding: 1rem 0;
+}
+.home-portfolio .image-overlay:before {
+    display: none;
+}
+
+
+}
