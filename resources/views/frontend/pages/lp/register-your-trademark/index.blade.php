@@ -1,222 +1,12 @@
-<?php
-include("../../backend/connectiondb.php");
-include "../../includes/var.php";
-
-$taxUS = 0;
-$taxUK = 0;
-$taxEU = 0;
-$silverpriceUS = 0;
-$goldpriceUS = 0;
-$diamondpriceUS = 0;
-$silverpriceUK = 0;
-$goldpriceUK = 0;
-$diamondpriceUK = 0;
-$silverpriceEU = 0;
-$goldpriceEU = 0;
-$diamondpriceEU = 0;
-
-$silverpriceUSCur = 0;
-$goldpriceUSCur = 0;
-$diamondpriceUSCur = 0;
-$silverpriceUSCur = 0;
-$goldpriceUSCur = 0;
-$diamondpriceUSCur = 0;
-$silverpriceUSCur = 0;
-$goldpriceUSCur = 0;
-$diamondpriceUSCur = 0;
-
-//Taxes
-$querytax = "select " . $table31Col1 . " from " . $table32 . " where " . $common7 . "='1' and " . $common2 . "='1'";
-$vacanciestax = mysqli_query($con, $querytax);
-if ($vacanciestax->num_rows > 0) {
-   $itemtax = mysqli_fetch_assoc($vacanciestax);
-   $taxUS = (float)$itemtax[$table31Col1];
-}
-$querytax = "select " . $table31Col1 . " from " . $table32 . " where " . $common7 . "='1' and " . $common2 . "='2'";
-$vacanciestax = mysqli_query($con, $querytax);
-if ($vacanciestax->num_rows > 0) {
-   $itemtax = mysqli_fetch_assoc($vacanciestax);
-   $taxUK = (float)$itemtax[$table31Col1];
-}
-$querytax = "select " . $table31Col1 . " from " . $table32 . " where " . $common7 . "='1' and " . $common2 . "='3'";
-$vacanciestax = mysqli_query($con, $querytax);
-if ($vacanciestax->num_rows > 0) {
-   $itemtax = mysqli_fetch_assoc($vacanciestax);
-   $taxEU = (float)$itemtax[$table31Col1];
-}
-
-//silver Package Price US
-$query = "select t1." . $table20Col1 . ",t1." . $table31Col1 . ",t2." . $table21Col1 . " from " . $table31 . " t1
-    inner join " . $table21 . " t2 on t1." . $common14 . " = t2." . $common2 . "
-    where t1." . $common7 . "='1' and t1." . $common13 . "='1' and t1." . $common19 . " = '1'  and t1." . $table31Col1 . " = '1'";
-$vacancies = mysqli_query($con, $query);
-if ($vacancies->num_rows > 0) {
-   while ($item = mysqli_fetch_assoc($vacancies)) {
-      $temp = (float)$item["price"];
-      if ($item[$table31Col1] == "1") {
-         $temp = $temp + (($temp * $taxUS) / 100);
-      }
-      $silverpriceUSCur = $item[$table21Col1];
-      $silverpriceUS = $silverpriceUS + $temp;
-   }
-}
-
-//Gold Package Price US
-$query = "select t1." . $table20Col1 . ",t1." . $table31Col1 . ",t2." . $table21Col1 . " from " . $table31 . " t1
-    inner join " . $table21 . " t2 on t1." . $common14 . " = t2." . $common2 . "
-    where t1." . $common7 . "='1' and t1." . $common13 . "='2' and t1." . $common19 . " = '1'  and t1." . $table31Col1 . " = '1'";
-$vacancies = mysqli_query($con, $query);
-if ($vacancies->num_rows > 0) {
-   while ($item = mysqli_fetch_assoc($vacancies)) {
-      $temp = (float)$item["price"];
-      if ($item[$table31Col1] == "1") {
-         $temp = $temp + (($temp * $taxUS) / 100);
-      }
-      $goldpriceUSCur = $item[$table21Col1];
-      $goldpriceUS = $goldpriceUS + $temp;
-   }
-}
-
-//Diamond Package Price US
-$query = "select t1." . $table20Col1 . ",t1." . $table31Col1 . ",t2." . $table21Col1 . " from " . $table31 . " t1
-    inner join " . $table21 . " t2 on t1." . $common14 . " = t2." . $common2 . "
-    where t1." . $common7 . "='1' and t1." . $common13 . "='3' and t1." . $common19 . " = '1'  and t1." . $table31Col1 . " = '1'";
-$vacancies = mysqli_query($con, $query);
-if ($vacancies->num_rows > 0) {
-   while ($item = mysqli_fetch_assoc($vacancies)) {
-      $temp = (float)$item["price"];
-      if ($item[$table31Col1] == "1") {
-         $temp = $temp + (($temp * $taxUS) / 100);
-         //$temp = $temp;
-      }
-      $diamondpriceUSCur = $item[$table21Col1];
-      $diamondpriceUS = $diamondpriceUS + $temp;
-   }
-}
-
-//silver Package Price UK
-$query = "select t1." . $table20Col1 . ",t1." . $table31Col1 . ",t2." . $table21Col1 . " from " . $table31 . " t1
-    inner join " . $table21 . " t2 on t1." . $common14 . " = t2." . $common2 . "
-    where t1." . $common7 . "='1' and t1." . $common13 . "='1' and t1." . $common19 . " = '2'  and t1." . $table31Col1 . " = '1'";
-$vacancies = mysqli_query($con, $query);
-if ($vacancies->num_rows > 0) {
-   while ($item = mysqli_fetch_assoc($vacancies)) {
-      $temp = (float)$item["price"];
-      if ($item[$table31Col1] == "1") {
-         $temp = $temp + (($temp * $taxUK) / 100);
-         // $temp = $temp; 
-      }
-      $silverpriceUK = $silverpriceUK + $temp;
-      $silverpriceUKCur = $item[$table21Col1];
-   }
-}
-
-//Gold Package Price UK
-$query = "select t1." . $table20Col1 . ",t1." . $table31Col1 . ",t2." . $table21Col1 . " from " . $table31 . " t1
-    inner join " . $table21 . " t2 on t1." . $common14 . " = t2." . $common2 . "
-    where t1." . $common7 . "='1' and t1." . $common13 . "='2' and t1." . $common19 . " = '2'  and t1." . $table31Col1 . " = '1'";
-$vacancies = mysqli_query($con, $query);
-if ($vacancies->num_rows > 0) {
-   while ($item = mysqli_fetch_assoc($vacancies)) {
-      $temp = (float)$item["price"];
-      if ($item[$table31Col1] == "1") {
-         $temp = $temp + (($temp * $taxUK) / 100);
-         // $temp = $temp; 
-      }
-      $goldpriceUK = $goldpriceUK + $temp;
-      $goldpriceUKCur = $item[$table21Col1];
-   }
-}
-
-//Diamond Package Price UK
-$query = "select t1." . $table20Col1 . ",t1." . $table31Col1 . ",t2." . $table21Col1 . " from " . $table31 . " t1
-    inner join " . $table21 . " t2 on t1." . $common14 . " = t2." . $common2 . "
-    where t1." . $common7 . "='1' and t1." . $common13 . "='3' and t1." . $common19 . " = '2'  and t1." . $table31Col1 . " = '1'";
-$vacancies = mysqli_query($con, $query);
-if ($vacancies->num_rows > 0) {
-   while ($item = mysqli_fetch_assoc($vacancies)) {
-      $temp = (float)$item["price"];
-      if ($item[$table31Col1] == "1") {
-         $temp = $temp + (($temp * $taxUK) / 100);
-         // $temp = $temp;  
-      }
-      $diamondpriceUK = $diamondpriceUK + $temp;
-      $diamondpriceUKCur = $item[$table21Col1];
-   }
-}
-
-//silver Package Price EU
-$query = "select t1." . $table20Col1 . ",t1." . $table31Col1 . ",t2." . $table21Col1 . " from " . $table31 . " t1
-    inner join " . $table21 . " t2 on t1." . $common14 . " = t2." . $common2 . "
-    where t1." . $common7 . "='1' and t1." . $common13 . "='1' and t1." . $common19 . " = '3'  and t1." . $table31Col1 . " = '1'";
-$vacancies = mysqli_query($con, $query);
-if ($vacancies->num_rows > 0) {
-   while ($item = mysqli_fetch_assoc($vacancies)) {
-      $temp = (float)$item["price"];
-      if ($item[$table31Col1] == "1") {
-         $temp = $temp + (($temp * $taxEU) / 100);
-         //$temp = $temp;
-      }
-      $silverpriceEU = $silverpriceEU + $temp;
-      $silverpriceEUCur = $item[$table21Col1];
-   }
-}
-
-//Gold Package Price EU
-$query = "select t1." . $table20Col1 . ",t1." . $table31Col1 . ",t2." . $table21Col1 . " from " . $table31 . " t1
-    inner join " . $table21 . " t2 on t1." . $common14 . " = t2." . $common2 . "
-    where t1." . $common7 . "='1' and t1." . $common13 . "='2' and t1." . $common19 . " = '3'  and t1." . $table31Col1 . " = '1'";
-$vacancies = mysqli_query($con, $query);
-if ($vacancies->num_rows > 0) {
-   while ($item = mysqli_fetch_assoc($vacancies)) {
-      $temp = (float)$item["price"];
-      if ($item[$table31Col1] == "1") {
-         $temp = $temp + (($temp * $taxEU) / 100);
-         //$temp = $temp; 
-      }
-      $goldpriceEU = $goldpriceEU + $temp;
-      $goldpriceEUCur = $item[$table21Col1];
-   }
-}
-
-//Diamond Package Price EU
-$query = "select t1." . $table20Col1 . ",t1." . $table31Col1 . ",t2." . $table21Col1 . " from " . $table31 . " t1
-    inner join " . $table21 . " t2 on t1." . $common14 . " = t2." . $common2 . "
-    where t1." . $common7 . "='1' and t1." . $common13 . "='3' and t1." . $common19 . " = '3'  and t1." . $table31Col1 . " = '1'";
-$vacancies = mysqli_query($con, $query);
-if ($vacancies->num_rows > 0) {
-   while ($item = mysqli_fetch_assoc($vacancies)) {
-      $temp = (float)$item["price"];
-      if ($item[$table31Col1] == "1") {
-         $temp = $temp + (($temp * $taxEU) / 100);
-         //$temp = $temp;
-      }
-      $diamondpriceEU = $diamondpriceEU + $temp;
-      $diamondpriceEUCur = $item[$table21Col1];
-   }
-}
-
-
-
-
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-   <?php include("../../includes/compatibility.php") ?>
-   <title>File A Trademark Now | Trademark Nova</title>
-   <meta name="description" content="" />
-   <meta name="keywords" content="file a trademark, trademark registration, file my trademark, register a logo, apply for trademark, trademark a slogan, register brand name, register trademark, trademark my business name, register a trademark" />
-   <!-- Google Fonts -->
-   <?php include("../../includes/styles.php") ?>
+@extends('frontend.layouts.lp.master')
+@section('main-content')
    <style>
       .iti--separate-dial-code .iti__selected-flag {
          background-color: white;
       }
 
       .bannerlp {
-         background: url(./assets/images/lp-banner.webp) right/cover no-repeat;
+         background: url(../../assets/images/lp-banner.webp) right/cover no-repeat;
          display: flex;
          align-items: flex-end;
       }
@@ -377,12 +167,12 @@ if ($vacancies->num_rows > 0) {
       <div class="container">
          <div class="row justify-content-between align-items-center">
             <div class="col-lg-2 col-md-2 col-sm-6">
-               <img src="assets/images/site-logo.webp" class="img-fluid">
+               <img src="{{asset('assets/images/site-logo.webp')}}" class="img-fluid">
             </div>
             <div class="col-lg-8 col-md-10 col-sm-6">
                <ul>
                   <!--<li><a href="tel:{{ config('var.number') }}" class="numSec"><i class="fas fa-phone-alt"></i>  {{ config('var.numberdisplay') }}</a></li>-->
-                  <li> <a href="mailto:<?= $email ?>" class="numSec"> <i class="fas fa-envelope me-2"></i><?= $email ?></a></li>
+                  <li> <a href="mailto:{{ config('var.email') }}" class="numSec"> <i class="fas fa-envelope me-2"></i>{{ config('var.email') }}</a></li>
                   <li><a href="/sequence-form-step1/" class="button-round">GET STARTED NOW</a></li>
                </ul>
             </div>
@@ -408,38 +198,38 @@ if ($vacancies->num_rows > 0) {
                   <!--<div class="row align-items-end mb-4 d-none">-->
                   <!--    <div class="col-md-4">-->
                   <!--        <div class="rateImg">-->
-                  <!--        <img src="assets/images/rate2.webp" class="img-fluid">-->
+                  <!--        <img src="{{asset('assets/images/rate2.webp')}}" class="img-fluid">-->
                   <!--    </div>-->
                   <!--    </div>-->
                   <!--    <div class="col-md-8">-->
                   <!--        <div class="rateBox-slider">-->
                   <!--            <div>-->
-                  <!--                <img src="assets/images/3.webp" class="img-fluid">-->
+                  <!--                <img src="{{asset('assets/images/3.webp')}}" class="img-fluid">-->
                   <!--            </div>-->
                   <!--             <div>-->
-                  <!--                <img src="assets/images/4.webp" class="img-fluid">-->
+                  <!--                <img src="{{asset('assets/images/4.webp')}}" class="img-fluid">-->
                   <!--            </div>-->
                   <!--             <div>-->
-                  <!--                <img src="assets/images/5.webp" class="img-fluid">-->
+                  <!--                <img src="{{asset('assets/images/5.webp')}}" class="img-fluid">-->
                   <!--            </div>-->
                   <!--             <div>-->
-                  <!--                <img src="assets/images/6.webp" class="img-fluid">-->
+                  <!--                <img src="{{asset('assets/images/6.webp')}}" class="img-fluid">-->
                   <!--            </div>-->
                   <!--             <div>-->
-                  <!--                <img src="assets/images/7.webp" class="img-fluid">-->
+                  <!--                <img src="{{asset('assets/images/7.webp')}}" class="img-fluid">-->
                   <!--            </div>-->
                   <!--             <div>-->
-                  <!--                <img src="assets/images/8.webp" class="img-fluid">-->
+                  <!--                <img src="{{asset('assets/images/8.webp')}}" class="img-fluid">-->
                   <!--            </div>-->
                   <!--             <div>-->
-                  <!--                <img src="assets/images/9.webp" class="img-fluid">-->
+                  <!--                <img src="{{asset('assets/images/9.webp')}}" class="img-fluid">-->
                   <!--            </div>-->
                   <!--        </div>-->
                   <!--    </div>-->
                   <!--</div>-->
                   <!--<div class="rateSec">-->
                   <!--    <div class="rateImg">-->
-                  <!--        <img src="assets/images/rate2.webp" class="img-fluid">-->
+                  <!--        <img src="{{asset('assets/images/rate2.webp')}}" class="img-fluid">-->
                   <!--    </div>-->
                   <!--    <div>-->
 
@@ -454,7 +244,7 @@ if ($vacancies->num_rows > 0) {
             </div>
             <div class="col-lg-5 col-md-5">
                <figure class="lp-girl">
-                  <img src="assets/images/lp-girl.webp" class="img-fluid">
+                  <img src="{{asset('assets/images/lp-girl.webp')}}" class="img-fluid">
                </figure>
             </div>
 
@@ -467,14 +257,14 @@ if ($vacancies->num_rows > 0) {
       <div class="container">
          <div class="row align-items-start">
             <div class="col-md-2 d-md-block d-none">
-               <img src="assets/images/rating.webp" class="img-fluid">
+               <img src="{{asset('assets/images/rating.webp')}}" class="img-fluid">
             </div>
             <div class="col-md-10">
                <div class="rateBox-slider">
                   <div>
                      <div class="reviewBox">
                         <div class="trust">
-                           <img src="assets/images/rate-star.webp" class="img-fluid">
+                           <img src="{{asset('assets/images/rate-star.webp')}}" class="img-fluid">
                            <h6>May 13, 2023</h6>
                         </div>
                         <p>Trademark Nova rocks! Got my first legal trademark approved with their help, and I'm already working with them on a second one.</p>
@@ -483,7 +273,7 @@ if ($vacancies->num_rows > 0) {
                   <div>
                      <div class="reviewBox">
                         <div class="trust">
-                           <img src="assets/images/rate-star.webp" class="img-fluid">
+                           <img src="{{asset('assets/images/rate-star.webp')}}" class="img-fluid">
                            <h6>May 5, 2023</h6>
                         </div>
                         <p>Overall great experience so far! Give the 4 because there is always room for improvement. Waiting to get my trademark information.</p>
@@ -492,7 +282,7 @@ if ($vacancies->num_rows > 0) {
                   <div>
                      <div class="reviewBox">
                         <div class="trust">
-                           <img src="assets/images/rate-star.webp" class="img-fluid">
+                           <img src="{{asset('assets/images/rate-star.webp')}}" class="img-fluid">
                            <h6> May 9, 2023</h6>
                         </div>
                         <p>I had a really easy experience using Trademark Nova to trademark my slogan. Communication with the lawyer was excellent.</p>
@@ -501,7 +291,7 @@ if ($vacancies->num_rows > 0) {
                   <div>
                      <div class="reviewBox">
                         <div class="trust">
-                           <img src="assets/images/rate-star.webp" class="img-fluid">
+                           <img src="{{asset('assets/images/rate-star.webp')}}" class="img-fluid">
                            <h6>Apr 13, 2023</h6>
                         </div>
                         <p>I approached Trademark Nova with some hesitation, as I had heard horror stories about the complexities of trademark registration.</p>
@@ -510,7 +300,7 @@ if ($vacancies->num_rows > 0) {
                   <div>
                      <div class="reviewBox">
                         <div class="trust">
-                           <img src="assets/images/rate-star.webp" class="img-fluid">
+                           <img src="{{asset('assets/images/rate-star.webp')}}" class="img-fluid">
                            <h6>Mar 12, 2023</h6>
                         </div>
                         <p>I didn't know what to expect when I decided to register my trademark with Trademark Nova, but I was pleasantly surprised by their level of service.</p>
@@ -519,7 +309,7 @@ if ($vacancies->num_rows > 0) {
                   <div>
                      <div class="reviewBox">
                         <div class="trust">
-                           <img src="assets/images/rate-star.webp" class="img-fluid">
+                           <img src="{{asset('assets/images/rate-star.webp')}}" class="img-fluid">
                            <h6>Mar 12, 2023</h6>
                         </div>
                         <p>Trademark registration was a task I was dreading, but Trademark Nova made it surprisingly easy.</p>
@@ -528,7 +318,7 @@ if ($vacancies->num_rows > 0) {
                   <div>
                      <div class="reviewBox">
                         <div class="trust">
-                           <img src="assets/images/rate-star.webp" class="img-fluid">
+                           <img src="{{asset('assets/images/rate-star.webp')}}" class="img-fluid">
                            <h6>Feb 17, 2023</h6>
                         </div>
                         <p>My experience with Trademark Nova for trademark registration was excellent.</p>
@@ -552,7 +342,7 @@ if ($vacancies->num_rows > 0) {
                </div>
 
                <div class="col-lg-6 col-md-12">
-                  <div class="about-video-banner" style="background-image: url(assets/images/img14.webp);"></div>
+                  <div class="about-video-banner" style="background-image: url(../../assets/images/img14.webp);"></div>
                </div>
 
                <div class="col-lg-6 col-md-12">
@@ -594,7 +384,7 @@ if ($vacancies->num_rows > 0) {
                            <p><span>*</span>Get Your Trademark Registration Serial Number in <span> Just 10 Days! </span></p>
                         </div>
                         <div class="botom">
-                           <h2><i class="fas <?= $silverpriceUSCur ?>"></i><?= $silverpriceUS ?></h2>
+                           <h2><i class="fas $49"></i>$49</h2>
                            <span class="text-start">+ Govt. Fee </span>
                         </div>
                      </div>
@@ -640,7 +430,7 @@ if ($vacancies->num_rows > 0) {
                            <p><span>*</span>Get Your Trademark Registration Serial Number in <span> Just 3-5 Days! </span></p>
                         </div>
                         <div class="botom">
-                           <h2><i class="fas <?= $goldpriceUSCur ?>"></i><?= $goldpriceUS ?></h2>
+                           <h2><i class="fas $149"></i>$149</h2>
                            <span class="text-start">+ Govt. Fee </span>
                         </div>
                      </div>
@@ -694,7 +484,7 @@ if ($vacancies->num_rows > 0) {
                            <p><span>*</span>Get Your Trademark Registration Serial Number on the <span> Same Day! </span></p>
                         </div>
                         <div class="botom">
-                           <h2><i class="fas <?= $diamondpriceUSCur ?>"></i><?= $diamondpriceUS ?></h2>
+                           <h2><i class="fas $249"></i> $249</h2>
                            <span class="text-start">+ Govt. Fee </span>
                         </div>
                      </div>
@@ -757,7 +547,7 @@ if ($vacancies->num_rows > 0) {
             <!--                    <p><span>*</span>Get Your Trademark Registration Serial Number in <span> Just 10 Days! </span></p>-->
             <!--                 </div>-->
             <!--                 <div class="botom">-->
-            <!--                    <h2><i class="fas <?= $silverpriceUKCur ?>"></i><?= $silverpriceUK ?></h2>-->
+            <!--                    <h2><i class="fas  $49"></i> $49</h2>-->
             <!--                    <span>+GOV FEES</span>-->
             <!--                 </div>-->
             <!--              </div>-->
@@ -803,7 +593,7 @@ if ($vacancies->num_rows > 0) {
             <!--                    <p><span>*</span>Get Your Trademark Registration Serial Number in <span> Just 3-5 Days! </span></p>-->
             <!--                 </div>-->
             <!--                 <div class="botom">-->
-            <!--                    <h2><i class="fas <?= $goldpriceUKCur ?>"></i><?= $goldpriceUK ?></h2>-->
+            <!--                    <h2><i class="fas "></i></h2>-->
             <!--                    <span>+GOV FEES</span>-->
             <!--                 </div>-->
             <!--              </div>-->
@@ -857,7 +647,7 @@ if ($vacancies->num_rows > 0) {
             <!--                    <p><span>*</span>Get Your Trademark Registration Serial Number on the <span> Same Day! </span></p>-->
             <!--                 </div>-->
             <!--                 <div class="botom">-->
-            <!--                    <h2><i class="fas <?= $diamondpriceUKCur ?>"></i><?= $diamondpriceUK ?></h2>-->
+            <!--                    <h2><i class="fas>"></i>></h2>-->
             <!--                    <span>+GOV FEES</span>-->
             <!--                 </div>-->
             <!--              </div>-->
@@ -936,7 +726,7 @@ if ($vacancies->num_rows > 0) {
             <!--                     <p><span>*</span>Get Your Trademark Registration Serial Number in <span> Just 10 Days! </span></p>-->
             <!--                  </div>-->
             <!--                  <div class="botom">-->
-            <!--                     <h2><i class="fas <?= $silverpriceUKCur ?>"></i><?= $silverpriceUK ?></h2>-->
+            <!--                     <h2><i class="fas"></i>></h2>-->
             <!--                     <span>+GOV FEES</span>-->
             <!--                  </div>-->
             <!--               </div>-->
@@ -982,7 +772,7 @@ if ($vacancies->num_rows > 0) {
             <!--                     <p><span>*</span>Get Your Trademark Registration Serial Number in <span> Just 3-5 Days! </span></p>-->
             <!--                  </div>-->
             <!--                  <div class="botom">-->
-            <!--                     <h2><i class="fas <?= $goldpriceUKCur ?>"></i><?= $goldpriceUK ?></h2>-->
+            <!--                     <h2><i class="fas <"></i></h2>-->
             <!--                     <span>+GOV FEES</span>-->
             <!--                  </div>-->
             <!--               </div>-->
@@ -1036,7 +826,7 @@ if ($vacancies->num_rows > 0) {
             <!--                     <p><span>*</span>Get Your Trademark Registration Serial Number on the <span> Same Day! </span></p>-->
             <!--                  </div>-->
             <!--                  <div class="botom">-->
-            <!--                     <h2><i class="fas <?= $diamondpriceUKCur ?>"></i><?= $diamondpriceUK ?></h2>-->
+            <!--                     <h2><i class="fas "></i></h2>-->
             <!--                     <span>+GOV FEES</span>-->
             <!--                  </div>-->
             <!--               </div>-->
@@ -1101,7 +891,7 @@ if ($vacancies->num_rows > 0) {
             <!--                     <p><span>*</span>Get Your Trademark Registration Serial Number in <span> Just 10 Days! </span></p>-->
             <!--                  </div>-->
             <!--                  <div class="botom">-->
-            <!--                     <h2><i class="fas <?= $silverpriceUSCur ?>"></i><?= $silverpriceUS ?></h2>-->
+            <!--                     <h2><i class="fas "></i></h2>-->
             <!--                     <span>+USPTO FEES</span>-->
             <!--                  </div>-->
             <!--               </div>-->
@@ -1147,7 +937,7 @@ if ($vacancies->num_rows > 0) {
             <!--                     <p><span>*</span>Get Your Trademark Registration Serial Number in <span> Just 3-5 Days! </span></p>-->
             <!--                  </div>-->
             <!--                  <div class="botom">-->
-            <!--                     <h2><i class="fas <?= $goldpriceUSCur ?>"></i><?= $goldpriceUS ?></h2>-->
+            <!--                     <h2><i class="fas "></i></h2>-->
             <!--                     <span>+USPTO FEES</span>-->
             <!--                  </div>-->
             <!--               </div>-->
@@ -1201,7 +991,7 @@ if ($vacancies->num_rows > 0) {
             <!--                     <p><span>*</span>Get Your Trademark Registration Serial Number on the <span> Same Day! </span></p>-->
             <!--                  </div>-->
             <!--                  <div class="botom">-->
-            <!--                     <h2><i class="fas <?= $diamondpriceUSCur ?>"></i><?= $diamondpriceUS ?></h2>-->
+            <!--                     <h2><i class="fas "></i></h2>-->
             <!--                     <span>+USPTO FEES</span>-->
             <!--                  </div>-->
             <!--               </div>-->
@@ -1266,7 +1056,7 @@ if ($vacancies->num_rows > 0) {
             <!--                     <p><span>*</span>Get Your Trademark Registration Serial Number in <span> Just 10 Days! </span></p>-->
             <!--                  </div>-->
             <!--                  <div class="botom">-->
-            <!--                     <h2><i class="fas <?= $silverpriceEUCur ?>"></i><?= $silverpriceEU ?></h2>-->
+            <!--                     <h2><i class="fas "></i></h2>-->
             <!--                     <span>+EUIPO FEES</span>-->
             <!--                  </div>-->
             <!--               </div>-->
@@ -1312,7 +1102,7 @@ if ($vacancies->num_rows > 0) {
             <!--                     <p><span>*</span>Get Your Trademark Registration Serial Number in <span> Just 3-5 Days! </span></p>-->
             <!--                  </div>-->
             <!--                  <div class="botom">-->
-            <!--                     <h2><i class="fas <?= $goldpriceEUCur ?>"></i><?= $goldpriceEU ?></h2>-->
+            <!--                     <h2><i class="fas"></i></h2>-->
             <!--                     <span>+EUIPO FEES</span>-->
             <!--                  </div>-->
             <!--               </div>-->
@@ -1366,7 +1156,7 @@ if ($vacancies->num_rows > 0) {
             <!--                     <p><span>*</span>Get Your Trademark Registration Serial Number on the <span> Same Day! </span></p>-->
             <!--                  </div>-->
             <!--                  <div class="botom">-->
-            <!--                     <h2><i class="fas <?= $diamondpriceEUCur ?>"></i><?= $diamondpriceEU ?></h2>-->
+            <!--                     <h2><i class="fas "></i></h2>-->
             <!--                     <span>+EUIPO FEES</span>-->
             <!--                  </div>-->
             <!--               </div>-->
@@ -1445,7 +1235,7 @@ if ($vacancies->num_rows > 0) {
                <div class="col-sm-6 col-lg-4 col-md-6">
                   <article class="portfolio-item">
                      <figure class="portfolio-img">
-                        <img src="assets/images/img3.webp" alt="">
+                        <img src="{{asset('assets/images/img3.webp')}}" alt="">
                         <span class="cat-link">
                         </span>
                      </figure>
@@ -1459,7 +1249,7 @@ if ($vacancies->num_rows > 0) {
                <div class="col-sm-6 col-lg-4 col-md-6">
                   <article class="portfolio-item">
                      <figure class="portfolio-img">
-                        <img src="assets/images/tm-search.webp" alt="">
+                        <img src="{{asset('assets/images/tm-search.webp')}}" alt="">
                         <span class="cat-link">
                         </span>
                      </figure>
@@ -1473,7 +1263,7 @@ if ($vacancies->num_rows > 0) {
                <div class="col-sm-6 col-lg-4 col-md-6">
                   <article class="portfolio-item">
                      <figure class="portfolio-img">
-                        <img src="assets/images/amaz.webp" alt="">
+                        <img src="{{asset('assets/images/amaz.webp')}}" alt="">
                         <span class="cat-link">
                         </span>
                      </figure>
@@ -1488,7 +1278,7 @@ if ($vacancies->num_rows > 0) {
                <div class="col-sm-6 col-lg-4 col-md-6">
                   <article class="portfolio-item">
                      <figure class="portfolio-img">
-                        <img src="assets/images/fam-law.webp" alt="">
+                        <img src="{{asset('assets/images/fam-law.webp')}}" alt="">
                         <span class="cat-link">
                         </span>
                      </figure>
@@ -1503,7 +1293,7 @@ if ($vacancies->num_rows > 0) {
                <div class="col-sm-6 col-lg-4 col-md-6">
                   <article class="portfolio-item">
                      <figure class="portfolio-img">
-                        <img src="assets/images/legal-writing.webp" alt="">
+                        <img src="{{asset('assets/images/legal-writing.webp')}}" alt="">
                         <span class="cat-link">
                         </span>
                      </figure>
@@ -1518,7 +1308,7 @@ if ($vacancies->num_rows > 0) {
                <div class="col-sm-6 col-lg-4 col-md-6">
                   <article class="portfolio-item">
                      <figure class="portfolio-img">
-                        <img src="assets/images/amazon.webp" alt="">
+                        <img src="{{asset('assets/images/amazon.webp')}}" alt="">
                         <span class="cat-link">
                         </span>
                      </figure>
@@ -1536,13 +1326,9 @@ if ($vacancies->num_rows > 0) {
    </section>
    <!-- home portfolio section html end -->
 
+   @include ('includes/testimonial')
+   @include ('includes/faq')
+   <!-- </main> --> 
+   @include ('includes/ind-leader')
 
-   <?php include("../../includes/testimonial.php") ?>
-
-   <?php include("../../includes/faq.php") ?>
-   <!-- </main> -->
-
-   <?php include '../../includes/ind-leader.php'; ?>
-   <?php include("../../includes/lp-footer.php") ?>
-
-   <?php include("../../includes/scripts.php") ?>
+@endsection

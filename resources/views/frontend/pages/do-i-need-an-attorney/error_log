@@ -1,0 +1,108 @@
+[02-Mar-2023 12:40:26 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/do-i-need-an-attorney/index.php on line 2
+[02-Mar-2023 12:40:26 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/do-i-need-an-attorney/index.php on line 2
+[02-Mar-2023 12:40:26 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:40:26 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:40:26 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:40:26 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:40:26 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 12:40:26 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 12:40:26 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 12:40:26 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 12:40:26 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:40:26 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:40:26 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:40:26 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 12:40:26 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 12:40:26 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 12:40:26 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 12:40:26 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[02-Mar-2023 12:42:01 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/do-i-need-an-attorney/index.php on line 2
+[02-Mar-2023 12:42:01 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/do-i-need-an-attorney/index.php on line 2
+[02-Mar-2023 12:42:01 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:42:01 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:42:01 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:42:01 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:42:01 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 12:42:01 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 12:42:01 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 12:42:01 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 12:42:01 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:42:01 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:42:01 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:42:01 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 12:42:01 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 12:42:01 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 12:42:01 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 12:42:01 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[02-Mar-2023 12:42:21 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/do-i-need-an-attorney/index.php on line 2
+[02-Mar-2023 12:42:21 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/do-i-need-an-attorney/index.php on line 2
+[02-Mar-2023 12:42:21 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:42:21 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:42:21 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:42:21 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:42:21 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 12:42:21 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 12:42:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 12:42:21 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 12:42:21 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:42:21 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:42:21 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:42:21 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 12:42:21 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 12:42:21 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 12:42:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 12:42:21 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[02-Mar-2023 12:49:35 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/do-i-need-an-attorney/index.php on line 2
+[02-Mar-2023 12:49:35 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/do-i-need-an-attorney/index.php on line 2
+[02-Mar-2023 12:49:35 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:49:35 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:49:35 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:49:35 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:49:35 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 12:49:35 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 12:49:35 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 12:49:35 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 12:49:35 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:49:35 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:49:35 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:49:35 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 12:49:35 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 12:49:35 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 12:49:35 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 12:49:35 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[02-Mar-2023 12:50:24 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/do-i-need-an-attorney/index.php on line 2
+[02-Mar-2023 12:50:24 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/do-i-need-an-attorney/index.php on line 2
+[02-Mar-2023 12:50:24 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:50:24 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:50:24 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:50:24 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:50:24 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 12:50:24 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 12:50:24 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 12:50:24 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 12:50:24 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:50:24 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:50:24 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:50:24 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 12:50:24 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 12:50:24 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 12:50:24 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 12:50:24 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231
+[02-Mar-2023 12:56:19 UTC] PHP Warning:  include(backend/connectiondb.php): failed to open stream: No such file or directory in /home/lvcvt89tayzh/public_html/do-i-need-an-attorney/index.php on line 2
+[02-Mar-2023 12:56:19 UTC] PHP Warning:  include(): Failed opening 'backend/connectiondb.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/lvcvt89tayzh/public_html/do-i-need-an-attorney/index.php on line 2
+[02-Mar-2023 12:56:19 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:56:19 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:56:19 UTC] PHP Notice:  Undefined variable: common10 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:56:19 UTC] PHP Notice:  Undefined variable: table32 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 192
+[02-Mar-2023 12:56:19 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 193
+[02-Mar-2023 12:56:19 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 12:56:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 194
+[02-Mar-2023 12:56:19 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/lvcvt89tayzh/public_html/includes/footer.php on line 195
+[02-Mar-2023 12:56:19 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:56:19 UTC] PHP Notice:  Undefined variable: common8 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:56:19 UTC] PHP Notice:  Undefined variable: table20 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 228
+[02-Mar-2023 12:56:19 UTC] PHP Notice:  Undefined variable: common7 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 12:56:19 UTC] PHP Notice:  Undefined variable: common2 in /home/lvcvt89tayzh/public_html/includes/footer.php on line 229
+[02-Mar-2023 12:56:19 UTC] PHP Notice:  Undefined variable: con in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 12:56:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 230
+[02-Mar-2023 12:56:19 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/lvcvt89tayzh/public_html/includes/footer.php on line 231

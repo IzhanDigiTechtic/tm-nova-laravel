@@ -1,20 +1,6 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php" ?>
-<!doctype html>
-<html lang="en">
+@extends('frontend.layouts.web.master')
+@section('main-content')
 
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>Copyright Registration Services in USA | Trademark Nova</title>
-    <meta name="description" content="Copyright Registration Services in USA by Trademark Nova. Protect your creative assets with streamlined registration process and get copyright registered in $149" />
-    <meta name="keywords" content="Copyright Registration" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
-</head>
-
-<body>
     <div id="page" class="full-page">
         <main id="content" class="site-main">
 
@@ -41,14 +27,15 @@ include "../includes/var.php" ?>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
-                            <div class="formStyle"><img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                            <div class="formStyle"><img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span>Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!
                                 </p>
-                                <?php include('../includes/lead-form.php') ?>
+                                @include ('includes/lead-form')
+
                             </div>
                         </div>
                     </div>
@@ -95,7 +82,7 @@ include "../includes/var.php" ?>
                            <div class="btnSec"><a href="/sequence-form-step1/" class="button-round">Get Started Now</a><a href="javascript:void(0);" class="alphaChat button-round">Chat now for instant support </a></div>
                         </div>
                         <div class="col-md-5">
-                            <figure class="aboutImg"><img src="assets/images/diligence-img-1.webp" alt=""><span><img src="assets/images/logo-io.webp" alt=""></span></figure>
+                            <figure class="aboutImg"><img src="{{asset('assets/images/diligence-img-1.webp')}}" alt=""><span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span></figure>
                         </div>
                     </div>
                 </div>
@@ -113,10 +100,10 @@ include "../includes/var.php" ?>
                                 intellectual property rights.</p>
                         </div>
                         <div class="col-md-12 ">
-                            <div class="processRow"><img src="assets/images/arrow.webp" alt="" class="arrow">
+                            <div class="processRow"><img src="{{asset('assets/images/arrow.webp')}}" alt="" class="arrow">
                                 <div class="cell left">
                                     <div class="circleBig"><span class="dot topLeft"></span><span class="dot left"></span><span class="dot right"></span><span class="num">01</span>
-                                        <div class="circle"><img src="assets/images/process-io-7.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-7.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Submit Your Trademark Information</h4>
                                     <p>Spend a couple of minutes filling out a simple questionnaire. This will initiate your
@@ -124,7 +111,7 @@ include "../includes/var.php" ?>
                                 </div>
                                 <div class="cell center">
                                     <div class="circleBig"><span class="dot left"></span><span class="dot right"></span><span class="num">02</span>
-                                        <div class="circle"><img src="assets/images/process-io-8.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-8.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Select Service & Make the Payment</h4>
                                     <p>Get all the details in order! Select your coveted service with Trademark Nova & make
@@ -132,7 +119,7 @@ include "../includes/var.php" ?>
                                 </div>
                                 <div class="cell right">
                                     <div class="circleBig"><span class="dot left"></span><span class="dot right"></span><span class="num">03</span>
-                                        <div class="circle"><img src="assets/images/process-io-9.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-9.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Thorough Evaluation & Filing</h4>
                                     <p>To ensure that your trademark is completely unique, our team conducts a thorough
@@ -166,7 +153,8 @@ include "../includes/var.php" ?>
                             <div class="btnSec"><a href="/sequence-form-step1/" class="button-round">Get Started Now</a><a href="javascript:void(0);" class="alphaChat button-round">Chat now for instant support </a></div>
                         </div>
                         <div class="col-md-5">
-                            <figure class="aboutImg"><img src="assets/images/img10.webp" alt=""><span><img src="assets/images/logo-io.webp" alt=""></span></figure>
+                            <figure class="aboutImg"><img src="{{asset('assets/images/img10.webp')}}" alt=""><span>
+                                <img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span></figure>
                         </div>
                     </div>
                 </div>
@@ -315,7 +303,7 @@ include "../includes/var.php" ?>
                                     Now</a><a href="javascript:void(0);" class="alphaChat button-round">Chat now for instant support
                                 </a></div>
                         </div>
-                        <div class="col-lg-5"><img src="assets/images/img11.webp" alt="" class="w-100 mt-4"></div>
+                        <div class="col-lg-5"><img src="{{asset('assets/images/img11.webp')}}" alt="" class="w-100 mt-4"></div>
                     </div>
                 </div>
             </section>
@@ -350,7 +338,7 @@ include "../includes/var.php" ?>
                             <div class="iconbox-container d-flex flex-wrap iconboxCarousel">
                                 <div class="iconbox-item-1 iconbox-item-3 d-flex flex-wrap">
                                     <div class="iconbox-border d-flex align-items-center">
-                                        <div class="iconbox-icon primary-bg"><img src="assets/images/Gicon1.webp" alt="">
+                                        <div class="iconbox-icon primary-bg"><img src="{{asset('assets/images/Gicon1.webp')}}" alt="">
                                         </div>
                                         <div class="iconbox-content">
                                             <h4 style="font-size: 18px;font-weight: 700;color: #223645;">Secure Your
@@ -362,7 +350,7 @@ include "../includes/var.php" ?>
                                 </div>
                                 <div class="iconbox-item-1 iconbox-item-3 d-flex flex-wrap">
                                     <div class="iconbox-border d-flex align-items-center">
-                                        <div class="iconbox-icon primary-bg"><img src="assets/images/Gicon2.webp" alt="">
+                                        <div class="iconbox-icon primary-bg"><img src="{{asset('assets/images/Gicon2.webp')}}" alt="">
                                         </div>
                                         <div class="iconbox-content" style="background-color: #535ee0;border-color: #4853d6;color: #fff;">
                                             <h4 style="font-size: 18px;font-weight: 700;color: #fff;">Enforce Your Rights
@@ -374,7 +362,7 @@ include "../includes/var.php" ?>
                                 </div>
                                 <div class="iconbox-item-1 iconbox-item-3 d-flex flex-wrap">
                                     <div class="iconbox-border d-flex align-items-center">
-                                        <div class="iconbox-icon primary-bg"><img src="assets/images/Gicon3.webp" alt="">
+                                        <div class="iconbox-icon primary-bg"><img src="{{asset('assets/images/Gicon3.webp')}}" alt="">
                                         </div>
                                         <div class="iconbox-content">
                                             <h4 style="font-size: 18px;font-weight: 700;color: #223645;">Stop Fakes &
@@ -386,7 +374,7 @@ include "../includes/var.php" ?>
                                 </div>
                                 <div class="iconbox-item-1 iconbox-item-3 d-flex flex-wrap">
                                     <div class="iconbox-border d-flex align-items-center">
-                                        <div class="iconbox-icon primary-bg"><img src="assets/images/Gicon4.webp" alt="">
+                                        <div class="iconbox-icon primary-bg"><img src="{{asset('assets/images/Gicon4.webp')}}" alt="">
                                         </div>
                                         <div class="iconbox-content">
                                             <h4 style="font-size: 18px;font-weight: 700;color: #223645;">Create Intangible
@@ -402,10 +390,12 @@ include "../includes/var.php" ?>
                 </div>
             </section>
 
-            <?php include("../includes/testimonial.php") ?>
-            <?php include("../includes/faq.php") ?>
+            @include ('includes/testimonial')
+            @include ('includes/faq')
         </main>
     </div>
 
-    <?php include("../includes/footer.php") ?>
-    <?php include("../includes/scripts.php") ?>
+   </main>
+
+@endsection
+   

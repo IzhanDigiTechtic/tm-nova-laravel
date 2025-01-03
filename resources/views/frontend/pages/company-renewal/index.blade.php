@@ -1,18 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>Company Renewal Service | Trademark Nova</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="file a trademark, trademark registration, file my trademark, register a logo, apply for trademark, trademark a slogan, register brand name, register trademark, trademark my business name, register a trademark" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
@@ -43,13 +30,15 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+
+                                @include ('includes/lead-form')
+
                             </div>
                         </div>
                     </div>
@@ -68,8 +57,8 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-6">
                             <figure class="aboutImg">
-                                <img src="assets/images/company-renewal-img1.webp" alt="">
-                                <span><img src="assets/images/logo-io.webp" alt=""></span>
+                                <img src="{{asset('assets/images/company-renewal-img1.webp')}}" alt="">
+                                <span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span>
                             </figure>
                         </div>
                     </div>
@@ -85,14 +74,14 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-12">
                             <div class="processRow">
-                                <img src="assets/images/arrow.webp" alt="" class="arrow">
+                                <img src="{{asset('assets/images/arrow.webp')}}" alt="" class="arrow">
                                 <div class="cell left">
                                     <div class="circleBig">
                                         <span class="dot topLeft"></span>
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">01</span>
-                                        <div class="circle"><img src="assets/images/process-io-1.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-1.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Thorough Evaluation</h4>
                                     <p>Our process starts with a thorough evaluation of your company's renewal needs and requirements, allowing us to provide you with personalized solutions that meet your specific needs. </p>
@@ -102,7 +91,7 @@ include "../includes/var.php"
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">02</span>
-                                        <div class="circle"><img src="assets/images/process-io-2.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-2.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Preparation & Submission of Paperwork</h4>
                                     <p>We'll then prepare and submit all the necessary paperwork, and keep you informed throughout the entire renewal process. Our team of experts is available to answer any questions you may have and to provide guidance and support every step of the way. </p>
@@ -112,7 +101,7 @@ include "../includes/var.php"
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">03</span>
-                                        <div class="circle"><img src="assets/images/process-io-3.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-3.webp')}}" alt=""></div>
                                     </div>
                                     <h4> And, You Are Done!</h4>
                                     <p>With Trademark Nova Renewal Process, you can have peace of mind knowing that your business is secure and ready to take on whatever the future holds. Contact us today to learn more about how we can help you renew your company with confidence.</p>
@@ -132,42 +121,42 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io1.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io1.png')}}" alt=""></div>
                                 <h4>Registered Office Address </h4>
                                 <p>Renew your Registered Office Address and continue to protect the privacy of your home address for another 12 months.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io2.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io2.png')}}" alt=""></div>
                                 <h4>Service Address</h4>
                                 <p>Our in-country teams maintain a detailed understanding of local regulations. Maintain the privacy provided with our Service Address for another year.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io3.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io3.png')}}" alt=""></div>
                                 <h4>Business Address Service</h4>
                                 <p>Renew your Business Address Service and maintain your excellent corporate image with our Covent Garden address.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io1.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io1.png')}}" alt=""></div>
                                 <h4>Confirmation Statement Service</h4>
                                 <p>Extend your Confirmation Statement Service and make sure you stay compliant with Companies House.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io2.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io2.png')}}" alt=""></div>
                                 <h4>Dormant Company Accounts </h4>
                                 <p>You can renew our Dormant Company Accounts Service here, and we will prepare and file your accounts for another year.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io3.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io3.png')}}" alt=""></div>
                                 <h4>Full Company Secretary Service</h4>
                                 <p>Renew your service and have the peace of mind that your company secretarial work is being taken care of for another year</p>
                             </div>
@@ -300,7 +289,7 @@ include "../includes/var.php"
                                 <div class="schedule">
                                     <h2>Request a Schedule For Free Consultation</h2>
                                     <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                    <a href="tel:<?= $number; ?>" class="telNum"><span>Call Us Now:</span><?= $numberdisplay; ?></a>
+                                    <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                                 </div>
                             </div>
 
@@ -310,8 +299,6 @@ include "../includes/var.php"
             </div>
             <!-- faq html end -->
 
-            <?php include("../includes/testimonial.php") ?>
+            @include ('includes/testimonial')
         </main>
-
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+@endsection

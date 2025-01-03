@@ -1,18 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>Trademark Dispute Insurance | Trademark Nova</title>
-    <meta name="description" content="Safeguard your business from Trademark Dispute Insurance withTrademark Nova. Protect against legal costs and disputes over trademark rights" />
-    <meta name="keywords" content="Trademark Dispute Insurance" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
@@ -43,13 +30,14 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+
+                                @include ('includes/lead-form')
                             </div>
                         </div>
                     </div>
@@ -70,8 +58,8 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-6">
                             <figure class="aboutImg">
-                                <img src="assets/images/dissolution-img1.webp" alt="">
-                                <span><img src="assets/images/logo-io.webp" alt=""></span>
+                                <img src="{{asset('assets/images/dissolution-img1.webp')}}" alt="">
+                                <span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span>
                             </figure>
                         </div>
                     </div>
@@ -113,21 +101,21 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io1.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io1.png')}}" alt=""></div>
                                 <h4>Dedicated Account Manager</h4>
                                 <p>Unlike other companies where you’re just a number, with Trademark Nova you have a dedicated, knowledgeable Account Manager to answer all of your questions and guide your trademark through to registration.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io2.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io2.png')}}" alt=""></div>
                                 <h4>We Make Legal Easy</h4>
                                 <p>At Trademark Nova, our top-notch systems make assembling even the most complex of legal documents quick and easy. Just answer a few simple questions and we’ll take care of the rest!</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io3.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io3.png')}}" alt=""></div>
                                 <h4>Affordable, Flat-Rate Services</h4>
                                 <p>And unlike services that charge by the hour and can cost an arm and a leg our flat-fee services and negotiated rates with our plan attorneys have up front pricing to keep you within your legal budget.</p>
                             </div>
@@ -347,8 +335,7 @@ include "../includes/var.php"
             </div>
             <!-- faq html end -->
 
-            <?php include("../includes/testimonial.php") ?>
+            @include ('includes/testimonial')
         </main>
 
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+@endsection

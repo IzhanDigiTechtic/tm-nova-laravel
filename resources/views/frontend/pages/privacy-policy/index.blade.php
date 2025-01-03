@@ -1,18 +1,6 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
+@extends('frontend.layouts.web.master')
+@section('main-content')
 
-<head>
-   <?php include("../includes/compatibility.php") ?>
-   <title>Privacy Policy | Trademark Nova</title>
-   <meta name="description" content="" />
-   <meta name="keywords" content="file a trademark, trademark registration, file my trademark, register a logo, apply for trademark, trademark a slogan, register brand name, register trademark, trademark my business name, register a trademark" />
-   <!-- Google Fonts -->
-   <?php include("../includes/styles.php") ?>
-   <?php include("../includes/header.php") ?>
    <style>
       .iti--separate-dial-code .iti__selected-flag {
          background-color: white;
@@ -71,5 +59,4 @@ include "../includes/var.php"
 
       </main>
 
-      <?php include("../includes/footer.php") ?>
-      <?php include("../includes/scripts.php") ?>
+@endsection

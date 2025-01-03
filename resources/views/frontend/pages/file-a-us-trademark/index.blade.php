@@ -1,19 +1,6 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
+@extends('frontend.layouts.web.master')
+@section('main-content')
 
-<head>
-   <?php include("../includes/compatibility.php") ?>
-   <title>File a US Trademark with USPTO | Trademark Nova</title>
-   <meta name="description" content="File a US trademark confidently with Trademark Nova's comprehensive guide. Navigate USPTO procedures smoothly and protect your brand 's identity" />
-   <meta name="keywords" content="file a US trademark">
-   <!-- <meta name="keywords" content="file a trademark, trademark registration, file my trademark, register a logo, apply for trademark, trademark a slogan, register brand name, register trademark, trademark my business name, register a trademark" /> -->
-   <!-- Google Fonts -->
-   <?php include("../includes/styles.php") ?>
-   <?php include("../includes/header.php") ?>
    <style>
       .iti--separate-dial-code .iti__selected-flag {
          background-color: white;
@@ -57,13 +44,14 @@ include "../includes/var.php"
                   </div>
                   <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                      <div class="formStyle">
-                        <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                        <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                         <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                         <div class="ribbon">
                            <p>Same Day Application Filing Available</p>
                         </div>
                         <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                        <?php include('../includes/lead-form.php') ?>
+                        @include ('includes/lead-form')
+
                      </div>
                   </div>
                </div>
@@ -88,7 +76,7 @@ include "../includes/var.php"
                   <!--         <small>excl. government fees</small>-->
                   <!--        <a href="/sequence-form-step1/" class="button-round">Register Now</a>-->
                   <!--      </div>-->
-                  <!--      <img src="assets/images/flag1.webp" alt="" class="rounded-circle">-->
+                  <!--      <img src="{{asset('assets/images/flag1.webp')}}" alt="" class="rounded-circle">-->
                   <!--   </div>-->
                   <!--</div>-->
                   <!--<div class="col-md-6">-->
@@ -99,7 +87,7 @@ include "../includes/var.php"
                   <!--         <small>excl. government fees</small>-->
                   <!--                                   <a href="/sequence-form-step1/" class="button-round">Register Now</a>-->
                   <!--      </div>-->
-                  <!--      <img src="assets/images/flag2.webp" alt="" class="rounded-circle">-->
+                  <!--      <img src="{{asset('assets/images/flag2.webp')}}" alt="" class="rounded-circle">-->
                   <!--   </div>-->
                   <!--</div>-->
                   <div class="col-md-6">
@@ -110,7 +98,7 @@ include "../includes/var.php"
                            <small>excl. government fees</small>
                            <a href="/sequence-form-step1/" class="button-round">Register Now</a>
                         </div>
-                        <img src="assets/images/flag3.webp" alt="" class="rounded-circle">
+                        <img src="{{asset('assets/images/flag3.webp')}}" alt="" class="rounded-circle">
                      </div>
                   </div>
                   <div class="col-md-6">
@@ -120,7 +108,7 @@ include "../includes/var.php"
                            <small>Discuss your requirements with our international <br> trademark consultant</small>
                            <a href="javascript:void(0);" class="alphaChat button-round">Talk To A Consultant</a>
                         </div>
-                        <img src="assets/images/flag4.webp" alt="" class="rounded-circle">
+                        <img src="{{asset('assets/images/flag4.webp')}}" alt="" class="rounded-circle">
                      </div>
                   </div>
                   <div class="col-md-12">
@@ -178,7 +166,7 @@ include "../includes/var.php"
                               <div class="iconbox-border d-flex align-items-center">
                                  <div class="iconbox-icon primary-bg">
                                     <!--<i aria-hidden="true" class="icon icon-business"></i>-->
-                                    <img src="assets/images/icon-01.webp" alt="">
+                                    <img src="{{asset('assets/images/icon-01.webp')}}" alt="">
                                  </div>
                                  <div class="iconbox-content">
                                     <h4 style="font-size: 18px;font-weight: 700;color: #223645;">9,300+ Businesses Consulted</h4>
@@ -189,7 +177,7 @@ include "../includes/var.php"
                            <div class="iconbox-item-1 iconbox-item-3 d-flex flex-wrap">
                               <div class="iconbox-border d-flex align-items-center">
                                  <div class="iconbox-icon primary-bg">
-                                    <img src="assets/images/icon-02.webp" alt="">
+                                    <img src="{{asset('assets/images/icon-02.webp')}}" alt="">
                                  </div>
                                  <div class="iconbox-content" style="background-color: #535ee0;border-color: #4853d6;color: #fff;">
                                     <h4 style="font-size: 18px;font-weight: 700;color: #fff;">7,500+ Trademarks Registered</h4>
@@ -200,7 +188,7 @@ include "../includes/var.php"
                            <div class="iconbox-item-1 iconbox-item-3 d-flex flex-wrap">
                               <div class="iconbox-border d-flex align-items-center">
                                  <div class="iconbox-icon primary-bg">
-                                    <img src="assets/images/icon-03.webp" alt="">
+                                    <img src="{{asset('assets/images/icon-03.webp')}}" alt="">
                                  </div>
                                  <div class="iconbox-content">
                                     <h4 style="font-size: 18px;font-weight: 700;color: #223645;">4,000+ Cases In Progress</h4>
@@ -252,7 +240,7 @@ include "../includes/var.php"
                      <div class="col-sm-6 col-lg-4">
                         <article class="portfolio-item">
                            <figure class="portfolio-img">
-                              <img src="assets/images/img3.webp" alt="">
+                              <img src="{{asset('assets/images/img3.webp')}}" alt="">
                               <span class="cat-link">
                               </span>
                            </figure>
@@ -266,7 +254,7 @@ include "../includes/var.php"
                      <div class="col-sm-6 col-lg-4 col-md-6">
                         <article class="portfolio-item">
                            <figure class="portfolio-img">
-                              <img src="assets/images/tm-search.webp" alt="">
+                              <img src="{{asset('assets/images/tm-search.webp')}}" alt="">
                               <span class="cat-link">
                               </span>
                            </figure>
@@ -280,7 +268,7 @@ include "../includes/var.php"
                      <div class="col-sm-6 col-lg-4 col-md-6">
                         <article class="portfolio-item">
                            <figure class="portfolio-img">
-                              <img src="assets/images/amaz.webp" alt="">
+                              <img src="{{asset('assets/images/amaz.webp')}}" alt="">
                               <span class="cat-link">
                               </span>
                            </figure>
@@ -295,7 +283,7 @@ include "../includes/var.php"
                      <div class="col-sm-6 col-lg-4 col-md-6">
                         <article class="portfolio-item">
                            <figure class="portfolio-img">
-                              <img src="assets/images/fam-law.png" alt="">
+                              <img src="{{asset('assets/images/fam-law.png')}}" alt="">
                               <span class="cat-link">
                               </span>
                            </figure>
@@ -310,7 +298,7 @@ include "../includes/var.php"
                      <div class="col-sm-6 col-lg-4 col-md-6">
                         <article class="portfolio-item">
                            <figure class="portfolio-img">
-                              <img src="assets/images/legal-writing.png" alt="">
+                              <img src="{{asset('assets/images/legal-writing.png')}}" alt="">
                               <span class="cat-link">
                               </span>
                            </figure>
@@ -325,7 +313,7 @@ include "../includes/var.php"
                      <div class="col-sm-6 col-lg-4 col-md-6">
                         <article class="portfolio-item">
                            <figure class="portfolio-img">
-                              <img src="assets/images/amazon.webp" alt="">
+                              <img src="{{asset('assets/images/amazon.webp')}}" alt="">
                               <span class="cat-link">
                               </span>
                            </figure>
@@ -754,7 +742,7 @@ include "../includes/var.php"
                         <p>To showcase your ecommerce business and sell your brand on Amazon, it’s a MANDATORY requirement to get your brand registered. Amazon Brand Registry is a protection offered by Trademark Nova to assist Amazon sellers register their brand and to remove listings that infringe on their trademark rights. If any other seller is using your trademark logo or name to sell goods or is copying your listings, Trademark Nova will have them banned.</p>
                         <a href="/sequence-form-step1/" class="button-round">Get Started</a>
                      </div>
-                     <div class="right"><img src="assets/images/amazon.webp" alt=""></div>
+                     <div class="right"><img src="{{asset('assets/images/amazon.webp')}}" alt=""></div>
                   </div>
                </div>
             </div>
@@ -777,12 +765,11 @@ include "../includes/var.php"
             </div>
          </section>
          <!-- About html start -->
+           
+@include ('includes/testimonial')
+@include ('includes/faq')
 
-         <?php include("../includes/testimonial.php") ?>
+   </main>
+@include ('includes/ind-leader')
 
-         <?php include("../includes/faq.php") ?>
-      </main>
-
-      <?php include '../includes/ind-leader.php'; ?>
-      <?php include("../includes/footer.php") ?>
-      <?php include("../includes/scripts.php") ?>
+@endsection

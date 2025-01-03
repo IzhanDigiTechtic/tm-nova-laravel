@@ -1,18 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>Response to Trademark Opposition | Trademark Nova</title>
-    <meta name="description" content="Response to Trademark Opposition made easy with Trademark Nova. Discover expert strategies and support to protect your brand effectively" />
-    <meta name="keywords" content="response to trademark opposition" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
@@ -43,13 +30,14 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+                                @include ('includes/lead-form')
+
                             </div>
                         </div>
                     </div>
@@ -70,8 +58,8 @@ include "../includes/var.php"
                             </div>
                             <div class="col-md-6">
                                 <figure class="aboutImg">
-                                    <img src="assets/images/response-opposition-img.webp" alt="">
-                                    <span><img src="assets/images/logo-io.webp" alt=""></span>
+                                    <img src="{{asset('assets/images/response-opposition-img.webp')}}" alt="">
+                                    <span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span>
                                 </figure>
                             </div>
                         </div>
@@ -86,17 +74,17 @@ include "../includes/var.php"
                             <h2>Why Should You <span class="primary-color">Respond?</span></h2>
                         </div>
                         <div class="col-md-4">
-                            <img src="assets/images/io1.webp" alt="" class="mb-3">
+                            <img src="{{asset('assets/images/io1.webp')}}" alt="" class="mb-3">
                             <h4>You’re Invested</h4>
                             <p>As a trademark owner, you have invested time, effort, and resources into building your brand. Therefore, it's important to respond to any opposition or challenge to protect your investment and preserve the value of your trademark. By responding, you demonstrate your commitment to your brand and your willingness to defend it against any threats.</p>
                         </div>
                         <div class="col-md-4">
-                            <img src="assets/images/io2.webp" alt="" class="mb-3">
+                            <img src="{{asset('assets/images/io2.webp')}}" alt="" class="mb-3">
                             <h4>Back on Track</h4>
                             <p>Response in a timely manner can help you get back on track with your registration process. By addressing any concerns raised by the opposition, you increase your chances of protecting your brand. Delaying or ignoring opposition, on the other hand, can lead to costly legal disputes and potentially delay or even derail your trademark registration process.</p>
                         </div>
                         <div class="col-md-4">
-                            <img src="assets/images/io3.webp" alt="" class="mb-3">
+                            <img src="{{asset('assets/images/io3.webp')}}" alt="" class="mb-3">
                             <h4>Quality You Can Trust</h4>
                             <p>Choosing us for your action response means you'll receive top-quality service from our experienced team of experts. We understand the importance of your trademark and work diligently to provide the best possible response to any challenges or opposition. With our assistance, you can increase your chances of getting accepted and protecting your brand.</p>
                         </div>
@@ -113,14 +101,14 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-12 mt-5">
                             <div class="processRow">
-                                <img src="assets/images/arrow.webp" alt="" class="arrow">
+                                <img src="{{asset('assets/images/arrow.webp')}}" alt="" class="arrow">
                                 <div class="cell left">
                                     <div class="circleBig">
                                         <span class="dot topLeft"></span>
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">01</span>
-                                        <div class="circle"><img src="assets/images/process-io-7.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-7.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Share Your Case with <br> Trademark Nova</h4>
                                     <p>Give us some basic information about your trademark registration and describe your goods and services you provide. All in all, we’ll just need a few simple questions answered or your attorney will handle the rest</p>
@@ -130,7 +118,7 @@ include "../includes/var.php"
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">02</span>
-                                        <div class="circle"><img src="assets/images/process-io-8.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-8.webp')}}" alt=""></div>
                                     </div>
                                     <h4>We Will Draft an <br> Action Response</h4>
                                     <p>We'll begin drafting a response that addresses the concerns raised by the opposition. Our attorneys & trademark experts will craft a persuasive and effective response that highlights the strengths of your trademark and effectively addresses any objections or challenges. </p>
@@ -140,7 +128,7 @@ include "../includes/var.php"
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">03</span>
-                                        <div class="circle"><img src="assets/images/process-io-9.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-9.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Finalise the Draft in <br> Compliance With Law</h4>
                                     <p>We'll then work with you to finalize the response and ensure that it's submitted on time and in compliance with all applicable rules and regulations. Throughout the process, we'll keep you informed of our progress and provide regular updates on the status of your case. </p>
@@ -179,21 +167,21 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io1.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io1.png')}}" alt=""></div>
                                 <h4>Dedicated Account Manager</h4>
                                 <p>Unlike other companies where you’re just a number, with Trademark Nova you have a dedicated, knowledgeable Account Manager to answer all of your questions and guide your trademark through to registration.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io2.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io2.png')}}" alt=""></div>
                                 <h4>We Make Legal Easy</h4>
                                 <p>At Trademark Nova, our top-notch systems make assembling even the most complex of legal documents quick and easy. Just answer a few simple questions and we’ll take care of the rest!</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io3.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io3.png')}}" alt=""></div>
                                 <h4>Affordable, Flat-Rate Services</h4>
                                 <p>And unlike services that charge by the hour and can cost an arm and a leg our flat-fee services and negotiated rates with our plan attorneys have up front pricing to keep you within your legal budget.</p>
                             </div>
@@ -325,7 +313,7 @@ include "../includes/var.php"
                                 <div class="schedule">
                                     <h2>Request a Schedule For Free Consultation</h2>
                                     <a href="book-free-consultation" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                    <a href="tel:<?= $number; ?>" class="telNum"><span>Call Us Now:</span><?= $numberdisplay; ?></a>
+                                    <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                                 </div>
                             </div>
                         </div>
@@ -333,9 +321,7 @@ include "../includes/var.php"
                 </div>
             </div>
             <!-- faq html end -->
-
-            <?php include("../includes/testimonial.php") ?>
+            @include ('includes/testimonial')
 
         </main>
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+    @endsection

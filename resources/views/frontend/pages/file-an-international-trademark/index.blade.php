@@ -1,19 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php" ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>File Your International Trademark | Trademark Nova</title>
-    <meta name="description" content="File Your International Trademark efficiently  with Trademark Nova's expert assistance. Ensure compliance across borders and safeguard your brand's identity." />
-    <meta name="keywords" content="File International Trademark" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
-</head>
-
+@extends('frontend.layouts.web.master')
+@section('main-content')
 <body>
     <div id="page" class="full-page">
         <main id="content" class="site-main">
@@ -36,13 +22,14 @@ include "../includes/var.php" ?>
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+                                @include ('includes/lead-form')
+
                             </div>
                         </div>
                     </div>
@@ -65,13 +52,13 @@ include "../includes/var.php" ?>
                             </div>
                             <div class="col-md-6">
                                 <figure class="aboutImg">
-                                    <img src="assets/images/int-img1.webp" alt="">
-                                    <span><img src="assets/images/logo-io.webp" alt=""></span>
+                                    <img src="{{asset('assets/images/int-img1.webp')}}" alt="">
+                                    <span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span>
                                 </figure>
                             </div>
                             <div class="col-lg-12">
                                 <div class="schedule personalConsulting">
-                                    <figure><img src="assets/images/int-img2.webp" alt=""></figure>
+                                    <figure><img src="{{asset('assets/images/int-img2.webp')}}" alt=""></figure>
                                     <div class="content">
                                         <h2>Personal Online Consultation</h2>
                                         <p>Get valuable advice or information about trademark registration or any other <br> service without committing to a purchase.</p>
@@ -96,21 +83,21 @@ include "../includes/var.php" ?>
                         <div class="col-md-12"></div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io10.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io10.png')}}" alt=""></div>
                                 <h4>Over 110 Countries </h4>
                                 <p>Valid in countries that are parties to the Madrid System. Choice of over 110 countries within Europe and elsewhere, including big economies such as the US, China, India and Japan.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io10.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io10.png')}}" alt=""></div>
                                 <h4>Flexible</h4>
                                 <p>You select only those countries that are relevant for your business. You can increase the number of countries of your international trademark registration at a later date.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io10.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io10.png')}}" alt=""></div>
                                 <h4>Convenient</h4>
                                 <p>Bundling a number of national registrations in a single international registration makes it more convenient and cheaper to manage. It's as easy as it may sound! </p>
                             </div>
@@ -158,8 +145,11 @@ include "../includes/var.php" ?>
                         </div>
             </section>
 
-            <?php include("../includes/faq.php") ?>
-            <?php include("../includes/testimonial.php") ?>
+            @include ('includes/faq')
+            @include ('includes/testimonial')
         </main>
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+        @endsection
+
+
+
+   

@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<base href="../">
-<head>
-  <title>Register Your US Brand on Amazon with Trademark Assured</title>
-  <meta name="description" content="Register your brand on Amazon with Trademark Assured's Amazon Brand Registry services. Our experts make the registration process quick and easy.">
-  <?php include("../backend/connectiondb.php"); ?>
-  <?php include '../includes/var.php'; ?>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <?php include '../includes/styles.php'; ?>
-</head>
-
-<body>
-
-<?php include '../includes/header.php'; ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
 
 <div class="mainSlider">
     <div class="container">
@@ -21,7 +7,9 @@
             <div class="col-xl-6 col-lg-6">
                 <h2>Protect your brand, grow your business with <span class="yellow-clr">Amazon Brand Registry</span> </h2>
                 <p>Safeguard your products and thrive in the competitive online marketplace with Amazon Brand Registry.</p>
-                <?php include '../includes/bannerBtn.php'; ?>
+
+                     @include ('includes/bannerBtn')
+
             </div>
         </div>
     </div>
@@ -75,7 +63,7 @@
     </div>
 </section>
 
-    <?php include '../includes/clients.php'; ?>
+@include ('includes/clients')
 
     <section class="pattern-bg aboutSec">
         <div class="container">
@@ -135,10 +123,10 @@
             </div>
         </div>
     </section>
+      @include ('includes/faq')
+      @include ('includes/cta')
+      @include ('includes/testimonial')
 
-    <?php include '../includes/faq.php'; ?>
-    <?php include '../includes/cta.php'; ?>
-    <?php include '../includes/testimonial.php'; ?>
-    <?php include '../includes/footer.php'; ?>
-    <?php include '../includes/script.php'; ?>
 
+      
+@endsection

@@ -1,18 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>Business Formation Services | Trademark Nova</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="file a trademark, trademark registration, file my trademark, register a logo, apply for trademark, trademark a slogan, register brand name, register trademark, trademark my business name, register a trademark" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
@@ -43,13 +30,14 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+
+                                @include ('includes/lead-form')
                             </div>
                         </div>
                     </div>
@@ -68,8 +56,8 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-6">
                             <figure class="aboutImg">
-                                <img src="assets/images/company-renewal-img1.webp" alt="">
-                                <span><img src="assets/images/logo-io.webp" alt=""></span>
+                                <img src="{{asset('assets/images/company-renewal-img1.webp')}}" alt="">
+                                <span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span>
                             </figure>
                         </div>
                     </div>
@@ -84,21 +72,21 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io1.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io1.png')}}" alt=""></div>
                                 <h4>Register Your New Business </h4>
                                 <p>One of the most critical steps in setting up a new business is to ensure that it is properly registered with the appropriate authorities. Our business formation services provide expert guidance and support to help you navigate the process of registering your new business. We can assist with everything from choosing the right legal structure for your business to obtaining the necessary licenses and permits. Our team of experienced professionals understands the nuances of business formation and can help you avoid common pitfalls and legal issues. With our services, you can rest assured that your new business is registered correctly and in compliance with all relevant laws and regulations.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io2.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io2.png')}}" alt=""></div>
                                 <h4>Verify Your Business Name</h4>
                                 <p>At Trademark Nova, by using our services, you can verify that your business name is not already in use and that it meets all the legal requirements for your chosen business structure. This can save you time, money, and legal headaches in the future. Additionally, many business formation services offer other benefits such as help with registering your business, obtaining necessary licenses and permits, and setting up your business structure. Overall, using trademark nova can help ensure that your business starts off on the right foot and stays compliant with all relevant regulations. Contact us today to learn more about how we can help you bring your business to life</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io3.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io3.png')}}" alt=""></div>
                                 <h4>Stay Updated with New Regulations</h4>
                                 <p>As a business owner, it's crucial to stay up-to-date with the latest regulations and laws that affect your industry and your business operations. This can be a challenging task, as regulations can change frequently and without notice. However, by using our services, you can ensure that you are always informed about any new regulations that may impact your business. These services stay current with the latest regulatory developments and can alert you to any changes that may affect your business. We can also provide guidance on how to comply with new regulations, minimizing the risk of any legal issues down the line. </p>
                             </div>
@@ -117,14 +105,14 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-12">
                             <div class="processRow">
-                                <img src="assets/images/arrow.webp" alt="" class="arrow">
+                                <img src="{{asset('assets/images/arrow.webp')}}" alt="" class="arrow">
                                 <div class="cell left">
                                     <div class="circleBig">
                                         <span class="dot topLeft"></span>
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">01</span>
-                                        <div class="circle"><img src="assets/images/process-io-1.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-1.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Launch Your Business Without Delays</h4>
                                     <p>From the articles of association to the certificate of incorporation, we handle all the paperwork for your business!</p>
@@ -134,7 +122,7 @@ include "../includes/var.php"
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">02</span>
-                                        <div class="circle"><img src="assets/images/process-io-2.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-2.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Leave No Room for Errors</h4>
                                     <p>Start your business today with Trademark Nova without any delay by issuing proper formation documents with the state! </p>
@@ -144,7 +132,7 @@ include "../includes/var.php"
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">03</span>
-                                        <div class="circle"><img src="assets/images/process-io-3.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-3.webp')}}" alt=""></div>
                                     </div>
                                     <h4> Ensure Business Name Availability</h4>
                                     <p>Verify your business name to see it doesn’t infringe another business’s trademark and avoid future problems! </p>
@@ -155,7 +143,7 @@ include "../includes/var.php"
                             <div class="schedule" style="margin-top: 4rem;">
                                 <h2>Request a Schedule For Free Consultation</h2>
                                 <a href="book-free-consultation" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                <a href="tel:<?= $number; ?>" class="telNum"><span>Call Us Now:</span><?= $numberdisplay; ?></a>
+                                <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                             </div>
                         </div>
                     </div>
@@ -288,8 +276,7 @@ include "../includes/var.php"
             </div>
             <!-- faq html end -->
 
-            <?php include("../includes/testimonial.php") ?>
+            @include ('includes/testimonial')
         </main>
 
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+@endsection

@@ -1,59 +1,15 @@
-<?php 
-include("../backend/connectiondb.php");
-require('../stripe-php-master/init.php');
-include "../includes/var.php" ;
 
-function dd($data){
-   echo "<pre>";
-   print_r($data);
-   die;
-};
 
-if(isset($_GET['session_id']) && isset($_GET['customer_id'])) { 
-   $customerid = $_GET['customer_id'];
-   $session_id = $_GET['session_id'];
-   $customer_query="select t1.name,t1.email,t1.phone,
-      t1.created_at,t1.Id,t2.title ,t1.updatedid,t1.ip_city,t1.ip_region,t1.ip_country
-      from customer t1
-      left join trademarkcountries t2 On t2.Id = t1.tmcountryId
-      where t1.isActive = '1' and t1.Id = '".$customerid."'
-   ";
-   $batch = mysqli_query($con,$customer_query);
-   if($batch->num_rows > 0){
-      $customer = mysqli_fetch_assoc($batch);
-   }
-   \Stripe\Stripe::setApiKey($secretKey);
-   $stripe = \Stripe\Checkout\Session::retrieve($session_id);
-   $data = [
-      'customer_id' => $customerid,
-      'paymentId' => $stripe->payment_intent,
-      'transaction_key' => $stripe->id,
-      'name' => $customer['name'],
-      'state' => $customer['ip_region'],
-      'city' => $customer['ip_city'],
-      'created_at' => date('Y-m-d H:i:s'),
-      'currency' => $stripe->currency,
-      'status' => $stripe->payment_status,
-      'amount' =>$stripe->amount_total / 100,
-      'amount_captured' =>$stripe->amount_total / 100
-   ];
-   
-   $query = "insert into packagepayment (customerId, paymentId, transaction_key, name, state, city, created_at, currency, status, amount, amount_captured) 
-               values('".$data['customer_id']."','".$data['paymentId']."','".$data['transaction_key']."','".$data['name']."','".$data['state']."','".$data['city']."',
-               '".$data['created_at']."','".$data['currency']."','".$data['status']."', '".$data['amount']."', '".$data['amount_captured']."')";
-   mysqli_query($con, $query);
-}
-?>
 <!doctype html>
 <html lang="en">
 <head>
-    <?php include("../includes/compatibility.php") ?>
+
         <title>Thank You | Trademark Nova</title>
         <meta name="description" content=""/>
         <meta name="keywords" content="" />
         <!-- Google Fonts -->
-        <?php include("../includes/styles.php") ?>
-        <?php include("../includes/header.php") ?>
+        @include ('includes/styles')
+        @include ('includes/header')
    </head>
    <body>
       <div id="page" class="full-page">
@@ -93,4 +49,4 @@ if(isset($_GET['session_id']) && isset($_GET['customer_id'])) {
             </section>
             <!-- home banner section html end -->
 
-<?php include("../includes/scripts.php") ?>
+            @include ('includes/scripts')

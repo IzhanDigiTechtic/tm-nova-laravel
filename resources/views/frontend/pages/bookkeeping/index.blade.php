@@ -1,18 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>Bookkeeping & Accounting Services | Trademark Nova</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
@@ -47,13 +34,13 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+                                @include ('includes/lead-form')
                             </div>
                         </div>
                     </div>
@@ -77,8 +64,8 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-6">
                             <figure class="aboutImg">
-                                <img src="assets/images/bookkeeping-img1.webp" alt="">
-                                <span><img src="assets/images/logo-io.webp" alt=""></span>
+                                <img src="{{asset('assets/images/bookkeeping-img1.webp')}}" alt="">
+                                <span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span>
                             </figure>
                         </div>
                         <div class="col-md-12 mt-5">
@@ -131,42 +118,42 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io1.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io1.png')}}" alt=""></div>
                                 <h4>Quickbook Setup</h4>
                                 <p>At Trademark Nova, our team of experts will work with you to understand your business needs and tailor a setup plan that's right for you. We'll help you configure your accounts, set up your chart of accounts, import your financial data, and more. With our help, you'll be able to use QuickBooks to its full potential & streamline your bookkeeping process.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io2.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io2.png')}}" alt=""></div>
                                 <h4>Stay Up-To-Date</h4>
                                 <p>We can help you clean up your existing records and get your files up-to-date. Our professionals will work with you to identify any discrepancies or errors in your financial records and develop a plan to address them. We'll also help you establish a system for ongoing maintenance to ensure your records remain accurate and up-to-date.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io3.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io3.png')}}" alt=""></div>
                                 <h4>Financial Statements</h4>
                                 <p>Trademark Nova experts will work with you to generate accurate and easy-to-understand financial statements that provide insight into your business's performance. We'll help you identify areas of strength and weakness, track your cash flow, and provide valuable information to inform your business decisions. </p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io4.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io4.png')}}" alt=""></div>
                                 <h4>Bank Reconciliations</h4>
                                 <p>We offer bank reconciliation services to help you stay on top of your finances. Our experts will work with you to identify any discrepancies between your bank statement and your accounting record. We'll also help you establish a system for ongoing reconciliation to ensure your records remain accurate in the future.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io5.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io5.png')}}" alt=""></div>
                                 <h4>Account Receivable</h4>
                                 <p>Trademark Nova will help you create an efficient system for managing your accounts receivable. We'll help you track invoices, follow up on payments, & resolve any disputes. We can also provide valuable insights into your customers' payment behavior, allowing you to make informed decisions about credits. </p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io6.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io6.png')}}" alt=""></div>
                                 <h4>Accounts Payable</h4>
                                 <p>With the help of Trademark Nova qualified experts, you can optimize your cash flow, reduce the risk of late payments and penalties, and keep your vendors happy. Contact us today to learn more about our accounts payable services and how Trademark Nova can help your business thrive.</p>
                             </div>
@@ -184,21 +171,21 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io1.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io1.png')}}" alt=""></div>
                                 <h4>Affordable Bookkeeping Services</h4>
                                 <p>Managing your finances is crucial to the success of your business, but it can be expensive to hire an in-house bookkeeper. That's why we offer affordable bookkeeping services to help you stay on top of your finances. Our team of experienced professionals will work with you to customize a solution that fits your specific needs and budget. We use latest technologies to ensure accuracy, and we stay up-to-date on the latest regulations and laws to keep your business compliant.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io2.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io2.png')}}" alt=""></div>
                                 <h4>Certified Team</h4>
                                 <p>When it comes to managing your finances, you want to work with a team of professionals who are knowledgeable, experienced, and certified. That's why At Trademark Nova, we offer a certified team for all your bookkeeping needs. Our team of experts is highly skilled and certified in various accounting and bookkeeping software, including QuickBooks, Xero, and Sage.Plus, we provide ongoing training to our team to ensure they are always delivering the highest quality of service to our clients. </p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io3.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io3.png')}}" alt=""></div>
                                 <h4>Best Service with Quality</h4>
                                 <p>At Trademark Nova, we pride ourselves on offering the best bookkeeping service with quality. Our team of experienced professionals is dedicated to providing accurate, efficient, and reliable bookkeeping services that meet the highest standards of quality. Plus, we provide clear communication and transparent pricing, so you always know what you're getting and how much it will cost. Contact us today to learn more about our bookkeeping services and how we can help your business thrive. </p>
                             </div>
@@ -217,7 +204,7 @@ include "../includes/var.php"
                                 <div class="schedule mt-0 mb-5">
                                     <h2>Request a Schedule For Free Consultation</h2>
                                     <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                    <a href="tel:<?= $number; ?>" class="telNum"><span>Call Us Now:</span><?= $numberdisplay; ?></a>
+                                    <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                                 </div>
                             </div>
 
@@ -349,8 +336,7 @@ include "../includes/var.php"
             </div>
             <!-- faq html end -->
 
-            <?php include("../includes/testimonial.php") ?>
+            @include ('includes/testimonial')
         </main>
 
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+@endsection

@@ -1,18 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>Trademark Renewel Services | Trademark Nova</title>
-    <meta name="description" content="Renew a Trademark - Trademark Nova offers professional trademark renewal services to safeguard your intellectual property" />
-    <meta name="keywords" content="trademark renewal service" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
@@ -43,13 +30,14 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+                                @include ('includes/lead-form')
+
                             </div>
                         </div>
                     </div>
@@ -72,8 +60,8 @@ include "../includes/var.php"
                             </div>
                             <div class="col-md-6">
                                 <figure class="aboutImg">
-                                    <img src="assets/images/trademark1.webp" alt="">
-                                    <span><img src="assets/images/logo-io.webp" alt=""></span>
+                                    <img src="{{asset('assets/images/trademark1.webp')}}" alt="">
+                                    <span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span>
                                 </figure>
                             </div>
                         </div>
@@ -90,14 +78,14 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-12 mt-5">
                             <div class="processRow">
-                                <img src="assets/images/arrow.webp" alt="" class="arrow">
+                                <img src="{{asset('assets/images/arrow.webp')}}" alt="" class="arrow">
                                 <div class="cell left">
                                     <div class="circleBig">
                                         <span class="dot topLeft"></span>
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">01</span>
-                                        <div class="circle"><img src="assets/images/process-io-4.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-4.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Thorough Review</h4>
                                     <p>Our process begins with a thorough review of your existing trademark registration to ensure that it meets all renewal eligibility requirements. </p>
@@ -107,7 +95,7 @@ include "../includes/var.php"
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">02</span>
-                                        <div class="circle"><img src="assets/images/process-io-5.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-5.webp')}}" alt=""></div>
                                     </div>
                                     <h4>File for Renewal </h4>
                                     <p>After the review, we'll prepare and file your renewal application with the appropriate government agency, along with any required fees and service fee.</p>
@@ -117,7 +105,7 @@ include "../includes/var.php"
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">03</span>
-                                        <div class="circle"><img src="assets/images/process-io-6.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-6.webp')}}" alt=""></div>
                                     </div>
                                     <h4>And You're Done!</h4>
                                     <p>Your assigned attorney will keep you informed of our progress and provide regular updates on the status of your case time to time.</p>
@@ -347,7 +335,7 @@ include "../includes/var.php"
                                 <div class="schedule">
                                     <h2>Request a Schedule For Free Consultation</h2>
                                     <a href="book-free-consultation" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                    <a href="tel:<?= $number; ?>" class="telNum"><span>Call Us Now:</span><?= $numberdisplay; ?></a>
+                                    <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                                 </div>
                             </div>
                         </div>
@@ -357,5 +345,4 @@ include "../includes/var.php"
             <!-- faq html end -->
 
         </main>
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+@endsection

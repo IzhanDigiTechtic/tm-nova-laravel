@@ -1,18 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>Trademark Representation Services | Trademark Nova</title>
-    <meta name="description" content="Trust Trademark Nova for professional trademark representation services. Safeguard your brand with our expert legal guidance" />
-    <meta name="keywords" content="Trademark Representation Service" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
@@ -43,13 +30,14 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+                                @include ('includes/lead-form')
+
                             </div>
                         </div>
                     </div>
@@ -69,8 +57,8 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-6">
                             <figure class="aboutImg">
-                                <img src="assets/images/ipo-img1.webp" alt="">
-                                <span><img src="assets/images/logo-io.webp" alt=""></span>
+                                <img src="{{asset('assets/images/ipo-img1.webp')}}" alt="">
+                                <span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span>
                             </figure>
                         </div>
                     </div>
@@ -87,28 +75,28 @@ include "../includes/var.php"
                         <div class="col-md-12"></div>
                         <div class="col-lg-3 col-md-6">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io10.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io10.png')}}" alt=""></div>
                                 <h4>Global Trademark Representation</h4>
                                 <p>Our trademark representation services are not limited to the USA - we act on behalf of clients located anywhere in the world to protect their valuable intellectual property. With our expertise and experience, you can have peace of mind.</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io10.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io10.png')}}" alt=""></div>
                                 <h4>Fixed & Transparent Pricing</h4>
                                 <p>At Trademark Nova, we believe in transparency and fairness when it comes to pricing. That's why we offer fixed and transparent pricing for our trademark representation services, so you know exactly what you're paying for and can budget accordingly.</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io10.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io10.png')}}" alt=""></div>
                                 <h4>Streamlined Process</h4>
                                 <p>At Trademark Nova, our professional experts understand that time is of the essence when it comes to trademark registration and protection. That's why we have streamlined our process to ensure that it's as efficient and effective as possible. </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io10.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io10.png')}}" alt=""></div>
                                 <h4>End-to-end Brand Protection</h4>
                                 <p>No matter where you belong, Trademark Nova will not only help you handle trademark registration but also provide ongoing monitoring and enforcement services to ensure that your trademarks are not being used without your permission. </p>
                             </div>
@@ -126,14 +114,14 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-12 mt-md-5">
                             <div class="processRow">
-                                <img src="assets/images/arrow.webp" alt="" class="arrow">
+                                <img src="{{asset('assets/images/arrow.webp')}}" alt="" class="arrow">
                                 <div class="cell left">
                                     <div class="circleBig">
                                         <span class="dot topLeft"></span>
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">01</span>
-                                        <div class="circle"><img src="assets/images/process-io-7.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-7.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Submit Your Trademark Information</h4>
                                     <p>Spend a couple of minutes filling out a simple questionnaire. This will initiate your respective IPO trademark registration process.</p>
@@ -143,7 +131,7 @@ include "../includes/var.php"
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">02</span>
-                                        <div class="circle"><img src="assets/images/process-io-8.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-8.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Select Service & Make the Payment</h4>
                                     <p>Get all the details in order! Select your coveted service with Trademark Nova & make the payment for your desired services.</p>
@@ -153,7 +141,7 @@ include "../includes/var.php"
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">03</span>
-                                        <div class="circle"><img src="assets/images/process-io-9.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-9.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Thorough Evaluation & Filing</h4>
                                     <p>To ensure that your trademark is completely unique, our team conducts a thorough trademark search across numerous databases and then file your trademark.</p>
@@ -219,5 +207,4 @@ include "../includes/var.php"
 
         </main>
 
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+@endsection

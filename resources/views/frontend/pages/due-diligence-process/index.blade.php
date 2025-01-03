@@ -1,18 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>Due Diligence Services | Trademark Nova</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="file a trademark, trademark registration, file my trademark, register a logo, apply for trademark, trademark a slogan, register brand name, register trademark, trademark my business name, register a trademark" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
@@ -42,13 +29,15 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+
+                                @include ('includes/lead-form')
+
                             </div>
                         </div>
                     </div>
@@ -68,8 +57,8 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-6">
                             <figure class="aboutImg">
-                                <img src="assets/images/diligence-img-1.webp" alt="">
-                                <span><img src="assets/images/logo-io.webp" alt=""></span>
+                                <img src="{{asset('assets/images/diligence-img-1.webp')}}" alt="">
+                                <span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span>
                             </figure>
                         </div>
                     </div>
@@ -149,35 +138,35 @@ include "../includes/var.php"
                     <div class="row justify-content-center row-cols-xl-5 row-cols-lg-3 row-cols-md-2 row-cols-1">
                         <div class="col">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io11.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io11.png')}}" alt=""></div>
                                 <h4>Financial Due Diligence</h4>
                                 <p> It involves thorough examination of the target company's financial statements, historical financial performance, & potential financial risks.</p>
                             </div>
                         </div>
                         <div class="col">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io12.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io12.png')}}" alt=""></div>
                                 <h4>Post Transactional Due Diligence</h4>
                                 <p>Examine completed transaction, identify areas of change, & ensuring that the expected benefits of the transaction are being realized.</p>
                             </div>
                         </div>
                         <div class="col">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io13.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io13.png')}}" alt=""></div>
                                 <h4>Business Valuations</h4>
                                 <p>Determine the economic value of a business, taking into account various factors i.e. financial performance, market conditions, and trends.</p>
                             </div>
                         </div>
                         <div class="col">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io14.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io14.png')}}" alt=""></div>
                                 <h4>International Due Diligence Services</h4>
                                 <p>Local laws, & cultural nuances, to evaluate the potential risks & opportunities associated with a cross-border transaction.</p>
                             </div>
                         </div>
                         <div class="col">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io15.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io15.png')}}" alt=""></div>
                                 <h4>Pre-emptive Due Diligence</h4>
                                 <p>Identify potential risks before they materialize, allowing them to take preventative measures and make informed decisions.</p>
                             </div>
@@ -195,14 +184,14 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-12 mt-md-md-5">
                             <div class="processRow">
-                                <img src="assets/images/arrow.webp" alt="" class="arrow">
+                                <img src="{{asset('assets/images/arrow.webp')}}" alt="" class="arrow">
                                 <div class="cell left">
                                     <div class="circleBig">
                                         <span class="dot topLeft"></span>
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">01</span>
-                                        <div class="circle"><img src="assets/images/process-io-7.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-7.webp')}}" alt=""></div>
                                     </div>
                                     <h4>In-depth Analysis</h4>
                                     <p>Our team of experts conducts an in-depth analysis of the target company, evaluating its financial performance, market position, legal compliance, operational efficiency, and potential risks and opportunities. </p>
@@ -212,7 +201,7 @@ include "../includes/var.php"
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">02</span>
-                                        <div class="circle"><img src="assets/images/process-io-8.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-8.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Engagement </h4>
                                     <p>At Trademark Nova, we prioritize open communication with our clients throughout the engagement, ensuring that we keep you informed every step of the way.</p>
@@ -222,7 +211,7 @@ include "../includes/var.php"
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">03</span>
-                                        <div class="circle"><img src="assets/images/process-io-9.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-9.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Comprehensive Report</h4>
                                     <p>At the end of our engagement, we provide you with clear and concise reports that highlight our findings, allowing you to make informed decisions with confidence. </p>
@@ -234,7 +223,7 @@ include "../includes/var.php"
                             <div class="schedule mt-5">
                                 <h2>Request a Schedule For Free Consultation</h2>
                                 <a href="book-free-consultation" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                <a href="tel:<?= $number; ?>" class="telNum"><span>Call Us Now:</span><?= $numberdisplay; ?></a>
+                                <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                             </div>
                         </div>
                     </div>
@@ -243,5 +232,4 @@ include "../includes/var.php"
 
         </main>
 
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+@endsection

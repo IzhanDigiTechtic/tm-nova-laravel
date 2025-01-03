@@ -1,17 +1,13 @@
-<?php 
-include("../backend/connectiondb.php");
-include "../includes/var.php" ?>
+
 
 <!doctype html>
 <html lang="en">
 <head>
-    <?php include("../includes/compatibility.php") ?>
-        <title>Thank You | <?=$websitename?></title>
+<title>Thank You | Trademark Nova</title>
         <meta name="description" content=""/>
         <meta name="keywords" content="" />
-        <!-- Google Fonts -->
-        <?php include("../includes/styles.php") ?>
-        <?php include("../includes/header.php") ?>
+        @include ('includes/styles')
+        @include ('includes/header')
    </head>
    <body>
       <div id="page" class="full-page">
@@ -51,4 +47,4 @@ include "../includes/var.php" ?>
             </section>
             <!-- home banner section html end -->
 
-<?php include("../includes/scripts.php") ?>
+@include ('includes/scripts')

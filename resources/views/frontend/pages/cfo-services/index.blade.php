@@ -1,18 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>CFO Services | Trademark Nova</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
@@ -43,13 +30,13 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+                                @include ('includes/lead-form')
                             </div>
                         </div>
                     </div>
@@ -70,8 +57,8 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-6">
                             <figure class="aboutImg">
-                                <img src="assets/images/cfo-img1.webp" alt="">
-                                <span><img src="assets/images/logo-io.webp" alt=""></span>
+                                <img src="{{asset('assets/images/cfo-img1.webp')}}" alt="">
+                                <span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span>
                             </figure>
                         </div>
                         <div class="col-md-12 mt-5">
@@ -124,21 +111,21 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io8.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io8.png')}}" alt=""></div>
                                 <h4>Cost-Effective Solution</h4>
                                 <p>Outsourcing CFO services can be a strategic and cost-effective solution for businesses looking to improve their financial performance and achieve their long-term goals.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io9.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io9.png')}}" alt=""></div>
                                 <h4>Team of Professionals</h4>
                                 <p>Outsourcing CFO services can provide businesses with access to a team of experienced professionals who can offer valuable insights and expertise in financial planning, forecasting, and reporting.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io10.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io10.png')}}" alt=""></div>
                                 <h4>Seamless Process</h4>
                                 <p>Outsourcing CFO services allows business owners and managers to focus on their core competencies and priorities, while leaving the financial management to experts. </p>
                             </div>
@@ -156,7 +143,7 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io1.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io1.png')}}" alt=""></div>
                                 <h4>Trust Us With The Numbers</h4>
                                 <p>At Trademark Nova, our technical knowledge will improve your company’s financial records and reporting. Moreover, our team will provide your business with the luxury of time-saving and efficient organization
                                     Successfully providing the best service for decades. By choosing to work with us, you will have more time to focus on making your business successful rather than focusing on numbers. Leave that to us.</p>
@@ -164,7 +151,7 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io2.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io2.png')}}" alt=""></div>
                                 <h4>Skilled & Reliable Advisors</h4>
                                 <p>Our trustworthy team of experienced professionals at Trademark Nova navigate the complex world of taxation and make your life a lot easier when it comes to managing your business finances.
                                     Given the precision and effective solutions offered by the company, it proudly stands as the backbone of finance teams of 3500+ multinational clients spread across different parts of the world.</p>
@@ -172,7 +159,7 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io3.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io3.png')}}" alt=""></div>
                                 <h4>Experienced in Various Industries</h4>
                                 <p>Our services are unlike any other online accounting solution company since we make your business our own business. Our team takes over the reins and swerves clients towards a successful and prosperous financial system. We have perfected the method to help our clients grow. By joining hands with us, your challenges become ours and we are exceptional at working with and overcoming financial challenges</p>
                             </div>
@@ -191,7 +178,7 @@ include "../includes/var.php"
                                 <div class="schedule mt-0 mb-5">
                                     <h2>Request a Schedule For Free Consultation</h2>
                                     <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                    <a href="tel:<?= $number; ?>" class="telNum"><span>Call Us Now:</span><?= $numberdisplay; ?></a>
+                                    <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                                 </div>
                             </div>
 
@@ -315,8 +302,7 @@ include "../includes/var.php"
             </div>
             <!-- faq html end -->
 
-            <?php include("../includes/testimonial.php") ?>
+            @include ('includes/testimonial')
         </main>
 
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+@endsection

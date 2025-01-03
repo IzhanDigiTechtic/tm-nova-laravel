@@ -1,18 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>Nominee Director Services | Trademark Nova</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="file a trademark, trademark registration, file my trademark, register a logo, apply for trademark, trademark a slogan, register brand name, register trademark, trademark my business name, register a trademark" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
@@ -43,13 +30,13 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+                                @include ('includes/lead-form')
                             </div>
                         </div>
                     </div>
@@ -69,8 +56,8 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-6">
                             <figure class="aboutImg">
-                                <img src="assets/images/tax-advisory-img1.webp" alt="">
-                                <span><img src="assets/images/logo-io.webp" alt=""></span>
+                                <img src="{{asset('assets/images/tax-advisory-img1.webp')}}" alt="">
+                                <span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span>
                             </figure>
                         </div>
                     </div>
@@ -86,21 +73,21 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io1.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io1.png')}}" alt=""></div>
                                 <h4>Create and maintain compliant corporate entities</h4>
                                 <p>With the guidance of our highly experienced local teams, and the provision of our comprehensive substance solutions, we help businesses minimise the risks of setting up and maintaining international entities.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io2.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io2.png')}}" alt=""></div>
                                 <h4>Make better local decisions</h4>
                                 <p>Our in-country teams maintain a detailed understanding of local regulations. Our highly experienced local directors ensure you have the right information available to make the best decisions for your business.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io3.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io3.png')}}" alt=""></div>
                                 <h4>Control your costs</h4>
                                 <p>Employing your own local director, obtaining an office address and ensuring you attend to local corporate administration can be a high-cost, high-risk approach to international entity management. As a local administrator, we provide a cost-efficient service.</p>
                             </div>
@@ -154,7 +141,7 @@ include "../includes/var.php"
                                 <div class="schedule">
                                     <h2>Request a Schedule For Free Consultation</h2>
                                     <a href="book-free-consultation" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                    <a href="tel:<?= $number; ?>" class="telNum"><span>Call Us Now:</span><?= $numberdisplay; ?></a>
+                                    <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                                 </div>
                             </div>
                         </div>
@@ -171,21 +158,21 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io1.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io1.png')}}" alt=""></div>
                                 <h4>Extensive Industry Knowledge</h4>
                                 <p>Trademark Nova is a reputable and reliable company that offers nominee director services to businesses across various industries. The company boasts a team of experts with extensive knowledge and experience in corporate governance and compliance. With a deep understanding of the regulatory framework, legal requirements, and best practices, the team can provide invaluable guidance to your business, ensuring that it stays compliant with all relevant laws and regulations.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io2.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io2.png')}}" alt=""></div>
                                 <h4>Tailored Nominee Director Solutions</h4>
                                 <p>Trademark Nova understands that every business is unique, with its own specific needs, goals, and challenges. That's why the company offers tailored nominee director solutions that are designed to meet the specific requirements of your business. Whether you are a startup, a small business, or a large corporation, Trademark Nova can provide a bespoke solution that meets your needs and budget. The team will work closely with you to understand your business and identify the right solution.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io3.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io3.png')}}" alt=""></div>
                                 <h4>Exceptional Customer Service</h4>
                                 <p>At Trademark Nova, the customer is at the heart of everything we do. We understand that choosing a nominee director is a critical decision that can have a significant impact on your business. That's why we strive to provide exceptional customer service and support to our clients, ensuring that they receive the best possible experience. By choosing Trademark Nova, you can be confident that you will receive exceptional customer service, and that we will always go the extra mile.</p>
                             </div>
@@ -318,7 +305,7 @@ include "../includes/var.php"
                                 <div class="schedule">
                                     <h2>Request a Schedule For Free Consultation</h2>
                                     <a href="book-free-consultation" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                    <a href="tel:<?= $number; ?>" class="telNum"><span>Call Us Now:</span><?= $numberdisplay; ?></a>
+                                    <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                                 </div>
                             </div>
 
@@ -328,8 +315,7 @@ include "../includes/var.php"
             </div>
             <!-- faq html end -->
 
-            <?php include("../includes/testimonial.php") ?>
+            @include ('includes/testimonial')
         </main>
 
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+ @endsection

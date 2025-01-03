@@ -1,18 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>Trademark Learning Essentials | Trademark Nova</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
@@ -43,13 +30,13 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+                                @include ('includes/lead-form')
                             </div>
                         </div>
                     </div>
@@ -67,7 +54,7 @@ include "../includes/var.php"
                         <div class="col-md-12"></div>
                         <div class="col-md-4">
                             <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="assets/images/io4.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io4.png')}}" alt=""></div>
                                 <h4>What is a Trademark?</h4>
                                 <p>A trademark can be any word, phrase, symbol, design, or a combination of these that identifies your goods or services.</p>
                                 <a href="what-is-a-trademark">Learn more</a>
@@ -75,15 +62,15 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="assets/images/io5.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io5.png')}}" alt=""></div>
                                 <h4>Trademark, Patent, or Copyright</h4>
                                 <p>Trademarks, patents, and copyrights are different types of intellectual property. IPO grants patents & registers trademarks.</p>
-                                <a href="trademark-patent-copyright">Learn more</a>
+                                <a href="{{route('trademark.patent.copyright')}}">Learn more</a>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="assets/images/io6.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io6.png')}}" alt=""></div>
                                 <h4>Trademark Examples</h4>
                                 <p>Almost anything can be a trademark if it indicates the source of your goods and services. It could be a word, slogan...</p>
                                 <a href="trademark-examples">Learn more</a>
@@ -91,7 +78,7 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="assets/images/io7.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io7.png')}}" alt=""></div>
                                 <h4>Scope of Protection</h4>
                                 <p>A trademark is always connected to the specific goods or services sold to customers with that trademark.</p>
                                 <a href="scope-of-protection">Learn more</a>
@@ -99,7 +86,7 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="assets/images/io8.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io8.png')}}" alt=""></div>
                                 <h4>What are Strong Trademarks?</h4>
                                 <p>It’s important to have a strong trademark that is inherently distinctive. This means your trademark quickly...</p>
                                 <a href="strong-trademarks">Learn more</a>
@@ -107,7 +94,7 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="assets/images/io9.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io9.png')}}" alt=""></div>
                                 <h4>Why Register Your Trademark?</h4>
                                 <p>Trademark is listed in our database of registered and pending trademarks. This provides public notice...</p>
                                 <a href="why-register-your-trademark">Learn more</a>
@@ -115,7 +102,7 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="assets/images/io4.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io4.png')}}" alt=""></div>
                                 <h4>Do I Need an Attorney?</h4>
                                 <p>Hiring an attorney may save you money because an attorney will know how to best advise you on your trademark...</p>
                                 <a href="do-i-need-an-attorney">Learn more</a>
@@ -123,7 +110,7 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="assets/images/io5.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io5.png')}}" alt=""></div>
                                 <h4>How Long Does It Take?</h4>
                                 <p>Usually, the process takes 12 to 18 months. Registering your trademark is a complex procedure that involves...</p>
                                 <a href="how-long-does-it-take">Learn more</a>
@@ -131,7 +118,7 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="assets/images/io6.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io6.png')}}" alt=""></div>
                                 <h4>Common Issues in Applications</h4>
                                 <p>As you file, be careful not to make these common errors. Some are easily fixable, but unfortunately some...</p>
                                 <a href="common-problems-in-applications">Learn more</a>
@@ -282,7 +269,7 @@ include "../includes/var.php"
                                 <div class="schedule">
                                     <h2>Request a Schedule For Free Consultation</h2>
                                     <a href="book-free-consultation" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                    <a href="tel:<?= $number; ?>" class="telNum"><span>Call Us Now:</span><?= $numberdisplay; ?></a>
+                                    <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                                 </div>
                             </div>
                         </div>
@@ -292,5 +279,4 @@ include "../includes/var.php"
             <!-- faq html end -->
 
         </main>
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+@endsection

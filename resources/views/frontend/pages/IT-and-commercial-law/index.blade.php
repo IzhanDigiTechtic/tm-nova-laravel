@@ -1,18 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>IT & Commercial Law | Trademark Nova</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="file a trademark, trademark registration, file my trademark, register a logo, apply for trademark, trademark a slogan, register brand name, register trademark, trademark my business name, register a trademark" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
@@ -43,13 +30,13 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+                                @include ('includes/lead-form')
                             </div>
                         </div>
                     </div>
@@ -69,8 +56,8 @@ include "../includes/var.php"
                             </div>
                             <div class="col-md-6">
                                 <figure class="aboutImg">
-                                    <img src="assets/images/it-img1.webp" alt="">
-                                    <span><img src="assets/images/logo-io.webp" alt=""></span>
+                                    <img src="{{asset('assets/images/it-img1.webp')}}" alt="">
+                                    <span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span>
                                 </figure>
                             </div>
                         </div>
@@ -93,7 +80,7 @@ include "../includes/var.php"
                             </ul>
                         </div>
                         <div class="col-md-5">
-                            <img src="assets/images/it-img2.webp" alt="" class="rounded box-shadow">
+                            <img src="{{asset('assets/images/it-img2.webp')}}" alt="" class="rounded box-shadow">
                         </div>
                     </div>
                 </div>
@@ -108,84 +95,84 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/it-io1.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/it-io1.png')}}" alt=""></div>
                                 <h4>SaaS agreements</h4>
                                 <p>We can provide you with a comprehensive legal review of the terms of the agreement, conducting thorough due diligence of the provider to ensure you’re protected and getting the very best out of the relationship.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/it-io2.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/it-io2.png')}}" alt=""></div>
                                 <h4>Technological research and development and collaboration agreem</h4>
                                 <p>We can produce an agreement that clearly defines each party’s obligations, limitations, and ownership so that roles are clearly defined, helping you avoid costly disputes later on.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/it-io3.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/it-io3.png')}}" alt=""></div>
                                 <h4>Data protection</h4>
                                 <p>Our specialists will ensure your processes align with current data protection law and GDPR, with comprehensive audits, staff training, and data breach prevention and management.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/it-io4.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/it-io4.png')}}" alt=""></div>
                                 <h4>Cloud services agreements</h4>
                                 <p>We’ll carefully negotiate and draft your agreement, detailing service levels, obligations, and your right to terminate, also making sure you comply with the platform providers’ requirements while minimising risk to your business.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/it-io5.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/it-io5.png')}}" alt=""></div>
                                 <h4>Protecting and commercialising your intellectual property</h4>
                                 <p>Our intellectual property specialists will provide a clear route to protect your IP, and where appropriate, uncover the right opportunities to commercialise assets to benefit your business.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/it-io6.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/it-io6.png')}}" alt=""></div>
                                 <h4>Outsourcing</h4>
                                 <p>We’ll ensure that any established outsourcing agreements are carefully reviewed and adapted and that any early stage negotiations with a new provider are fit for purpose, while also considering exit provisions, such as the right to step in, should the supplier be unable to perform.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/it-io7.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/it-io7.png')}}" alt=""></div>
                                 <h4>Software licensing and end user licensing</h4>
                                 <p>We’ll carefully draft your license agreements so that you successfully prevent abuses of your software, keep control over its use, limit your liabilities and, put terms in place that will protect your business and suit your future plans.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/it-io8.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/it-io8.png')}}" alt=""></div>
                                 <h4>Ecommerce and Distance selling regulations</h4>
                                 <p>Whether it’s via phone, mail or online transactions, we’ll ensure you comply with The Consumer Rights Act and have the right terms and conditions in place to protect you.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/it-io9.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/it-io9.png')}}" alt=""></div>
                                 <h4>Video game and app development</h4>
                                 <p>From development agreements, to intellectual property considerations, distribution agreements, and regulatory compliance, we can support you at every stage in video game or app development, so that you protect your assets, safely distribute your product, and abide by current regulations.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/it-io10.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/it-io10.png')}}" alt=""></div>
                                 <h4>Procurement</h4>
                                 <p>Whatever software, hardware or systems you need to introduce to your business, we can review any boilerplate agreements you’ve been presented with by your supplier and make sure that the necessary adaptations are made to terms so that you get exactly what you require.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/it-io11.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/it-io11.png')}}" alt=""></div>
                                 <h4>Cybersecurity</h4>
                                 <p>By assessing potential risk to your business, we’ll help you put the right cyber resilience protocols in place, build incident response plans, and make sure you comply with the relevant legislation.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/it-io12.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/it-io12.png')}}" alt=""></div>
                                 <h4>Fintech</h4>
                                 <p>We’ll guide you through the regulatory minefield that you’ll have to navigate as part of the Fintech sector, helping you manage risk effectively, taking a wider view of your business so that we can also support you with the accompanying data protection, intellectual property, and contractual considerations as you scale.</p>
                             </div>
@@ -195,7 +182,7 @@ include "../includes/var.php"
                             <div class="schedule">
                                 <h2>Request a Schedule For Free Consultation</h2>
                                 <a href="book-free-consultation" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                <a href="tel:<?= $number; ?>" class="telNum"><span>Call Us Now:</span><?= $numberdisplay; ?></a>
+                                <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                             </div>
                         </div>
                     </div>
@@ -206,7 +193,7 @@ include "../includes/var.php"
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="col-xl-6 px-0">
-                            <img src="assets/images/it-img3.webp" alt="" class="w-100">
+                            <img src="{{asset('assets/images/it-img3.webp')}}" alt="" class="w-100">
                         </div>
                         <div class="col-xl-4 ps-xl-5 pt-4">
                             <h3><span class="primary-color">Who We Help:</span> Fast-growing Technology Companies</h3>
@@ -241,18 +228,17 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-4">
                             <div class="schedule mt-4">
-                                <img src="assets/images/schedule-img1.webp" alt="">
+                                <img src="{{asset('assets/images/schedule-img1.webp')}}" alt="">
                                 <h2>Request a Schedule For Free Consultation</h2>
                                 <a href="book-free-consultation" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                <a href="tel:<?= $number; ?>" class="telNum"><span>Call Us Now:</span><?= $numberdisplay; ?></a>
+                                <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <?php include("../includes/testimonial.php") ?>
+            @include ('includes/testimonial')
 
         </main>
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+@endsection

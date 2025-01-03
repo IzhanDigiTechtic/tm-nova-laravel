@@ -1,17 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php" ?>
-<!doctype html>
-<html lang="en">
-
-<head>
-   <?php include("../includes/compatibility.php") ?>
-   <title>FAQs | Trademark Nova</title>
-   <meta name="description" content="" />
-   <meta name="keywords" content="" />
-   <!-- Google Fonts -->
-   <?php include("../includes/styles.php") ?>
-   <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
 </head>
 
 <body>
@@ -35,10 +23,10 @@ include "../includes/var.php" ?>
                   </div>
                   <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                      <div class="formStyle">
-                        <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                        <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                         <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                         <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                        <?php include('../includes/lead-form.php') ?>
+                        @include ('includes/lead-form')
                      </div>
                   </div>
                </div>
@@ -253,5 +241,4 @@ include "../includes/var.php" ?>
          </div>
          <!-- faq html end -->
       </main>
-      <?php include("../includes/footer.php") ?>
-      <?php include("../includes/scripts.php") ?>
+@endsection

@@ -1,18 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>Trademark Consultation Services | Trademark Nova</title>
-    <meta name="description" content="Trademark Consultation Services with Trademark Nova: Get strategic insights to protect and enhance your brand's identity with confidence" />
-    <meta name="keywords" content="Trademark Consultation Services " />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
@@ -45,13 +32,14 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+                                @include ('includes/lead-form')
+
                             </div>
                         </div>
                     </div>
@@ -69,14 +57,14 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-12">
                             <div class="processRow">
-                                <img src="assets/images/arrow.webp" alt="" class="arrow">
+                                <img src="{{asset('assets/images/arrow.webp')}}" alt="" class="arrow">
                                 <div class="cell left">
                                     <div class="circleBig">
                                         <span class="dot topLeft"></span>
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">01</span>
-                                        <div class="circle"><img src="assets/images/process-io-1.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-1.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Identify the Service You Are Interested In</h4>
                                     <p>Scheduling a consultation can be a great way to get valuable advice about our services. Start by identifying your desired service!</p>
@@ -86,7 +74,7 @@ include "../includes/var.php"
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">02</span>
-                                        <div class="circle"><img src="assets/images/process-io-2.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-2.webp')}}" alt=""></div>
                                     </div>
                                     <h4>Determine the Best Time To Schedule</h4>
                                     <p>Choose the best time from below given calendar to schedule your consultation with Trademark Nova.</p>
@@ -96,7 +84,7 @@ include "../includes/var.php"
                                         <span class="dot left"></span>
                                         <span class="dot right"></span>
                                         <span class="num">03</span>
-                                        <div class="circle"><img src="assets/images/process-io-3.webp" alt=""></div>
+                                        <div class="circle"><img src="{{asset('assets/images/process-io-3.webp')}}" alt=""></div>
                                     </div>
                                     <h4> Gather Any Questions You May Have Beforehand</h4>
                                     <p>Be prepared for the consultation by gathering any relevant information you may have beforehand, and make sure to show up on time.</p>
@@ -134,5 +122,4 @@ include "../includes/var.php"
                 </div>
             </section>
         </main>
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+       @endsection

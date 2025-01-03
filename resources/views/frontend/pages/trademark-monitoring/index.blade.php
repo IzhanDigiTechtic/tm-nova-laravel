@@ -1,18 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>Trademark Monitoring Service | Trademark Nova</title>
-    <meta name="description" content="Stay ahead with our trademark monitoring service at Trademark Nova. Stop competitors from profiting off your reputation " />
-    <meta name="keywords" content="trademark monitoring service" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
@@ -43,13 +30,14 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+
+                                @include ('includes/lead-form')
                             </div>
                         </div>
                     </div>
@@ -148,14 +136,14 @@ include "../includes/var.php"
                                 </tbody>
                             </table>
                             <p>The above fees include disbursements and our service charges for setting up the monitoring service with the watch notices sent directly to you without trademark Direct analysis.</p>
-                            <p><a href="tel:<?= $number; ?>">Contact us today</a> for no obligation advice on our trademark monitoring services.</p>
+                            <p><a href="tel:{{ config('var.number') }}">Contact us today</a> for no obligation advice on our trademark monitoring services.</p>
                         </div>
                         <div class="col-lg-4">
                             <div class="schedule">
-                                <img src="assets/images/schedule-img.webp" alt="">
+                                <img src="{{asset('assets/images/schedule-img.webp')}}" alt="">
                                 <h2>Request a Schedule For Free Consultation</h2>
                                 <a href="book-free-consultation" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                <a href="tel:<?= $number; ?>" class="telNum"><span>Call Us Now:</span><?= $numberdisplay; ?></a>
+                                <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                             </div>
                         </div>
                     </div>
@@ -286,5 +274,4 @@ include "../includes/var.php"
             </div>
             <!-- faq html end -->
         </main>
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+@endsection

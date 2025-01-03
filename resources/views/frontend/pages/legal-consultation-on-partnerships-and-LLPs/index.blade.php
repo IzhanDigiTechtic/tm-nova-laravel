@@ -1,18 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>Legal Consultation On Partnerships & LLPs | Trademark Nova</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="file a trademark, trademark registration, file my trademark, register a logo, apply for trademark, trademark a slogan, register brand name, register trademark, trademark my business name, register a trademark" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
@@ -43,13 +30,13 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+                                @include ('includes/lead-form')
                             </div>
                         </div>
                     </div>
@@ -68,8 +55,8 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-6">
                             <figure class="aboutImg">
-                                <img src="assets/images/legal-img-1.webp" alt="">
-                                <span><img src="assets/images/logo-io.webp" alt=""></span>
+                                <img src="{{asset('assets/images/legal-img-1.webp')}}" alt="">
+                                <span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span>
                             </figure>
                         </div>
                     </div>
@@ -80,7 +67,7 @@ include "../includes/var.php"
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="col-md-5 px-0">
-                            <img src="assets/images/legal-img-2.webp" alt="">
+                            <img src="{{asset('assets/images/legal-img-2.webp')}}" alt="">
                         </div>
                         <div class="col-md-7 px-md-5 my-4 text-center">
                             <h3>Range of Partnership Services</h3>
@@ -121,10 +108,10 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-4">
                             <div class="schedule">
-                                <img src="assets/images/schedule-img1.webp" alt="">
+                                <img src="{{asset('assets/images/schedule-img1.webp')}}" alt="">
                                 <h2>Request a Schedule For Free Consultation</h2>
                                 <a href="book-free-consultation" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                <a href="tel:<?= $number; ?>" class="telNum"><span>Call Us Now:</span><?= $numberdisplay; ?></a>
+                                <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                             </div>
                         </div>
                     </div>
@@ -141,21 +128,21 @@ include "../includes/var.php"
                         <div class="col-md-12"></div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io1.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io1.png')}}" alt=""></div>
                                 <h4>Experienced Solicitors</h4>
                                 <p>At Trademark Nova, our team of experienced solicitors specializes in Partnership & LLP Solicitors Services. With years of experience in the field, we understand the complexities and challenges that businesses face when operating as a partnership or LLP. We have helped numerous businesses navigate these challenges and succeed, and we are confident that we can do the same for you. </p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io3.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io3.png')}}" alt=""></div>
                                 <h4>Tailored Services</h4>
                                 <p>At our firm, we understand that every business is unique, with its own set of goals, challenges, and requirements. That is why we offer tailored Partnership & LLP Solicitors Services to meet the specific needs of each client. Whether you are looking to establish a new partnership or LLP, or seeking to resolve disputes or restructure an existing one, we work closely with you to understand your needs</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io3.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io3.png')}}" alt=""></div>
                                 <h4>Exceptional Client Care </h4>
                                 <p>We pride ourselves on providing exceptional client care and support throughout the entire process of Partnership & LLP Solicitors Services. We understand that the legal process can be complex and daunting, which is why we strive to make it as smooth and stress-free as possible for our clients. Our team is committed to providing clear and transparent communication, ensuring that you are fully informed and involved at every step of the way.</p>
                             </div>
@@ -174,7 +161,7 @@ include "../includes/var.php"
                                 <div class="schedule mt-0 mb-5">
                                     <h2>Request a Schedule For Free Consultation</h2>
                                     <a href="book-free-consultation" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                    <a href="tel:<?= $number; ?>" class="telNum"><span>Call Us Now:</span><?= $numberdisplay; ?></a>
+                                    <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                                 </div>
                             </div>
 
@@ -299,5 +286,4 @@ include "../includes/var.php"
 
         </main>
 
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+@endsection

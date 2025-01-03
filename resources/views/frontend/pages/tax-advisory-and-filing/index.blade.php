@@ -1,18 +1,5 @@
-<?php
-include("../backend/connectiondb.php");
-include "../includes/var.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include("../includes/compatibility.php") ?>
-    <title>Tax Advisory & Filing | Trademark Nova</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="file a trademark, trademark registration, file my trademark, register a logo, apply for trademark, trademark a slogan, register brand name, register trademark, trademark my business name, register a trademark" />
-    <!-- Google Fonts -->
-    <?php include("../includes/styles.php") ?>
-    <?php include("../includes/header.php") ?>
+@extends('frontend.layouts.web.master')
+@section('main-content')
     <style>
         .iti--separate-dial-code .iti__selected-flag {
             background-color: white;
@@ -43,13 +30,13 @@ include "../includes/var.php"
                         </div>
                         <div class="col-lg-5 col-md-6 d-flex flex-wrap align-items-end">
                             <div class="formStyle">
-                                <img src="assets/images/arrow.png" alt="" class="targetedDown" />
+                                <img src="{{asset('assets/images/arrow.png')}}" alt="" class="targetedDown" />
                                 <h4 class="blinkAnim">Start Your <span>Trademark</span> Registration Process</h4>
                                 <div class="ribbon">
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
-                                <?php include('../includes/lead-form.php') ?>
+                                @include ('includes/lead-form')
                             </div>
                         </div>
                     </div>
@@ -73,8 +60,8 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-6">
                             <figure class="aboutImg">
-                                <img src="assets/images/tax-advisory-img1.webp" alt="">
-                                <span><img src="assets/images/logo-io.webp" alt=""></span>
+                                <img src="{{asset('assets/images/tax-advisory-img1.webp')}}" alt="">
+                                <span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span>
                             </figure>
                         </div>
                         <div class="col-md-12 mt-5">
@@ -127,21 +114,21 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io1.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io1.png')}}" alt=""></div>
                                 <h4>File Your Tax</h4>
                                 <p>Filing your tax return is not just a legal requirement but also offers several benefits to taxpayers. Firstly, it ensures compliance with tax laws and regulations, reducing the risk of penalties and fines. Filing your taxes also provides a clear picture of your financial situation, allowing you to plan and manage your finances better. Additionally, filing your tax return on time can help you claim any refunds or credits you may be eligible for.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io2.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io2.png')}}" alt=""></div>
                                 <h4>Team of Experts</h4>
                                 <p>Trademark Nova's financial experts are dedicated to providing their clients with top-notch financial and tax management services. The team consists of highly skilled and experienced professionals who possess in-depth knowledge of tax laws, regulations, and policies. They work closely with their clients to understand their unique financial needs and objectives, and then develop customized solutions to meet those needs.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io3.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io3.png')}}" alt=""></div>
                                 <h4>Online Taxes Management</h4>
                                 <p>At Trademark Nova, we provide businesses and individuals with a convenient and efficient way to file taxes from anywhere with an internet connection. This means that taxpayers no longer have to physically visit tax offices or wait in long lines to file their taxes. Overall, online tax management offers a streamlined & accessible way to manage taxes, saving time and improving accuracy for individuals & businesses.</p>
                             </div>
@@ -159,21 +146,21 @@ include "../includes/var.php"
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io1.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io1.png')}}" alt=""></div>
                                 <h4>Tax Preparation & Filing </h4>
                                 <p>With our state-of-the-art software and meticulous attention to detail, we take the hassle out of tax preparation, so you can focus on what matters most – your business. Whether you're an individual or a business owner, we offer customized tax solutions that meet your unique needs. With our commitment to accuracy and efficiency, you can trust that your tax returns are in good hands. Choose Trademark Nova for top-notch tax preparation and filing services, and let us help you take control of your finances!</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io2.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io2.png')}}" alt=""></div>
                                 <h4>Valuable Tax Advices</h4>
                                 <p>We provide comprehensive tax planning services that can help you minimize your tax liability and optimize your financial situation. With our expert guidance and state-of-the-art technology, we make it easy for you to navigate the world of taxes and make informed decisions about your financial future. Trust Trademark Nova to provide you with the valuable tax advice you need to achieve your financial goals, and experience the peace of mind that comes with knowing you're in good hands.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="apartCell">
-                                <div class="circle"><img src="assets/images/io3.png" alt=""></div>
+                                <div class="circle"><img src="{{asset('assets/images/io3.png')}}" alt=""></div>
                                 <h4>Tax Exemptions</h4>
                                 <p>Whether you're an individual or a business owner, we offer customized tax exemption services that are tailored to your unique needs. Looking for a way to reduce your tax burden and save money? Look no further than Trademark Nova's tax exemption services! With our expertise and attention to detail, you can trust that we will leave no stone unturned in our efforts to reduce your tax burden. Choose Trademark Nova for tax exemption, and start enjoying the benefits of increased savings today!</p>
                             </div>
@@ -192,7 +179,7 @@ include "../includes/var.php"
                                 <div class="schedule mt-0 mb-5">
                                     <h2>Request a Schedule For Free Consultation</h2>
                                     <a href="book-free-consultation" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                    <a href="tel:<?= $number; ?>" class="telNum"><span>Call Us Now:</span><?= $numberdisplay; ?></a>
+                                    <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                                 </div>
                             </div>
 
@@ -316,8 +303,7 @@ include "../includes/var.php"
             </div>
             <!-- faq html end -->
 
-            <?php include("../includes/testimonial.php") ?>
+            @include ('includes/testimonial')
         </main>
 
-        <?php include("../includes/footer.php") ?>
-        <?php include("../includes/scripts.php") ?>
+@endsection
