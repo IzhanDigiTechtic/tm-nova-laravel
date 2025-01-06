@@ -12,7 +12,7 @@
                      78731</a></li>
                <li><a href="tel:{{ config('var.number') }}"><i class="fa fa-phone-alt"></i> {{ config('var.numberdisplay') }}</a>
                </li>
-               <li><a href="mailto:<?= $email ?>"><i class="fa fa-envelope"></i> <?= $email ?></a></li>
+               <li><a href="mailto:{{ config('var.email') }}"><i class="fa fa-envelope"></i> {{ config('var.email') }}</a></li>
             </ul>
          </div>
       </div>
@@ -29,13 +29,13 @@
                   <div class="footer-menu text-md-end col-md-5">
                      <ul>
                         <li>
-                           <a href="privacy-policy">
+                           <a href="{{route('privacy.policy')}}">
                               <i aria-hidden="true" class="fa fa-folder"></i>
                               <span> Privacy Policy</span>
                            </a>
                         </li>
                         <li>
-                           <a href="terms-and-conditions">
+                           <a href="{{route('terms.and.conditions')}}">
                               <i aria-hidden="true" class="fa fa-folder"></i>
                               <span> Our Terms & Conditions</span>
                            </a>

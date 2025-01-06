@@ -72,6 +72,8 @@ Route::get('/why-register-your-trademark', [FrontendController::class, 'whyregis
 Route::get('/do-i-need-an-attorney', [FrontendController::class, 'doineedanattorney'])->name('do.i.need.an.attorney');
 Route::get('/how-long-does-it-take', [FrontendController::class, 'howlongdoesittake'])->name('how.long.does.it.take');
 Route::get('/common-problems-in-applications', [FrontendController::class, 'commonproblemsinapplications'])->name('common.problems.in.applications');
+Route::get('/VAT-registration', [FrontendController::class, 'VATregistration'])->name('VAT.registration');
+
 
 Route::get('/thank-you', [FrontendController::class, 'thankyou'])->name('thank.you');
 Route::get('/thankyou', [FrontendController::class, 'thankyou2'])->name('thank.you2');

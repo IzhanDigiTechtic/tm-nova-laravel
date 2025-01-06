@@ -8,13 +8,13 @@
                   <div class="footer-menu text-md-end col-md-5">
                      <ul>
                         <li>
-                           <a href="privacy-policy">
+                           <a href="{{route('privacy.policy')}}">
                               <i aria-hidden="true" class="fa fa-folder"></i>
                               <span> Privacy Policy</span>
                            </a>
                         </li>
                         <li>
-                           <a href="terms-and-conditions">
+                           <a href="{{route('terms.and.conditions')}}">
                               <i aria-hidden="true" class="fa fa-folder"></i>
                               <span> Our Terms & Conditions</span>
                            </a>

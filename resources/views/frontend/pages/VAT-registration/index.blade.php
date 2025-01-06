@@ -12,18 +12,17 @@
         <!-- site header html end  -->
         <main id="content" class="site-main">
             <!-- home banner section html start -->
-            <section class="home-banner" style="background: url(assets/images/comprehensive-trademark-ban.webp) center/cover no-repeat;">
+            <section class="home-banner" style="background: url(assets/images/vat-ban.webp) center/cover no-repeat;">
                 <div class="container">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-md-6">
                             <div class="banner-content">
-                                <h3 class="banner-subtitle">Trademark Learning Essentials</h3>
-                                <h2 class="banner-title">Access A Variety of Educational Resources at <span>Trademark Nova</span></h2>
+                                <h3 class="banner-subtitle">VAT Registration Service</h3>
+                                <h2 class="banner-title">Streamline Your Business with Hassle-Free <span>VAT Registration</span> Service</h2>
                                 <div class="banner-text">
-                                    <p>By providing trademark learning essentials, Trademark Nova is furnishing the online learning platform that provides users with access to a variety of educational resources, so that they can make informed decisions.</p>
+                                    <p>Trademark Nova takes the burden of the complex VAT registration process off your shoulders. By using our reliable VAT registration service, you can streamline your business operations and focus on what you do best – growing your business.</p>
                                 </div>
-                                <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                <div class="banner-button">
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>
@@ -36,7 +35,9 @@
                                     <p>Same Day Application Filing Available</p>
                                 </div>
                                 <p>Fill out this brief form given below. It will take less than 60 seconds to complete it!</p>
+
                                 @include ('includes/lead-form')
+
                             </div>
                         </div>
                     </div>
@@ -44,103 +45,64 @@
             </section>
             <!-- home banner section html end -->
 
-            <section class="bg-light-grey apartSec">
+            <section class="about-page-section">
                 <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 text-center">
-                            <h2>Trademark Learning <span class="primary-color">Essentials</span></h2>
-                            <p>Trademark Learning Essentials is an innovative approach by Trademark Nova for the users to learn the significance, process and other essential knowledge needed to get their trademark registered.</p>
-                        </div>
-                        <div class="col-md-12"></div>
-                        <div class="col-md-4">
-                            <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="{{asset('assets/images/io4.png')}}" alt=""></div>
-                                <h4>What is a Trademark?</h4>
-                                <p>A trademark can be any word, phrase, symbol, design, or a combination of these that identifies your goods or services.</p>
-                                <a href="what-is-a-trademark">Learn more</a>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="section-head">
+                                <h2 class="section-title">VAT <span class="primary-color">Registration</span> in UK</h2>
                             </div>
+                            <p>Trademark Nova is a trusted and reliable company that offers VAT registration services in the UK to businesses of all sizes and types. VAT registration is a complex and time-consuming process that can be overwhelming for many business owners, but with Trademark Nova, you can streamline the process and ensure that you are fully compliant with all relevant laws and regulations.</p>
+                            <p>Our team of experts has a deep understanding of the VAT registration process and the UK's tax laws, enabling us to provide valuable guidance and support to your business. We offer a range of VAT registration services that are tailored to meet the specific needs and goals of your business. Whether you are a small startup or a large corporation, we have the expertise and experience to help you navigate the VAT registration process with ease.</p>
                         </div>
-                        <div class="col-md-4">
-                            <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="{{asset('assets/images/io5.png')}}" alt=""></div>
-                                <h4>Trademark, Patent, or Copyright</h4>
-                                <p>Trademarks, patents, and copyrights are different types of intellectual property. IPO grants patents & registers trademarks.</p>
-                                <a href="trademark-patent-copyright">Learn more</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="{{asset('assets/images/io6.png')}}" alt=""></div>
-                                <h4>Trademark Examples</h4>
-                                <p>Almost anything can be a trademark if it indicates the source of your goods and services. It could be a word, slogan...</p>
-                                <a href="trademark-examples">Learn more</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="{{asset('assets/images/io7.png')}}" alt=""></div>
-                                <h4>Scope of Protection</h4>
-                                <p>A trademark is always connected to the specific goods or services sold to customers with that trademark.</p>
-                                <a href="scope-of-protection">Learn more</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="{{asset('assets/images/io8.png')}}" alt=""></div>
-                                <h4>What are Strong Trademarks?</h4>
-                                <p>It’s important to have a strong trademark that is inherently distinctive. This means your trademark quickly...</p>
-                                <a href="strong-trademarks">Learn more</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="{{asset('assets/images/io9.png')}}" alt=""></div>
-                                <h4>Why Register Your Trademark?</h4>
-                                <p>Trademark is listed in our database of registered and pending trademarks. This provides public notice...</p>
-                                <a href="why-register-your-trademark">Learn more</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="{{asset('assets/images/io4.png')}}" alt=""></div>
-                                <h4>Do I Need an Attorney?</h4>
-                                <p>Hiring an attorney may save you money because an attorney will know how to best advise you on your trademark...</p>
-                                <a href="do-i-need-an-attorney">Learn more</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="{{asset('assets/images/io5.png')}}" alt=""></div>
-                                <h4>How Long Does It Take?</h4>
-                                <p>Usually, the process takes 12 to 18 months. Registering your trademark is a complex procedure that involves...</p>
-                                <a href="how-long-does-it-take">Learn more</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="apartCell" style="min-height: 14rem;">
-                                <div class="circle"><img src="{{asset('assets/images/io6.png')}}" alt=""></div>
-                                <h4>Common Issues in Applications</h4>
-                                <p>As you file, be careful not to make these common errors. Some are easily fixable, but unfortunately some...</p>
-                                <a href="common-problems-in-applications">Learn more</a>
-                            </div>
+                        <div class="col-md-6">
+                            <figure class="aboutImg">
+                                <img src="{{asset('assets/images/vat-img1.webp')}}" alt="">
+                                <span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span>
+                            </figure>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="bg-light-grey scheduleSec">
+            <section class="apartSec intTrademark">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <h3>Learn To Identify And Protect Your Intellectual Property</h3>
-                            <p>Are you thinking about starting a business? Do you own one already? Or maybe you’re an inventor, artist, or designer. Maybe you sell goods online or in a store or provide a service to others. If so, you may have intellectual property. Do you know what types of IP you might have? Do you know how to protect them? Contact Trademark Nova Right Away!</p>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="schedule">
-                                <h2>Request a Schedule For Free Consultation</h2>
-                                <a href="book-free-consultation" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <div class="apartCell">
+                                <h4>VAT Registration for Small Businesses</h4>
+                                <p>Trademark Nova assist with the registration process, ensuring that all necessary documents are submitted to HMRC on time. This service also includes guidance on VAT compliance, invoicing, and record-keeping. Small businesses can focus on their core operations while ensuring we meet their VAT obligations.</p>
                             </div>
-                            <p>Unlock the power of your ideas! Learn how to identify and protect your intellectual property today. From trademarks to patents, copyrights to trade secrets, our comprehensive guide has got you covered. Don't let others profit from your hard work – take action now and safeguard your creative genius! Click here to get started.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="apartCell">
+                                <h4>Completion of VAT(VAT01) Form for registration</h4>
+                                <p>Our experts will, in consultation with you, complete the VAT01 form so that your business can successfully apply for its VAT registration number. Once completed, we will email you the completed form to sign. After you have put your signature on the document, you can either post it back or scan and email.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="apartCell">
+                                <h4>Submission of the VAT01 form to the correct department</h4>
+                                <p>There are two different HMRC offices handling different types of VAT registration based upon your company’s history and your personal history. To make sure you receive your VAT number as quickly as possible, we will submit the form to the relevant VAT registration office address.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="apartCell">
+                                <h4>Receipt of VAT number</h4>
+                                <p>You will receive your VAT number direct from HMRC. Around three quarters of all VAT numbers are received within 10 working days. At busier times, HMRC may take up to a month to provide you with your VAT number.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="apartCell">
+                                <h4>Application to join a specialist scheme</h4>
+                                <p>If you decide that your business would benefit from joining either the Flat Rate Scheme, the Annual Accounting Scheme, or both to the correct office, we will make the necessary application on your behalf.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="apartCell">
+                                <h4>Acknowledgement that you have joined an alternative scheme</h4>
+                                <p>You will receive notification direct from HMRC, normally within 10 working days, that your application to join either the Flat Rate Scheme, the Annual Accounting Scheme, or both to the correct office has been successful.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -151,6 +113,7 @@
                 <div class="container">
                     <div class="faq-page-container">
                         <div class="row justify-content-center">
+
                             <div class="col-lg-12">
                                 <div class="faq-content-wrap">
                                     <div class="section-head text-center">
@@ -265,18 +228,87 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-12">
-                                <div class="schedule">
-                                    <h2>Request a Schedule For Free Consultation</h2>
-                                    <a href="book-free-consultation" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
-                                    <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- faq html end -->
 
+            <section class="apartSec intTrademark">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h2>Why Choose Trademark Nova For VAT Registration </h2>
+                            <p>Our VAT registration services include a comprehensive analysis of your business activities and operations to determine your VAT liability and the best VAT scheme for your business. We also handle all the paperwork and filing requirements, ensuring that your registration is completed accurately and efficiently. Additionally, we provide ongoing support and advice to help you manage your VAT compliance obligations and avoid any penalties or fines.</p>
+                        </div>
+                        <div class="col-md-12"></div>
+                        <div class="col-md-4">
+                            <div class="apartCell">
+                                <div class="circle"><img src="{{asset('assets/images/io1.png')}}" alt=""></div>
+                                <h4>Expertise & Experience</h4>
+                                <p>Trademark Nova offers a comprehensive service that covers all aspects of VAT registration, including compliance, record-keeping, and filing of VAT returns. Our team of experts ensures that all clients receive accurate and timely advice, enabling them to comply with HMRC's requirements and avoid costly penalties.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="apartCell">
+                                <div class="circle"><img src="{{asset('assets/images/io2.png')}}" alt=""></div>
+                                <h4>Competitive Pricing</h4>
+                                <p>Our services are at competitive prices, making it an affordable option for small businesses. We provide transparent pricing structures with no hidden costs, ensuring that clients are fully aware of what they are paying for. This allows small businesses to access professional VAT registration services without breaking their budget.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="apartCell">
+                                <div class="circle"><img src="{{asset('assets/images/io3.png')}}" alt=""></div>
+                                <h4>Personalised Service </h4>
+                                <p>We understand that every business is unique and has different VAT requirements, so Trademark Nova offers a bespoke service that addresses the specific needs of each business. Our experts work closely with clients to understand their business and provide tailored solutions that meet their VAT obligations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="apartSec">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="schedule mt-0 mb-5">
+                                <h2>Request a Schedule For Free Consultation</h2>
+                                <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
+                                <a href="tel:+442080891039" class="telNum"><span>Call Us Now:</span>+44 20 8089 1039</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-10 text-center">
+                            <h2>Other Related <span class="primary-color">Services</span></h2>
+                            <p>We can provide free qualified guidance to help get you started with your business needs. Trademark Nova offers various other VAT registration services, including VAT de-registration, VAT return filing, Nominee director appointment etc </p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="apartCell">
+                                <img src="{{asset('assets/images/io16.png')}}" alt="">
+                                <h4>Registered Office Address</h4>
+                                <p>We offer a service that allows business owners the use of our prestigious address as if it were their own, and get official mail passed on to them hassle-free and confidentially without compromising their private residential address.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="apartCell">
+                                <img src="{{asset('assets/images/io17.png')}}" alt="">
+                                <h4>Business Trading Address</h4>
+                                <p>Our service allows you to receive your company’s correspondence at our central London location as if it were your own, giving the appearance of your business being based in the heart of the capital.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="apartCell">
+                                <img src="{{asset('assets/images/io18.png')}}" alt="">
+                                <h4>Nominee Director </h4>
+                                <p>Companies House legally require all directors of UK companies and partners of LLPs to register a directors business address for the public. Our nominee director services are legal & discreet ensuring easy company formations. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            @include ('includes/testimonial')
+    
         </main>
+
 @endsection

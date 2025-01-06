@@ -5,10 +5,10 @@
             <div class="footer-menu text-md-end col-md-5">
                 <ul>
                     <li>
-                       <a href="privacy-policy"><span>Privacy Policy</span></a>
+                       <a href="{{route('privacy.policy')}}"><span>Privacy Policy</span></a>
                     </li>
                     <li>
-                       <a href="terms-and-conditions"><span>Terms & Conditions</span></a>
+                       <a href="{{route('terms.and.conditions')}}"><span>Terms & Conditions</span></a>
                     </li>
                 </ul>
             </div>

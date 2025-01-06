@@ -6,13 +6,13 @@
                <aside class="widget">
                   <h3 class="widget-title">Trademark Registration</h3>
                   <ul>
-                     <li><a href="book-free-consultation">Trademark Consultation</a></li>
-                     <li><a href="comprehensive-trademark-search">Comprehensive Trademark Search</a></li>
+                     <li><a href="{{route('book.free.consultation')}}">Trademark Consultation</a></li>
+                     <li><a href="{{route('comprehensive.trademark.search')}}">Comprehensive Trademark Search</a></li>
                      <!--<li><a href="file-a-uk-trademark">File a UK Trademark</a></li>-->
                      <!--<li><a href="file-eu-trademark">File an EU Trademark</a></li>-->
-                     <li><a href="file-a-us-trademark">File a U.S. Trademark</a></li>
-                     <li><a href="file-an-international-trademark">File an International Trademark</a></li>
-                     <li><a href="IPO-representation-on-behalf-of-your-company">IPO Representation</a></li>
+                     <li><a href="{{route('file.a.us.trademark')}}">File a U.S. Trademark</a></li>
+                     <li><a href="{{route('file.an.international.trademark')}}">File an International Trademark</a></li>
+                     <li><a href="{{route('IPO.representation.on.behalf.of.your.company')}}">IPO Representation</a></li>
                   </ul>
                </aside>
             </div>
@@ -20,11 +20,11 @@
                <aside class="widget">
                   <h3 class="widget-title">Post-Filing Trademark Needs</h3>
                   <ul>
-                     <li><a href="trademark-renewal">Trademark Renewal</a></li>
-                     <li><a href="response-to-opposition">Response to Opposition</a></li>
-                     <li><a href="statement-of-use">Trademark Statement of Use</a></li>
-                     <li><a href="co-existence-agreement">Co-Existence Agreement</a></li>
-                     <li><a href="abandoned-trademark-refiling">Abandoned Trademark ReFiling</a></li>
+                     <li><a href="{{route('trademark.renewal')}}">Trademark Renewal</a></li>
+                     <li><a href="{{route('response.to.opposition')}}">Response to Opposition</a></li>
+                     <li><a href="{{route('statement.of.use')}}">Trademark Statement of Use</a></li>
+                     <li><a href="{{route('co.existence.agreement')}}">Co-Existence Agreement</a></li>
+                     <li><a href="{{route('abandoned.trademark.refiling')}}">Abandoned Trademark ReFiling</a></li>
                   </ul>
                </aside>
             </div>
@@ -32,11 +32,11 @@
                <aside class="widget">
                   <h3 class="widget-title">Ongoing Protection</h3>
                   <ul>
-                     <li><a href="trademark-dispute-insurance">Trademark Dispute Insurance</a></li>
-                     <li><a href="trademark-monitoring">Trademark Monitoring</a></li>
-                     <li><a href="trademark-ownership-transfer">Ownership Transfer</a></li>
-                     <li><a href="cease-desist-letter">Cease & Desist Letter</a></li>
-                     <li><a href="domain-resolution">Domain Resolution</a></li>
+                     <li><a href="{{route('trademark.dispute.insurance')}}">Trademark Dispute Insurance</a></li>
+                     <li><a href="{{route('trademark.monitoring')}}">Trademark Monitoring</a></li>
+                     <li><a href="{{route('trademark.ownership.transfer')}}">Ownership Transfer</a></li>
+                     <li><a href="{{route('cease.desist.letter')}}">Cease & Desist Letter</a></li>
+                     <li><a href="{{route('domain.resolution')}}">Domain Resolution</a></li>
                   </ul>
                </aside>
             </div>
@@ -133,13 +133,13 @@
                   <div class="footer-menu text-md-end col-md-5">
                      <ul>
                         <li>
-                           <a href="privacy-policy">
+                           <a href="{{route('privacy.policy')}}">
                               <i aria-hidden="true" class="fa fa-folder"></i>
                               <span> Privacy Policy</span>
                            </a>
                         </li>
                         <li>
-                           <a href="terms-and-conditions">
+                           <a href="{{route('terms.and.conditions')}}">
                               <i aria-hidden="true" class="fa fa-folder"></i>
                               <span> Our Terms & Conditions</span>
                            </a>

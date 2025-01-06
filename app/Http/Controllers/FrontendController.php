@@ -567,6 +567,17 @@ class FrontendController extends Controller
             ]
         );
     }
+    public function VATregistration()
+    {
+        return view(
+            'frontend.pages.VAT-registration.index',
+            [
+                'title' => 'VAT Registration Service | Trademark Nova',
+                'description' => '',
+                'keywords' => ''
+            ]
+        );
+    }
     public function thankyou()
     {
         return view(
