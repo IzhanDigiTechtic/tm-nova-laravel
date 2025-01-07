@@ -1,15 +1,5 @@
-
-
-<!doctype html>
-<html lang="en">
-<head>
-<title>Thank You | Trademark Nova</title>
-        <meta name="description" content=""/>
-        <meta name="keywords" content="" />
-        @include ('includes/styles')
-        @include ('includes/header')
-   </head>
-   <body>
+@extends('frontend.layouts.thankyou.master')
+@section('main-content')
       <div id="page" class="full-page">
          <main id="content" class="site-main">
            <!-- home banner section html start -->
@@ -47,4 +37,4 @@
             </section>
             <!-- home banner section html end -->
 
-@include ('includes/scripts')
+@endsection
