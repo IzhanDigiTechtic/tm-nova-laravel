@@ -15,7 +15,7 @@
                                     <p>Protect your brand and expand your business globally with our 'file an international trademark' service. With our help, you can rest assured that your brand is secure and positioned for success in the international marketplace.</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

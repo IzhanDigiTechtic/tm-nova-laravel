@@ -23,7 +23,7 @@
                                     <p>At Trademark Nova, with our knowledge and experience, we can provide tailored solutions that suit each individual's unique circumstances, ensuring that we are equipped to face any challenge that comes their way.</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

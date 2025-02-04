@@ -23,7 +23,7 @@
                                     <p>At Trademark Nova, we understand the importance of trademarks, trade names, and other intellectual property assets to businesses of all sizes, and works to ensure that these assets are properly protected under the law.</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

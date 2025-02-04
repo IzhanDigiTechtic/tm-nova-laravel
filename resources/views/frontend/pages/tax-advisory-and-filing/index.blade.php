@@ -23,7 +23,7 @@
                                     <p>By partnering with a qualified tax professional at Trademark Nova who specializes in working with businesses like yours, you can ensure that your tax returns are accurate, compliant, and optimized to maximize your deductions and minimize your liabilities.</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

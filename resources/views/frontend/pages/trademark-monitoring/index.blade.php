@@ -23,7 +23,7 @@
                                     <p>At Trademark Nova, we keep a watchful eye on your trademarks so that you don't have to. We use state-of-the-art technology and industry expertise to detect any unauthorized use of your brand name, logo, or any other identifying mark. </p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

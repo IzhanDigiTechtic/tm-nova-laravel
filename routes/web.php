@@ -29,8 +29,7 @@ Route::get('/copyright-registration', [FrontendController::class, 'copyrightregi
 Route::get('/file-an-international-trademark', [FrontendController::class, 'fileaninternationaltrademark'])->name('file.an.international.trademark');
 Route::get('/comprehensive-trademark-search', [FrontendController::class, 'comprehensivetrademarksearch'])->name('comprehensive.trademark.search');
 Route::get('/book-free-consultation', [FrontendController::class, 'bookfreeconsultation'])->name('book.free.consultation');
-Route::get('/IPO-representation-on-behalf-of-your-company', [FrontendController::class, 'IPOrepresentationonbehalfofyourcompany'])->name
-('IPO.representation.on.behalf.of.your.company');
+Route::get('/IPO-representation-on-behalf-of-your-company', [FrontendController::class, 'IPOrepresentationonbehalfofyourcompany'])->name('IPO.representation.on.behalf.of.your.company');
 Route::get('/trademark-renewal', [FrontendController::class, 'trademarkrenewal'])->name('trademark.renewal');
 Route::get('/response-to-opposition', [FrontendController::class, 'responsetoopposition'])->name('response.to.opposition');
 Route::get('/statement-of-use', [FrontendController::class, 'statementofuse'])->name('statement.of.use');
@@ -86,54 +85,10 @@ Route::get('/terms-and-conditions', [FrontendController::class, 'termsandconditi
 Route::get('/lp/register-your-trademark', [FrontendController::class, 'lpregisteryourtrademark'])->name('lp.register.your.trademark');
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//########### Sequence Routes ################
+Route::get('/sequence/step1', [FrontendController::class, 'step1'])->name('step1');
+Route::get('/sequence/step2', [FrontendController::class, 'step2'])->name('step2');
+Route::get('/sequence/step3', [FrontendController::class, 'step3'])->name('step3');
+Route::get('/sequence/step4', [FrontendController::class, 'step4'])->name('step4');
+Route::get('/sequence/step5', [FrontendController::class, 'step5'])->name('step5');
+Route::get('/sequence/step6', [FrontendController::class, 'step6'])->name('step6');

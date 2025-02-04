@@ -173,7 +173,7 @@
                <ul>
                   <!--<li><a href="tel:{{ config('var.number') }}" class="numSec"><i class="fas fa-phone-alt"></i>  {{ config('var.numberdisplay') }}</a></li>-->
                   <li> <a href="mailto:{{ config('var.email') }}" class="numSec"> <i class="fas fa-envelope me-2"></i>{{ config('var.email') }}</a></li>
-                  <li><a href="/sequence-form-step1/" class="button-round">GET STARTED NOW</a></li>
+                  <li><a href="{{route('step1')}}" class="button-round">GET STARTED NOW</a></li>
                </ul>
             </div>
          </div>
@@ -236,7 +236,7 @@
                   <!--    </div>-->
                   <!--</div>-->
                   <div class="btnSec">
-                     <a href="/sequence-form-step1/" class="button-round">Get Started Now</a>
+                     <a href="{{route('step1')}}" class="button-round">Get Started Now</a>
                      <a href="javascript:void(0);" class="alphaChat button-round">Chat now for instant support </a>
                   </div>
                   <p class="lastPara">Start as low as <span>$49</span>, view <a href="#pakgeSec" class="goDown">Trademark Registration packages</a></p>
@@ -355,7 +355,7 @@
                         <h4><span>03.</span> Trademark Filing </h4>
                         <p>After successful evaluation, we will file your trademark at the Intellectual Property Office.</p>
                      </div>
-                     <a href="/sequence-form-step1/" class="button-round">START TRADEMARK REGISTRATION</a>
+                     <a href="{{route('step1')}}" class="button-round">START TRADEMARK REGISTRATION</a>
                   </div>
                </div>
 
@@ -417,7 +417,7 @@
                         </ul>
                      </div>
                      <div class="pricing-footer">
-                        <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
+                        <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
                      </div>
                   </div>
                </div>
@@ -471,7 +471,7 @@
                         </ul>
                      </div>
                      <div class="pricing-footer">
-                        <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
+                        <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
                      </div>
                   </div>
                </div>
@@ -533,7 +533,7 @@
                         </ul>
                      </div>
                      <div class="pricing-footer">
-                        <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
+                        <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
                      </div>
                   </div>
                </div>
@@ -580,7 +580,7 @@
             <!--                 </ul>-->
             <!--              </div>-->
             <!--              <div class="pricing-footer">-->
-            <!--                 <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
+            <!--                 <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
             <!--              </div>-->
             <!--           </div>-->
             <!--        </div>-->
@@ -634,7 +634,7 @@
             <!--                 </ul>-->
             <!--              </div>-->
             <!--              <div class="pricing-footer">-->
-            <!--                 <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
+            <!--                 <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
             <!--              </div>-->
             <!--           </div>-->
             <!--        </div>-->
@@ -696,7 +696,7 @@
             <!--                 </ul>-->
             <!--              </div>-->
             <!--              <div class="pricing-footer">-->
-            <!--                 <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
+            <!--                 <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
             <!--              </div>-->
             <!--           </div>-->
             <!--        </div>-->
@@ -759,7 +759,7 @@
             <!--                  </ul>-->
             <!--               </div>-->
             <!--               <div class="pricing-footer">-->
-            <!--                  <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
+            <!--                  <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
             <!--               </div>-->
             <!--            </div>-->
             <!--         </div>-->
@@ -813,7 +813,7 @@
             <!--                  </ul>-->
             <!--               </div>-->
             <!--               <div class="pricing-footer">-->
-            <!--                  <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
+            <!--                  <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
             <!--               </div>-->
             <!--            </div>-->
             <!--         </div>-->
@@ -875,7 +875,7 @@
             <!--                  </ul>-->
             <!--               </div>-->
             <!--               <div class="pricing-footer">-->
-            <!--                  <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
+            <!--                  <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
             <!--               </div>-->
             <!--            </div>-->
             <!--         </div>-->
@@ -924,7 +924,7 @@
             <!--                  </ul>-->
             <!--               </div>-->
             <!--               <div class="pricing-footer">-->
-            <!--                  <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
+            <!--                  <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
             <!--               </div>-->
             <!--            </div>-->
             <!--         </div>-->
@@ -978,7 +978,7 @@
             <!--                  </ul>-->
             <!--               </div>-->
             <!--               <div class="pricing-footer">-->
-            <!--                  <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
+            <!--                  <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
             <!--               </div>-->
             <!--            </div>-->
             <!--         </div>-->
@@ -1040,7 +1040,7 @@
             <!--                  </ul>-->
             <!--               </div>-->
             <!--               <div class="pricing-footer">-->
-            <!--                  <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
+            <!--                  <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
             <!--               </div>-->
             <!--            </div>-->
             <!--         </div>-->
@@ -1089,7 +1089,7 @@
             <!--                  </ul>-->
             <!--               </div>-->
             <!--               <div class="pricing-footer">-->
-            <!--                  <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
+            <!--                  <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
             <!--               </div>-->
             <!--            </div>-->
             <!--         </div>-->
@@ -1143,7 +1143,7 @@
             <!--                  </ul>-->
             <!--               </div>-->
             <!--               <div class="pricing-footer">-->
-            <!--                  <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
+            <!--                  <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
             <!--               </div>-->
             <!--            </div>-->
             <!--         </div>-->
@@ -1205,7 +1205,7 @@
             <!--                  </ul>-->
             <!--               </div>-->
             <!--               <div class="pricing-footer">-->
-            <!--                  <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
+            <!--                  <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>-->
             <!--               </div>-->
             <!--            </div>-->
             <!--         </div>-->

@@ -23,7 +23,7 @@
                                     <p>Our expert team can help businesses navigate complex domain name disputes, such as cases involving confusingly similar domain names or domain names registered in bad faith. We work to recover or transfer the disputed domain name to the rightful trademark owner</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

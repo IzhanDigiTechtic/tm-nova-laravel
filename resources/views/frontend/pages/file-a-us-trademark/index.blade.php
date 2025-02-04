@@ -37,7 +37,7 @@
                            <p><i class="fas fa-check-circle"></i>Same Day Trademark Application Filing Available</p>
                         </div>
                         <div class="banner-button btnSec">
-                           <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                           <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                            <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                         </div>
                      </div>
@@ -74,7 +74,7 @@
                   <!--         <h4>UK Registration</h4>-->
                   <!--         <span>From $99</span>-->
                   <!--         <small>excl. government fees</small>-->
-                  <!--        <a href="/sequence-form-step1/" class="button-round">Register Now</a>-->
+                  <!--        <a href="{{route('step1')}}" class="button-round">Register Now</a>-->
                   <!--      </div>-->
                   <!--      <img src="{{asset('assets/images/flag1.webp')}}" alt="" class="rounded-circle">-->
                   <!--   </div>-->
@@ -85,7 +85,7 @@
                   <!--         <h4>EU Registration</h4>-->
                   <!--         <span>From $149</span>-->
                   <!--         <small>excl. government fees</small>-->
-                  <!--                                   <a href="/sequence-form-step1/" class="button-round">Register Now</a>-->
+                  <!--                                   <a href="{{route('step1')}}" class="button-round">Register Now</a>-->
                   <!--      </div>-->
                   <!--      <img src="{{asset('assets/images/flag2.webp')}}" alt="" class="rounded-circle">-->
                   <!--   </div>-->
@@ -96,7 +96,7 @@
                            <h4>US Registration</h4>
                            <span>From $49</span>
                            <small>excl. government fees</small>
-                           <a href="/sequence-form-step1/" class="button-round">Register Now</a>
+                           <a href="{{route('step1')}}" class="button-round">Register Now</a>
                         </div>
                         <img src="{{asset('assets/images/flag3.webp')}}" alt="" class="rounded-circle">
                      </div>
@@ -156,7 +156,7 @@
                               <h4><span>03.</span> Thorough Evaluation & Filing</h4>
                               <p>To ensure that trademark is completely unique, our team conducts a thorough trademark search across numerous databases & then file your trademark with US.</p>
                            </div>
-                           <a href="/sequence-form-step1/" class="button-round">START TRADEMARK REGISTRATION</a>
+                           <a href="{{route('step1')}}" class="button-round">START TRADEMARK REGISTRATION</a>
                         </div>
                      </div>
 
@@ -371,7 +371,7 @@
                   <!--                </ul>-->
                   <!--             </div>-->
                   <!--             <div class="pricing-footer">-->
-                  <!--                <a href="/sequence-form-step1/" class="button-round">Get Started</a>-->
+                  <!--                <a href="{{route('step1')}}" class="button-round">Get Started</a>-->
                   <!--             </div>-->
                   <!--          </div>-->
                   <!--       </div>-->
@@ -412,7 +412,7 @@
                   <!--                </ul>-->
                   <!--             </div>-->
                   <!--             <div class="pricing-footer">-->
-                  <!--                <a href="/sequence-form-step1/" class="button-round">Get Started</a>-->
+                  <!--                <a href="{{route('step1')}}" class="button-round">Get Started</a>-->
                   <!--             </div>-->
                   <!--          </div>-->
                   <!--       </div>-->
@@ -441,7 +441,7 @@
                   <!--                </ul>-->
                   <!--             </div>-->
                   <!--             <div class="pricing-footer">-->
-                  <!--                <a href="/sequence-form-step1/" class="button-round">Get Started</a>-->
+                  <!--                <a href="{{route('step1')}}" class="button-round">Get Started</a>-->
                   <!--             </div>-->
                   <!--          </div>-->
                   <!--       </div>-->
@@ -498,7 +498,7 @@
                                     </ul>
                                  </div>
                                  <div class="pricing-footer">
-                                    <a href="/sequence-form-step1/" class="button-round">Get Started</a>
+                                    <a href="{{route('step1')}}" class="button-round">Get Started</a>
                                  </div>
                               </div>
                            </div>
@@ -552,7 +552,7 @@
                                     </ul>
                                  </div>
                                  <div class="pricing-footer">
-                                    <a href="/sequence-form-step1/" class="button-round">Get Started</a>
+                                    <a href="{{route('step1')}}" class="button-round">Get Started</a>
                                  </div>
                               </div>
                            </div>
@@ -614,7 +614,7 @@
                                     </ul>
                                  </div>
                                  <div class="pricing-footer">
-                                    <a href="/sequence-form-step1/" class="button-round">Get Started</a>
+                                    <a href="{{route('step1')}}" class="button-round">Get Started</a>
                                  </div>
                               </div>
                            </div>
@@ -650,7 +650,7 @@
                                     </ul>
                                  </div>
                                  <div class="pricing-footer">
-                                    <a href="/sequence-form-step1/" class="button-round">Get Started</a>
+                                    <a href="{{route('step1')}}" class="button-round">Get Started</a>
                                  </div>
                               </div>
                            </div>
@@ -691,7 +691,7 @@
                                     </ul>
                                  </div>
                                  <div class="pricing-footer">
-                                    <a href="/sequence-form-step1/" class="button-round">Get Started</a>
+                                    <a href="{{route('step1')}}" class="button-round">Get Started</a>
                                  </div>
                               </div>
                            </div>
@@ -720,7 +720,7 @@
                                     </ul>
                                  </div>
                                  <div class="pricing-footer">
-                                    <a href="/sequence-form-step1/" class="button-round">Get Started</a>
+                                    <a href="{{route('step1')}}" class="button-round">Get Started</a>
                                  </div>
                               </div>
                            </div>
@@ -740,7 +740,7 @@
                   <div class="body">
                      <div class="left">
                         <p>To showcase your ecommerce business and sell your brand on Amazon, it’s a MANDATORY requirement to get your brand registered. Amazon Brand Registry is a protection offered by Trademark Nova to assist Amazon sellers register their brand and to remove listings that infringe on their trademark rights. If any other seller is using your trademark logo or name to sell goods or is copying your listings, Trademark Nova will have them banned.</p>
-                        <a href="/sequence-form-step1/" class="button-round">Get Started</a>
+                        <a href="{{route('step1')}}" class="button-round">Get Started</a>
                      </div>
                      <div class="right"><img src="{{asset('assets/images/amazon.webp')}}" alt=""></div>
                   </div>

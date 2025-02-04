@@ -23,7 +23,7 @@
                                     <p>Are you looking for a reliable and trustworthy partner to handle your company's trademark representation? Look no further than Trademark Nova! We offer top-notch trademark representation services that will help protect your company's valuable intellectual property. </p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

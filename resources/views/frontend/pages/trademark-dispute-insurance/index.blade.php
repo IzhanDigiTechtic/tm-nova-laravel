@@ -23,7 +23,7 @@
                                     <p>Trademark Dispute Insurance is a valuable protection for businesses of all sizes! With this insurance by Trademark Nova, you can rest assured that your brand is safeguarded and your business is protected from potentially costly legal battles.</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

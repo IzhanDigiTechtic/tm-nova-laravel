@@ -24,7 +24,7 @@
                                     <p>At Trademark Nova, our team of experienced professionals will take care of all the legal paperwork and ensure that your company name change is completed quickly and efficiently, leaving you free to focus on the future of your business. </p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

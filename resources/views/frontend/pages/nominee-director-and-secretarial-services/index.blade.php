@@ -23,7 +23,7 @@
                                     <p>Our nominee director services are legal & discreet ensuring identity protection and easy company formation for non-UK residents wanting anonymous company ownership. We can also provide exclusive company nominee directors; all our nominee directors are UK citizens.</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

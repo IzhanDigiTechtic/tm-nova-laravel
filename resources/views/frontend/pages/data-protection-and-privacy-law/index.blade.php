@@ -23,7 +23,7 @@
                                     <p>Our team can assist you across all areas of data protection & privacy law, including: Cybersecurity, Data Breaches & Incident Management, Data Governance, Data Protection Health Check, Data Protection Impact Assessments and much more.</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

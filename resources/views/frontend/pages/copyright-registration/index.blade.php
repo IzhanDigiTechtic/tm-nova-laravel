@@ -20,7 +20,7 @@
                                     </p>
                                     <p><i class="fa fa-check-square"></i>Same Day Application Filing Available</p>
                                 </div>
-                                <div class="banner-button btnSec"><a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                <div class="banner-button btnSec"><a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                 <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR
                                         CONSULTANT</a></div>
                                 <p class="lastPara mb-0 mt-3">Start as low as <span>$149</span>, view <a href="#pakgeSec" class="goDown">Copyright Registration packages</a></p>
@@ -79,7 +79,7 @@
                                 submit your copyright registration, you officially establish ownership of such work and
                                 reinforce your future rights, such as violation and unauthorized use of copyright by persons
                                 or entities.</p>
-                           <div class="btnSec"><a href="/sequence-form-step1/" class="button-round">Get Started Now</a><a href="javascript:void(0);" class="alphaChat button-round">Chat now for instant support </a></div>
+                           <div class="btnSec"><a href="{{route('step1')}}" class="button-round">Get Started Now</a><a href="javascript:void(0);" class="alphaChat button-round">Chat now for instant support </a></div>
                         </div>
                         <div class="col-md-5">
                             <figure class="aboutImg"><img src="{{asset('assets/images/diligence-img-1.webp')}}" alt=""><span><img src="{{asset('assets/images/logo-io.webp')}}" alt=""></span></figure>
@@ -126,7 +126,7 @@
                                         trademark search across numerous databases and then file your trademark.</p>
                                 </div>
                             </div>
-                           <div class="btnSec mt-4"><a href="/sequence-form-step1/" class="button-round">Get Started
+                           <div class="btnSec mt-4"><a href="{{route('step1')}}" class="button-round">Get Started
                                  Now</a><a href="javascript:void(0);" class="alphaChat button-round">Chat now for instant support </a></div>
                         </div>
                     </div>
@@ -150,7 +150,7 @@
                                 <p><i class="fa fa-check-square"></i>By registering your copyright, reinforce your rights to
                                     sue organizations for violation</p>
                             </div>
-                            <div class="btnSec"><a href="/sequence-form-step1/" class="button-round">Get Started Now</a><a href="javascript:void(0);" class="alphaChat button-round">Chat now for instant support </a></div>
+                            <div class="btnSec"><a href="{{route('step1')}}" class="button-round">Get Started Now</a><a href="javascript:void(0);" class="alphaChat button-round">Chat now for instant support </a></div>
                         </div>
                         <div class="col-md-5">
                             <figure class="aboutImg"><img src="{{asset('assets/images/img10.webp')}}" alt=""><span>
@@ -202,7 +202,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="pricing-footer"><a href="/sequence-form-step1/" class="button-round">Get
+                                    <div class="pricing-footer"><a href="{{route('step1')}}" class="button-round">Get
                                             Started <i class="fa fa-arrow-right"></i></a></div>
                                 </div>
                             </div>
@@ -236,7 +236,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="pricing-footer"><a href="/sequence-form-step1/" class="button-round">Get
+                                    <div class="pricing-footer"><a href="{{route('step1')}}" class="button-round">Get
                                             Started <i class="fa fa-arrow-right"></i></a></div>
                                 </div>
                             </div>
@@ -299,7 +299,7 @@
                                     <p><i class="fas fa-arrow-circle-right mr-3"></i>Artistic Masterpieces</p>
                                 </li>
                             </ul>
-                            <div class="btnSec mt-4"><a href="/sequence-form-step1/" class="button-round">Get Started
+                            <div class="btnSec mt-4"><a href="{{route('step1')}}" class="button-round">Get Started
                                     Now</a><a href="javascript:void(0);" class="alphaChat button-round">Chat now for instant support
                                 </a></div>
                         </div>
@@ -317,7 +317,7 @@
                                         <h2 class="section-title">Ready to Register Your Trademark?</h2>
                                     </div>
                                     <p>94% chance of successfully registering a trademark with our Diamond Package.</p>
-                                    <div class="btnSec justify-content-center mt-3"><a href="/sequence-form-step1/" class="button-round">Get Started Now</a><a href="javascript:void(0);" class="alphaChat button-round">Chat now for instant support </a></div>
+                                    <div class="btnSec justify-content-center mt-3"><a href="{{route('step1')}}" class="button-round">Get Started Now</a><a href="javascript:void(0);" class="alphaChat button-round">Chat now for instant support </a></div>
                                 </div>
                             </div>
                         </div>

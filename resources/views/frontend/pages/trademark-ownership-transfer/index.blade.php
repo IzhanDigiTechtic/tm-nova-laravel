@@ -23,7 +23,7 @@
                                     <p>Whether you're looking to transfer ownership due to a merger or acquisition, or you simply want to pass on the rights of your trademark to someone else, Trademark Nova is a one stop solution for all your business needs.</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

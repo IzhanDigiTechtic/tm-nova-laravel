@@ -23,7 +23,7 @@
                                     <p>Indicate that your business is up-to-date on all of its required filings, such as taxes, licenses, and annual reports. By obtaining a Certificate of Good Standing, demonstrate to others that your business is trustworthy, financially responsible, and in compliance with all applicable regulations. </p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

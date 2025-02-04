@@ -23,7 +23,7 @@
                                     <p> Our Issuance of Shares Services can help you unlock the potential of your business and take it to the next level. Contact us today to explore the benefits of our Issuance of Shares Services</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>
@@ -104,7 +104,7 @@
                             <div class="schedule">
                                 <img src="{{asset('assets/images/schedule-img1.webp')}}" alt="">
                                 <h2>Request a Schedule For Free Consultation</h2>
-                                <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
+                                <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
                                 <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                             </div>
                         </div>

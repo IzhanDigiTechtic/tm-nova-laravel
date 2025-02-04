@@ -273,7 +273,7 @@
                         <div class="col-lg-12">
                             <div class="schedule mt-0 mb-5">
                                 <h2>Request a Schedule For Free Consultation</h2>
-                                <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
+                                <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
                                 <a href="tel:+442080891039" class="telNum"><span>Call Us Now:</span>+44 20 8089 1039</a>
                             </div>
                         </div>

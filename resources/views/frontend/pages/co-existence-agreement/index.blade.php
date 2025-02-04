@@ -23,7 +23,7 @@
                                     <p>Expertly crafted agreements that meet your unique needs and protect your intellectual property. With our service, businesses can establish a secure and cooperative partnership, minimizing the risk of conflict and maximizing collaboration.</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

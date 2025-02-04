@@ -24,7 +24,7 @@
                                     <p>Cutting edge technology and an industry leading team of experts with over 10 years of industry experience that are dedicated to helping you remove any obstacles you will encounter to owning your IP.</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

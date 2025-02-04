@@ -23,7 +23,7 @@
                                     <p>Are you facing copyright infringement, harassment, or breach of contract? Our Cease and desist letter services can provide an affordable & effective solution to protect your rights and prevent further harm.</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

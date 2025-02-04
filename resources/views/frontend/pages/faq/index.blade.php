@@ -16,7 +16,7 @@
                            <p>Save yourself from the hassle of expensive redesigns after finding out you’re violating existing trademarks. Know everything you need to know before starting your trademark registration process.</p>
                         </div>
                         <div class="banner-button btnSec">
-                           <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                           <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                            <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                         </div>
                      </div>

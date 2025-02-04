@@ -99,7 +99,7 @@
                               <div class="col-md-3">
                                  <div class="schedule">
                                     <h2>Request a Schedule For Free Consultation</h2>
-                                    <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
+                                    <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
                                     <!--<a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>-->
                                  </div>
                               </div>

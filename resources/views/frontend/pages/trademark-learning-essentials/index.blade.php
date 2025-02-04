@@ -23,7 +23,7 @@
                                     <p>By providing trademark learning essentials, Trademark Nova is furnishing the online learning platform that provides users with access to a variety of educational resources, so that they can make informed decisions.</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

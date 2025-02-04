@@ -1,0 +1,15 @@
+:root{
+    --primary-iz: #002537;
+}
+.padding__top__iz{
+padding-top: 15vh;
+}
+.padding__bottom__iz{
+padding-bottom: 15vh;
+}
+.bg-info{
+    background-color: #CFF4FC;
+}
+.bg__primary{
+    background-color: var(--primary-iz);
+}

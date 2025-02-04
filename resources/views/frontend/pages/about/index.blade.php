@@ -16,7 +16,7 @@
                            <p>We work hard to protect your brand at affordable rates. Our proven standardized process minimizes the chances of application rejection, and optimizes your application for success.</p>
                         </div>
                         <div class="banner-button btnSec">
-                           <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                           <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                            <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                         </div>
                      </div>

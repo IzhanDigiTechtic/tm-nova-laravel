@@ -26,7 +26,7 @@
                                     <p><i class="fas fa-check-circle"></i>We search international, domestic, state and domain name databases for similar names</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>
@@ -160,7 +160,7 @@
                                         </ul>
                                     </div>
                                     <div class="pricing-footer">
-                                        <a href="/sequence-form-step1/" class="button-round">Get Started</a>
+                                        <a href="{{route('step1')}}" class="button-round">Get Started</a>
                                     </div>
                                 </div>
                             </div>
@@ -201,7 +201,7 @@
                                         </ul>
                                     </div>
                                     <div class="pricing-footer">
-                                        <a href="/sequence-form-step1/" class="button-round">Get Started</a>
+                                        <a href="{{route('step1')}}" class="button-round">Get Started</a>
                                     </div>
                                 </div>
                             </div>
@@ -230,7 +230,7 @@
                                         </ul>
                                     </div>
                                     <div class="pricing-footer">
-                                        <a href="/sequence-form-step1/" class="button-round">Get Started</a>
+                                        <a href="{{route('step1')}}" class="button-round">Get Started</a>
                                     </div>
                                 </div>
                             </div>
@@ -274,7 +274,7 @@
                         <!--                           </ul>-->
                         <!--                        </div>-->
                         <!--                        <div class="pricing-footer">-->
-                        <!--                           <a href="/sequence-form-step1/" class="button-round">Get Started</a>-->
+                        <!--                           <a href="{{route('step1')}}" class="button-round">Get Started</a>-->
                         <!--                        </div>-->
                         <!--                     </div>-->
                         <!--                  </div>-->
@@ -315,7 +315,7 @@
                         <!--                           </ul>-->
                         <!--                        </div>-->
                         <!--                        <div class="pricing-footer">-->
-                        <!--                           <a href="/sequence-form-step1/" class="button-round">Get Started</a>-->
+                        <!--                           <a href="{{route('step1')}}" class="button-round">Get Started</a>-->
                         <!--                        </div>-->
                         <!--                     </div>-->
                         <!--                  </div>-->
@@ -344,7 +344,7 @@
                         <!--                           </ul>-->
                         <!--                        </div>-->
                         <!--                        <div class="pricing-footer">-->
-                        <!--                           <a href="/sequence-form-step1/" class="button-round">Get Started</a>-->
+                        <!--                           <a href="{{route('step1')}}" class="button-round">Get Started</a>-->
                         <!--                        </div>-->
                         <!--                     </div>-->
                         <!--                  </div>-->
@@ -380,7 +380,7 @@
                         <!--                           </ul>-->
                         <!--                        </div>-->
                         <!--                        <div class="pricing-footer">-->
-                        <!--                           <a href="/sequence-form-step1/" class="button-round">Get Started</a>-->
+                        <!--                           <a href="{{route('step1')}}" class="button-round">Get Started</a>-->
                         <!--                        </div>-->
                         <!--                     </div>-->
                         <!--                  </div>-->
@@ -421,7 +421,7 @@
                         <!--                           </ul>-->
                         <!--                        </div>-->
                         <!--                        <div class="pricing-footer">-->
-                        <!--                           <a href="/sequence-form-step1/" class="button-round">Get Started</a>-->
+                        <!--                           <a href="{{route('step1')}}" class="button-round">Get Started</a>-->
                         <!--                        </div>-->
                         <!--                     </div>-->
                         <!--                  </div>-->
@@ -450,7 +450,7 @@
                         <!--                           </ul>-->
                         <!--                        </div>-->
                         <!--                        <div class="pricing-footer">-->
-                        <!--                           <a href="/sequence-form-step1/" class="button-round">Get Started</a>-->
+                        <!--                           <a href="{{route('step1')}}" class="button-round">Get Started</a>-->
                         <!--                        </div>-->
                         <!--                     </div>-->
                         <!--                  </div>-->

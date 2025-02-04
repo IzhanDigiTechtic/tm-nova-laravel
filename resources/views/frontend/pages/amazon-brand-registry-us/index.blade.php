@@ -25,7 +25,7 @@
                                     <p><i class="fas fa-check-circle"></i>100% Guaranteed- Reliable Service Providers Available.</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>
@@ -167,7 +167,7 @@
                         <div class="body">
                             <div class="left">
                                 <p>To showcase your ecommerce business and sell your brand on Amazon, it’s a MANDATORY requirement to get your brand registered. Amazon Brand Registry is a protection offered by Trademark Nova to assist Amazon sellers register their brand and to remove listings that infringe on their trademark rights. If any other seller is using your trademark logo or name to sell goods or is copying your listings, Trademark Nova will have them banned.</p>
-                                <a href="/sequence-form-step1/" class="button-round">START TRADEMARK REGISTRATION</a>
+                                <a href="{{route('step1')}}" class="button-round">START TRADEMARK REGISTRATION</a>
                             </div>
                             <div class="right"><img src="assets/images/amazon.webp" alt=""></div>
                         </div>

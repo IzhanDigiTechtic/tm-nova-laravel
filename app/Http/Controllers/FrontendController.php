@@ -1,11 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use Inertia\Inertia;
+
 class FrontendController extends Controller
 
 {
     // ##################### Website Pages ######################
-  
+
     public function home()
     {
         return view(
@@ -632,5 +635,77 @@ class FrontendController extends Controller
                 'keywords' => 'file a trademark, trademark registration, file my trademark, register a logo, apply for trademark, trademark a slogan, register brand name, register trademark, trademark my business name, register a trademark'
             ]
         );
+    }
+    //############# Sequence Pages ######################
+    public function step1()
+    {
+        return Inertia::render('Sequence/Step1');
+        // return view(
+        //     'frontend.pages.sequence.step1',
+        //     [
+        //         'title' => 'Sequence | Trademark Nova',
+        //         'description' => ''
+        //     ]
+        // );
+    }
+    public function step2()
+    {
+        return Inertia::render('Sequence/Step2');
+        // return view(
+        //     'frontend.pages.sequence.step2',
+        //     [
+        //         'title' => 'Sequence | Trademark Nova',
+        //         'description' => ''
+        //     ]
+        // );
+    }
+    public function step3()
+    {
+        return Inertia::render('Sequence/Step3');
+        // return view(
+        //     'frontend.pages.sequence.step3',
+        //     [
+        //         'title' => 'Sequence | Trademark Nova',
+        //         'description' => ''
+        //     ]
+        // );
+    }
+    public function step4()
+    {
+        return Inertia::render('Sequence/Step4');
+        // return view(
+        //     'frontend.pages.sequence.step4',
+        //     [
+        //         'title' => 'Sequence | Trademark Nova',
+        //         'description' => ''
+        //     ]
+        // );
+    }
+    public function step5()
+    {
+        return Inertia::render('Sequence/Step5');
+        // return view(
+        //     'frontend.pages.sequence.step5',
+        //     [
+        //         'title' => 'Sequence | Trademark Nova',
+        //         'description' => ''
+        //     ]
+        // );
+    }
+    public function step6()
+    {
+        return Inertia::render('Sequence/Step6');
+        // return view(
+        //     'frontend.pages.sequence.step6',
+        //     [
+        //         'title' => 'Sequence | Trademark Nova',
+        //         'description' => ''
+        //     ]
+        // );
+    }
+
+    public function paymentinvoice()
+    {
+        return Inertia::render('Invoice/Payment');
     }
 }

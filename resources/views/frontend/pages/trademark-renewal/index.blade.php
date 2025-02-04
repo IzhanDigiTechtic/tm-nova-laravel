@@ -23,7 +23,7 @@
                                     <p>Renewing your trademark ensures that your brand remains protected, giving you the peace of mind to focus on growing your business. With our expert trademark renewal services, you can trust that your brand is in good hands and your intellectual property rights are safeguarded for years to come.</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>

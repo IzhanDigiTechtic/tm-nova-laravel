@@ -12,26 +12,8 @@
         background-color: white;
     }
 </style>
-<script type="text/javascript">
-    function validate_contactform() {
-        document.getElementById("errorDisplaycon").innerHTML = "";
-        var name = document.getElementById("PhoneNumber2con").value;
-        var len = document.getElementById("lengcon").value;
-        let myArray = name.split(" ");
-        var originallen = 0;
-        for (var j = 0; j < myArray.length; j++) {
-            for (var i = 0; i < myArray[j].length; i++) {
-                originallen = originallen + 1;
-            }
-        }
-        if (originallen != parseInt(len)) {
-            document.getElementById("errorDisplaycon").innerHTML = "Phone Number is not accurate";
-            return false;
-        }
-        return true;
-    }
-</script>
-<form action="backend/mail_sent.php" method="POST" enctype="multipart/form-data" class="formStyle lpForm">
+
+<form class="formStyle lpForm">
 
     <div class="input-group">
         <label>Enter Your Name*</label>
@@ -39,7 +21,7 @@
     </div>
     <div class="input-group">
         <label>Enter Your Email*</label>
-        <input type="email" name="email" class="form-control email" required />
+        <input type="email" name="email" class="form-control email" />
     </div>
     <div class="input-group">
         <label>Enter Your Number*</label>
@@ -53,10 +35,10 @@
 
     <div class="input-group">
         <label>Enter Your Query</label>
-        <textarea rows="8" name="description"></textarea>
+        <textarea rows="8" name="description" class=" message" required></textarea>
     </div>
     <!-- <div class="input-group" id="errorDisplaycon" style="color:red;"></div> -->
     <div class="input-group">
-        <input type="button" class="lpformsubmit" value="SUBMIT QUESTIONS" name="faq_contact">
+        <button type="button" class="contactformsubmit button-round">SUBMIT QUESTIONS</button>
     </div>
 </form>

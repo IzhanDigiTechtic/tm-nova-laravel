@@ -23,7 +23,7 @@
                                     <p>Strengthen your company's security and ensure you can present accurate financials. With this service, we will assist your business in generating a realistic budget and true financial projections</p>
                                 </div>
                                 <div class="banner-button btnSec">
-                                    <a href="/sequence-form-step1/" class="button-round d-md-none d-block">Get Started Now</a>
+                                    <a href="{{route('step1')}}" class="button-round d-md-none d-block">Get Started Now</a>
                                     <a href="javascript:void(0);" class="alphaChat button-round">TALK TO OUR CONSULTANT</a>
                                 </div>
                             </div>
@@ -177,7 +177,7 @@
                             <div class="col-lg-12">
                                 <div class="schedule mt-0 mb-5">
                                     <h2>Request a Schedule For Free Consultation</h2>
-                                    <a href="/sequence-form-step1/" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
+                                    <a href="{{route('step1')}}" class="button-round">Get Started <i class="fa fa-arrow-right"></i></a>
                                     <a href="tel:{{ config('var.number') }}" class="telNum"><span>Call Us Now:</span>{{ config('var.numberdisplay') }}</a>
                                 </div>
                             </div>
