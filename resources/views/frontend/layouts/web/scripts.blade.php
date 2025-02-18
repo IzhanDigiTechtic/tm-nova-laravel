@@ -1,19 +1,21 @@
-<script src="{{asset('assets/js/all.min.js')}}"></script>
-<!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+<script src="{{ asset('assets/js/all.min.js') }}"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.11/build/js/intlTelInput.min.js"></script>
 
 <!-- Start of alphachatpro.com Widget script -->
-<script id="cd360-snippet" src="https://alphachatpro.com:/assets/scripts/snippet.js?key=6719534c13fb6b4213bb86d0"></script>
+<script id="cd360-snippet" src="https://alphachatpro.com:/assets/scripts/snippet.js?key=6719534c13fb6b4213bb86d0">
+</script>
 <!-- End of alphachatpro.com Widget script -->
 
 
 <?php if ($_SERVER['REQUEST_URI'] != "/") { ?>
-    <script>
-        $(document).ready(function() {
-            calculateResult();
-            //alert();
-        });
-    </script>
+<script>
+    $(document).ready(function() {
+        calculateResult();
+        //alert();
+    });
+</script>
 <?php } ?>
 
 <script src="assets/js/custom.js?v=123"></script>
@@ -31,15 +33,25 @@
                         // dropdownContainer: parent,
                         strictMode: true,
                         initialCountry: "us",
-                        onlyCountries: ["al", "ad", "at", "au", "ae", "sa", "at", "br", "ca", "us", "cn", "dk", "cz", "fi", "de", "ge", "is", "jm", "no", "nl", "mx", "pl", "qa", "ro", "ru", "es", "ch", "se", "tr", "kw"],
+                        onlyCountries: ["al", "ad", "at", "au", "ae", "sa", "at", "br",
+                            "ca", "us", "cn", "dk", "cz", "fi", "de", "ge", "is", "jm",
+                            "no", "nl", "mx", "pl", "qa", "ro", "ru", "es", "ch", "se",
+                            "tr", "kw"
+                        ],
                         geoIpLookup: function(callback) {
                             fetch('https://ipinfo.io', {
                                     method: 'GET'
                                 })
                                 .then(response => response.json())
                                 .then(data => {
-                                    var countryCode = (data && data.country) ? data.country : "";
-                                    if (!["al", "ad", "at", "au", "ae", "sa", "at", "br", "ca", "us", "cn", "dk", "cz", "fi", "de", "ge", "is", "jm", "no", "nl", "mx", "pl", "qa", "ro", "ru", "es", "ch", "se", "tr", "kw"].includes(countryCode)) {
+                                    var countryCode = (data && data.country) ? data
+                                        .country : "";
+                                    if (!["al", "ad", "at", "au", "ae", "sa", "at",
+                                            "br", "ca", "us", "cn", "dk", "cz",
+                                            "fi", "de", "ge", "is", "jm", "no",
+                                            "nl", "mx", "pl", "qa", "ro", "ru",
+                                            "es", "ch", "se", "tr", "kw"
+                                        ].includes(countryCode)) {
                                         countryCode = 'us';
                                     }
                                     callback(countryCode);
@@ -91,6 +103,7 @@
                 return true;
             }
         }
+
         function showError(field, message) {
             field.addClass('form-error').after(
                 `<span class="error-message text-danger ms-2" style="font-size: 70%">${message}</span>`);
@@ -99,6 +112,7 @@
         function clearError(field) {
             field.removeClass('form-error').next('.error-message').remove();
         }
+
         function validatePhone($form) {
             var phoneInput = $form.find('.phone')[0];
             if (phoneInput && phoneInput.iti) {
@@ -116,12 +130,13 @@
             }
         }
 
-    
-    
+
+
 
         $(document).on('click', '.contactformsubmit', function(e) {
             e.preventDefault();
             var $form = $(this).closest('form');
+            var $btn = $(this);
             var emailValid = validateEmail($form);
             var phoneValid = validatePhone($form);
             var dynamicValid = validateDynamicInputs($form);
@@ -134,8 +149,8 @@
             var email = $form.find('.email').val();
             var phone = $form.find('.phone').val();
             var message = $form.find('.message').val();
-            document.querySelector(".contactformsubmit").innerHTML = `Submitting...`
-            $('.contactformsubmit').attr('disabled', 'true');
+            $btn.html('Submiting...');
+            $btn.attr('disabled', true);
             $.ajax({
                 url: 'https://tm-brands.digitechtictest.com/api/leads',
                 method: 'POST',
@@ -157,6 +172,7 @@
 
                         var leadData = {
                             lead_id: lead_id,
+                            lead_step: 1,
                             data: [{
                                 question: "Message",
                                 answer: message,
@@ -181,21 +197,20 @@
                                     errorMsg.style.display = "none";
                                 }
                                 console.log("Form submitted successfully")
+                                $btn.html('Discuss your Requirements');
+                                $btn.attr('disabled', false);
                                 // alert(
                                 //     'Lead and message successfully submitted!');
                                 window.location.href = `/thankyou`
                             },
                             error: function(xhr, status, error) {
-
                                 // alert('Error submitting message!');
                                 const errorMsg = document.getElementById(
                                     "errormsg");
                                 errorMsg.innerHTML = "Error submitting form!";
                                 errorMsg.style.display = "block";
-                                document.querySelector(".contactformsubmit")
-                                    .innerHTML = `Register My Trademark`;
-                                errorMsg.style.display = "block";
-                                $('.contactformsubmit').removeAttr('disabled');
+                                $btn.html('Discuss your Requirements');
+                                $btn.attr('disabled', false);
 
                             }
                         });
@@ -204,10 +219,10 @@
                         // alert('Error: Your email already exists.');
                         const errorMsg = document.getElementById("errormsg");
                         errorMsg.innerHTML = "Email Already Exists!";
-                        document.querySelector(".contactformsubmit").innerHTML =
-                            `Register My Trademark`;
+                        $btn.html('Discuss your Requirements');
+                        $btn.attr('disabled', false);
                         errorMsg.style.display = "block";
-                        $('.contactformsubmit').removeAttr('disabled');
+
                         // $('.contactformsubmit').attr('disabled', 'false'); 
 
 
@@ -232,6 +247,7 @@
         $(document).on('click', '.leadformsubmit', function(e) {
             e.preventDefault();
             var $form = $(this).closest('form');
+            var $btn = $(this);
             var emailValid = validateEmail($form);
             var phoneValid = validatePhone($form);
             var dynamicValid = validateDynamicInputs($form);
@@ -244,8 +260,8 @@
             var email = $form.find('.email').val();
             var phone = $form.find('.phone').val();
 
-            document.querySelector(".leadformsubmit").innerHTML = `Submitting...`
-            $('.leadformsubmit').attr('disabled', 'true');
+            $btn.html('Submitting...');
+            $btn.attr('disabled', true);
             $.ajax({
                 url: 'https://tm-brands.digitechtictest.com/api/leads',
                 method: 'POST',
@@ -259,69 +275,9 @@
                     phone: phone
                 }),
                 success: function(response) {
-
-                    if (response.data && response.data.id) {
-
-                        var lead_id = response.data.id;
-
-
-                        var leadData = {
-                            lead_id: lead_id,
-                            data: [{
-                                question: "Message",
-                                answer: "Lead Form",
-                                lead_type: "text",
-                                lead_step: 1
-                            }]
-                        };
-
-
-                        $.ajax({
-                            url: 'https://tm-brands.digitechtictest.com/api/leadData',
-                            method: 'POST',
-                            headers: {
-                                'Authorization': 'uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB', // Replace 
-                                'Content-Type': 'application/json'
-                            },
-                            data: JSON.stringify(leadData),
-                            success: function(leadDataResponse) {
-                                const errorMsg = document.getElementById(
-                                    "errormsg");
-                                if (errorMsg.style.display == "block") {
-                                    errorMsg.style.display = "none";
-                                }
-                               
-                                // alert(
-                                //     'Lead and message successfully submitted!');
-                                window.location.href = `/thankyou`
-                            },
-                            error: function(xhr, status, error) {
-
-                                // alert('Error submitting message!');
-                                const errorMsg = document.getElementById(
-                                    "errormsg");
-                                errorMsg.innerHTML = "Error submitting form!";
-                                errorMsg.style.display = "block";
-                                document.querySelector(".leadformsubmit")
-                                    .innerHTML = `Register My Trademark`;
-                                errorMsg.style.display = "block";
-                                $('.leadformsubmit').removeAttr('disabled');
-
-                            }
-                        });
-                    } else {
-                        // alert('Error: lead_id not found in response!');
-                        // alert('Error: Your email already exists.');
-                        const errorMsg = document.getElementById("errormsg");
-                        errorMsg.innerHTML = "Email Already Exists!";
-                        document.querySelector(".leadformsubmit").innerHTML =
-                            `Register My Trademark`;
-                        errorMsg.style.display = "block";
-                        $('.leadformsubmit').removeAttr('disabled');
-                        // $('.leadformsubmit').attr('disabled', 'false'); 
-
-
-                    }
+                    $btn.html('Discuss your Requirements');
+                    $btn.attr('disabled', false);
+                    window.location.href = `/thankyou`
                 },
                 error: function(xhr, status, error) {
                     console.log(error);
@@ -329,24 +285,27 @@
                     errorMsg.innerHTML = "Error submitting form!";
                     errorMsg.style.display = "block";
                     // document.querySelector(".leadformsubmit").innerHTML = "Register My Trademark";
-                    document.querySelector(".leadformsubmit").innerHTML =
-                        `Register My Trademark`;
-                    $('.leadformsubmit').removeAttr('disabled');
+                    $btn.html('Discuss your Requirements');
+                    $btn.attr('disabled', false);
                     // $('.leadformsubmit').attr('disabled', 'false'); 
                 }
             });
 
         });
 
-        function openChatWidget(){
-            postMessage({method: "showWebWidget",type: "cd360Api", apiType: "liveChat"})
+        function openChatWidget() {
+            postMessage({
+                method: "showWebWidget",
+                type: "cd360Api",
+                apiType: "liveChat"
+            })
         }
 
         $(document).on('click', '.alphaChat', function(e) {
             openChatWidget();
         })
 
-     
+
     });
 </script>
 </body>
