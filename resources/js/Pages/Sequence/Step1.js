@@ -147,7 +147,7 @@ const Step1 = () => {
                     {
                         headers: {
                             "Content-Type": "multipart/form-data", // Set the correct content type for file uploads
-                            Authorization: `puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2`,
+                            Authorization: `uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB`,
                         },
                     }
                 );
@@ -269,7 +269,7 @@ const Step1 = () => {
 
             const { data } = await axios.post(ApiRequest.leads, formdata, {
                 headers: {
-                    Authorization: `puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2`,
+                    Authorization: `uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB`,
                 },
             });
 
@@ -337,7 +337,7 @@ const Step1 = () => {
                     payload,
                     {
                         headers: {
-                            Authorization: `puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2`,
+                            Authorization: `uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB`,
                         },
                     }
                 );

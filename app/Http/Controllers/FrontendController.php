@@ -704,8 +704,15 @@ class FrontendController extends Controller
         // );
     }
 
-    public function paymentinvoice()
+    public function invoicePayment()
     {
-        return Inertia::render('Invoice/Payment');
+        return view(
+            'frontend.pages.invoice',
+            [
+                'title' => 'Invoice',
+                'description' => '',
+                'keywords' => ''
+            ]
+        );
     }
 }

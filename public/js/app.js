@@ -2215,721 +2215,6 @@ function SequenceLayout(_ref) {
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Invoice/Payment.js":
-/*!***********************************************!*\
-  !*** ./resources/js/Pages/Invoice/Payment.js ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_payment_inputs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-payment-inputs */ "./node_modules/react-payment-inputs/es/index.js");
-/* harmony import */ var react_payment_inputs_images__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-payment-inputs/images */ "./node_modules/react-payment-inputs/es/images/index.js");
-/* harmony import */ var _axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../axios */ "./resources/js/axios.js");
-/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-hot-toast */ "./node_modules/react-hot-toast/dist/index.mjs");
-/* harmony import */ var _apiRequest__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../apiRequest */ "./resources/js/apiRequest.js");
-/* harmony import */ var _invoice_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./invoice.css */ "./resources/js/Pages/Invoice/invoice.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
-function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
-function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
-function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
-function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
-
-
-
-
-
-
-
-
-var Payment = function Payment() {
-  var _apiData$brand;
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
-      cardHolderName: "",
-      cardNumber: undefined,
-      // expirationDate: "",
-      // cvv: "",
-      address: "",
-      city: "",
-      state: "",
-      zipCode: ""
-    }),
-    _useState2 = _slicedToArray(_useState, 2),
-    formValues = _useState2[0],
-    setFormValues = _useState2[1];
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
-    _useState4 = _slicedToArray(_useState3, 2),
-    formErrors = _useState4[0],
-    setFormErrors = _useState4[1];
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState6 = _slicedToArray(_useState5, 2),
-    isSubmitting = _useState6[0],
-    setIsSubmitting = _useState6[1];
-  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
-    _useState8 = _slicedToArray(_useState7, 2),
-    apiData = _useState8[0],
-    setapiData = _useState8[1];
-  var url = window.location.href;
-  var urlObj = new URL(url);
-  var params = new URLSearchParams(urlObj.search);
-  var invoice_id = params.get("invoice");
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    var fetchData = /*#__PURE__*/function () {
-      var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-        var response;
-        return _regeneratorRuntime().wrap(function _callee$(_context) {
-          while (1) switch (_context.prev = _context.next) {
-            case 0:
-              _context.prev = 0;
-              if (invoice_id) {
-                _context.next = 4;
-                break;
-              }
-              console.error("Invoice ID not found in URL.");
-              return _context.abrupt("return");
-            case 4:
-              _context.next = 6;
-              return _axios__WEBPACK_IMPORTED_MODULE_3__["default"].get("api/invoice/".concat(invoice_id),
-              // Insert invoice_id into the URL
-              {
-                headers: {
-                  Authorization: "Bearer puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2"
-                  // "Content-Type": "application/json",
-                }
-              });
-            case 6:
-              response = _context.sent;
-              if (response) {
-                // console.log(response.data.invoice);
-                setapiData(response.data.invoice);
-                console.log(response.data.invoice);
-                console.log("iz");
-              }
-              _context.next = 13;
-              break;
-            case 10:
-              _context.prev = 10;
-              _context.t0 = _context["catch"](0);
-              console.error("Error fetching data:", _context.t0);
-            case 13:
-            case "end":
-              return _context.stop();
-          }
-        }, _callee, null, [[0, 10]]);
-      }));
-      return function fetchData() {
-        return _ref.apply(this, arguments);
-      };
-    }();
-    fetchData();
-    return function () {
-      // cleanup code if necessary
-    };
-  }, []);
-
-  // console.log(invoice_id, "INVOICE ID");
-  var handleInputChange = function handleInputChange(e) {
-    var _e$target = e.target,
-      name = _e$target.name,
-      value = _e$target.value;
-
-    // Create a temporary form object to store new values
-    var updatedValues = _objectSpread(_objectSpread({}, formValues), {}, _defineProperty({}, name, value));
-    if (name === "expiryDate") {
-      var _value$split$map = value.split("/").map(function (str) {
-          return str.trim();
-        }),
-        _value$split$map2 = _slicedToArray(_value$split$map, 2),
-        month = _value$split$map2[0],
-        year = _value$split$map2[1];
-
-      // Update the expiry month and year in one go along with the main form field
-      updatedValues = _objectSpread(_objectSpread({}, updatedValues), {}, {
-        expiry__month: month,
-        expiry__year: year
-      });
-    }
-    if (name === "cardNumber") {
-      // Replace all spaces in the card number
-      updatedValues = _objectSpread(_objectSpread({}, updatedValues), {}, _defineProperty({}, name, value.replace(/\s/g, "")));
-    }
-
-    // Finally, set all values in a single setState call
-    setFormValues(updatedValues);
-  };
-  function expDateValidate(expDate) {
-    var _expDate$split$map = expDate.split("/").map(function (str) {
-        return str.trim();
-      }),
-      _expDate$split$map2 = _slicedToArray(_expDate$split$map, 2),
-      month = _expDate$split$map2[0],
-      year = _expDate$split$map2[1]; // Split and remove spaces
-
-    var currentDate = new Date();
-    var currentYear = currentDate.getFullYear();
-    var currentMonth = currentDate.getMonth() + 1; // Months are 0-indexed in JS, so we add 1.
-
-    var expiryYear = Number("20".concat(year)); // Assuming year format is YY, so prefix '20'
-    var expiryMonth = Number(month);
-
-    // Check if the year is greater than 2035
-    if (expiryYear > 2035) {
-      return "Expiry Date Year cannot be greater than 2035";
-    }
-
-    // Check if the card is already expired
-    if (expiryYear < currentYear || expiryYear === currentYear && expiryMonth < currentMonth) {
-      return "Card is expired";
-    }
-
-    // If no validation error, return null or undefined
-    return;
-  }
-  var _usePaymentInputs = (0,react_payment_inputs__WEBPACK_IMPORTED_MODULE_1__.usePaymentInputs)(),
-    getCardNumberProps = _usePaymentInputs.getCardNumberProps,
-    getExpiryDateProps = _usePaymentInputs.getExpiryDateProps,
-    getCVCProps = _usePaymentInputs.getCVCProps,
-    wrapperProps = _usePaymentInputs.wrapperProps,
-    getCardImageProps = _usePaymentInputs.getCardImageProps;
-  var validate = function validate() {
-    var errors = {};
-
-    // Validate Card Holder Name
-    if (!formValues.cardHolderName.trim()) {
-      errors.cardHolderName = true;
-      react_hot_toast__WEBPACK_IMPORTED_MODULE_4__["default"].error("Please enter Card Holder Name");
-    }
-    if (!formValues.address.trim()) {
-      react_hot_toast__WEBPACK_IMPORTED_MODULE_4__["default"].error("Please enter Your Address");
-      errors.address = true;
-    }
-    // if (!formValues.state.trim()) {
-    //     toast.error("Please enter Your State");
-    //     errors.state = true;
-    // }
-    // if (!formValues.city.trim()) {
-    //     toast.error("Please enter Your City");
-    //     errors.city = true;
-    // }
-    // Validate Card Number (16 digits)
-    if (!formValues.cardNumber || formValues.cardNumber.replace(/\s/g, "").length < 15 || formValues.cardNumber.replace(/\s/g, "").length > 19) {
-      errors.cardNumber = true;
-      react_hot_toast__WEBPACK_IMPORTED_MODULE_4__["default"].error("Please enter Card Number Correctly");
-    }
-    // console.log(formValues.cardNumber, formValues.cardNumber.replace(/\s/g, "").length)
-    // console.log(formValues)
-    var validationMessage = expDateValidate(formValues.expiryDate);
-
-    // Validate Expiration Date (MM/YY)
-    if (validationMessage) {
-      errors.expiryDate = true;
-      react_hot_toast__WEBPACK_IMPORTED_MODULE_4__["default"].error(validationMessage);
-      // console.log(validationMessage); // Error message if invalid
-    } else {
-      console.log("Expiration date is valid");
-    }
-    // if (!expDateValidate(formValues.expiryDate)) {
-    //     errors.expirationDate = true;
-    // }
-
-    // Validate CVV (3 to 4 digits)
-    // if (
-    //     !formValues.cvv ||
-    //     formValues.cvv.length < 3 ||
-    //     formValues.cvv.length > 4 ||
-    //     !/^\d+$/.test(formValues.cvv)
-    // ) {
-    //     errors.cvv = true;
-    // }
-    if (!formValues.cvv && !formValues.cvc) {
-      react_hot_toast__WEBPACK_IMPORTED_MODULE_4__["default"].error("Please enter Your CVC");
-      errors.cvv = true;
-    }
-    // Validate Address
-
-    // Validate Zip Code (5 digits)
-    if (!formValues.zipCode || formValues.zipCode.length !== 5) {
-      react_hot_toast__WEBPACK_IMPORTED_MODULE_4__["default"].error("Please enter Your Zipcode");
-      errors.zipCode = true;
-    }
-    // console.log(errors)
-    return errors;
-  };
-  var handleSubmit = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2(e) {
-      var errors, response;
-      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-        while (1) switch (_context2.prev = _context2.next) {
-          case 0:
-            e.preventDefault();
-            errors = validate();
-            setFormErrors(errors);
-            // console.log(formErrors)
-            setIsSubmitting(true);
-            // toast.error(
-            //     "There was an error submitting the form. Please try again."
-            // );
-            // If no errors, submit the form
-            // console.log(Object.keys(errors).length)
-            if (!(Object.keys(errors).length === 0)) {
-              _context2.next = 17;
-              break;
-            }
-            _context2.prev = 5;
-            _context2.next = 8;
-            return _axios__WEBPACK_IMPORTED_MODULE_3__["default"].post("api/invoice/".concat(invoice_id),
-            // Replace with your actual API URL
-            {
-              card_num: formValues.cardNumber,
-              expiry: formValues.expiry__month + "/" + formValues.expiry__year,
-              cvv: formValues.cvc || formValues.cvv,
-              address: formValues.address,
-              zip: formValues.zipCode,
-              name: formValues.cardHolderName
-            }, {
-              headers: {
-                Authorization: "Bearer puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2"
-                // "Content-Type": "application/json",
-              }
-            });
-          case 8:
-            response = _context2.sent;
-            // console.log(response);
-
-            // Assuming a successful response has a status of "success" in its data
-            if (response.data.status == "success") {
-              // console.log("Payment done successfully", formValues);
-              react_hot_toast__WEBPACK_IMPORTED_MODULE_4__["default"].success("Payment done successfully");
-              // window.location.href = `/thank-you`;
-              window.location.reload();
-              // setFormValues({
-              //     cardHolderName: "",
-              //     cardNumber: "",
-              //     address: "",
-              //     city: "",
-              //     state: "",
-              //     zipCode: "",
-              //     expiryDate: "",
-              //     expiry__month: "",
-              //     expiry__year: "",
-              //     cvc: ""
-              // })
-              setIsSubmitting(false);
-            } else {
-              // console.log("Payment failed", formValues);
-              react_hot_toast__WEBPACK_IMPORTED_MODULE_4__["default"].error("Payment failed!");
-              setIsSubmitting(false);
-            }
-            _context2.next = 17;
-            break;
-          case 12:
-            _context2.prev = 12;
-            _context2.t0 = _context2["catch"](5);
-            console.error("Error processing payment:", _context2.t0);
-            setIsSubmitting(false);
-            // console.log("Payment failed", formValues);
-            react_hot_toast__WEBPACK_IMPORTED_MODULE_4__["default"].error("An error occurred while processing the payment. Please try again.");
-          case 17:
-          case "end":
-            return _context2.stop();
-        }
-      }, _callee2, null, [[5, 12]]);
-    }));
-    return function handleSubmit(_x) {
-      return _ref2.apply(this, arguments);
-    };
-  }();
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-      className: "row mx-0 justify-content-center padding__top__iz padding__bottom__iz",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_hot_toast__WEBPACK_IMPORTED_MODULE_4__.Toaster, {
-        position: "top-right",
-        reverseOrder: false
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-        className: "col-lg-6",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-          "class": "alert bg-info p-2 rounded-3 ",
-          role: "alert",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("p", {
-            className: "mb-0 text-dark",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
-              className: "fw-bold",
-              children: " Note: "
-            }), "Please do not refresh or close this page while your payment is processing. Doing so may result in double charges or incomplete transactions. Additionally, avoid clicking the payment button multiple times as it may also cause duplicate charges. Your patience is appreciated as we securely process your payment. Thank you."]
-          })
-        }), (apiData === null || apiData === void 0 ? void 0 : apiData.invoice_logo) == "show_brand_logo" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-          className: "bg-light d-flex justify-content-lg-start justify-content-center px-lg-4  mt-3 shadow py-5 rounded-3",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
-            className: "img-fluid",
-            height: "100",
-            src: apiData === null || apiData === void 0 || (_apiData$brand = apiData.brand) === null || _apiData$brand === void 0 || (_apiData$brand = _apiData$brand.mail_details) === null || _apiData$brand === void 0 ? void 0 : _apiData$brand.logo
-          })
-        }), (apiData === null || apiData === void 0 ? void 0 : apiData.invoice_logo) == "new_brand_logo" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-          className: "bg-light d-flex justify-content-lg-start justify-content-center px-lg-4  mt-3 shadow py-5 rounded-3",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
-            className: "img-fluid",
-            height: "100",
-            style: {
-              objectFit: "contain"
-            },
-            src: apiData.invoice_photo
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-          className: "bg-light   mt-3 shadow py-3 rounded-3",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-            className: "bg__primary px-3 py-3 mx-2 rounded-3 ",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h5", {
-              className: "text-white mb-0",
-              children: "Customer Details"
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-            className: "mt-3",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-              className: "row mx-0 px-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-                className: "col-md-4 col-12",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-                  className: "fw-bold mb-0",
-                  children: "Name:"
-                })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-                className: "col-md-8 col-12",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-                  className: "fw-light mb-0",
-                  style: {
-                    wordWrap: "break-word"
-                  },
-                  children: apiData !== null ? apiData.lead.name : ""
-                })
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("hr", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-              className: "row mx-0 px-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-                className: "col-md-4 col-12",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-                  className: "fw-bold mb-0",
-                  children: "Email:"
-                })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-                className: "col-md-8 col-12",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-                  className: "fw-light mb-0",
-                  style: {
-                    wordWrap: "break-word"
-                  },
-                  children: apiData !== null ? apiData.lead.email : ""
-                })
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("hr", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-              className: "row mx-0 px-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-                className: "col-md-4 col-12",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-                  className: "fw-bold mb-0",
-                  children: "Contact:"
-                })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-                className: "col-md-8 col-12",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-                  className: "fw-light mb-0",
-                  children: apiData !== null ? apiData.lead.phone : ""
-                })
-              })]
-            })]
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-          className: "bg-light   mt-3 shadow py-3 rounded-3",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-            className: "bg__primary px-3 py-3 mx-2 rounded-3 d-flex flex-wrap justify-content-between align-items-center ",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h5", {
-              className: "text-white mb-0",
-              children: "Invoice Details"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("h5", {
-              className: "text-white mb-0",
-              children: ["#", apiData !== null ? apiData.invoice_no : ""]
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-            className: "mt-3",
-            children: [apiData !== null ? apiData.invoice_items.map(function (item) {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                  className: "row mx-0 px-3",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                    className: "col-md-8 col-12",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-                      className: "fw-bold mb-0",
-                      children: item.service
-                    }), " "]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                    className: "col-md-4 col-12",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("p", {
-                      className: "fw-light mb-0",
-                      children: [apiData.merchant.currency_symbol, item.price]
-                    }), " "]
-                  })]
-                }, item.id), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("hr", {})]
-              });
-            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                className: "row mx-0 px-3",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                  className: "col-md-8 col-12",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-                    className: "fw-bold mb-0",
-                    children: "service"
-                  }), " "]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                  className: "col-md-4 col-12",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-                    className: "fw-light mb-0",
-                    children: "$0"
-                  }), " "]
-                })]
-              }, 0), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("hr", {})]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-              className: "row mx-0 px-5",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-                className: "col-md-8 col-12",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-                  className: "fw-bold mb-0 text-dark",
-                  children: "Total:"
-                })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-                className: "col-md-4 col-12",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("p", {
-                  className: "fw-bold mb-0 text-dark",
-                  children: [apiData !== null ? apiData.merchant.currency_symbol : "$", apiData !== null ? apiData.invoice_items.reduce(function (acc, item) {
-                    return acc + parseFloat(item.price);
-                  }, 0) : 0]
-                })
-              })]
-            })]
-          })]
-        }), apiData !== null && (apiData === null || apiData === void 0 ? void 0 : apiData.transaction_status) == "paid" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-            className: "bg-light   mt-3 shadow py-3 rounded-3",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-              className: "bg__primary px-3 py-3 mx-2 rounded-3 ",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h5", {
-                className: "text-white mb-0",
-                children: "Transaction Details"
-              })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-              className: "mt-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                className: "row mx-0 px-3",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-                  className: "col-md-4 col-12",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-                    className: "fw-bold mb-0",
-                    children: "Transaction ID :"
-                  })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-                  className: "col-md-8 col-12",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-                    className: "fw-light mb-0",
-                    style: {
-                      wordWrap: "break-word"
-                    },
-                    children: apiData !== null ? apiData.transaction_id : ""
-                  })
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("hr", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                className: "row mx-0 px-3",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-                  className: "col-md-4 col-12",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-                    className: "fw-bold mb-0",
-                    children: "Transaction Status ID:"
-                  })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-                  className: "col-md-8 col-12",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-                    className: "fw-light mb-0",
-                    style: {
-                      wordWrap: "break-word"
-                    },
-                    children: apiData !== null ? apiData.transaction_status : ""
-                  })
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("hr", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                className: "row mx-0 px-3",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-                  className: "col-md-4 col-12",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-                    className: "fw-bold mb-0",
-                    children: "Paid at:"
-                  })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-                  className: "col-md-8 col-12",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-                    className: "fw-light mb-0",
-                    children: apiData !== null ? apiData.paid_at : ""
-                  })
-                })]
-              })]
-            })]
-          })
-        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-          className: "bg-light   mt-3 shadow py-3 rounded-3",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-            className: "bg__primary px-3 py-3 mx-2 rounded-3 ",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h5", {
-              className: "text-white mb-0",
-              children: "Payment Details"
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("form", {
-            onSubmit: handleSubmit,
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-              className: "mt-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("p", {
-                className: "mb-2 text-uppercase text-dark px-3 py-4",
-                children: [" ", "Pay with Card:"]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                className: "row mx-0 px-3",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                  className: "col-lg-6 col-12",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("label", {
-                    htmlFor: "",
-                    className: "mb-2",
-                    children: "Card Number"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                    style: {
-                      height: "60px"
-                    },
-                    className: "form-control d-flex gap-2 align-items-center ".concat(formErrors.cardNumber && formErrors.cardNumber ? "border-danger" : ""),
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("svg", _objectSpread({}, getCardImageProps({
-                      images: react_payment_inputs_images__WEBPACK_IMPORTED_MODULE_2__["default"]
-                    }))), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("input", _objectSpread({
-                      type: "text",
-                      style: {
-                        border: "0px",
-                        padding: "0px",
-                        backgroundColor: "transparent",
-                        height: "20px"
-                      }
-                    }, getCardNumberProps({
-                      onChange: function onChange(e) {
-                        return handleInputChange(e);
-                      }
-                    })))]
-                  })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                  className: "col-lg-6 col-12 mt-lg-0 mt-3",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("label", {
-                    htmlFor: "",
-                    className: "mb-2",
-                    children: "Valid Thru"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("input", _objectSpread({
-                    type: "text",
-                    className: "form-control ".concat(formErrors.expiryDate ? "border-1 border-danger" : "")
-                  }, getExpiryDateProps({
-                    onChange: function onChange(e) {
-                      return handleInputChange(e);
-                    }
-                  })))]
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                className: "row mx-0 px-3 mt-3",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                  className: "col-lg-6 col-12",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("label", {
-                    htmlFor: "",
-                    className: "mb-2",
-                    children: "CVV"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("input", _objectSpread({
-                    type: "text",
-                    className: "form-control ".concat(formErrors.cvv && formErrors.cvc ? "border-1 border-danger" : "")
-                  }, getCVCProps({
-                    onChange: function onChange(e) {
-                      return handleInputChange(e);
-                    }
-                  })))]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                  className: "col-lg-6 col-12 mt-lg-0 mt-3",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("label", {
-                    htmlFor: "",
-                    className: "mb-2",
-                    children: "Zip Code"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("input", {
-                    type: "text",
-                    name: "zipCode",
-                    value: formValues.zipCode,
-                    onChange: handleInputChange,
-                    maxLength: 5,
-                    pattern: "[0-9]*",
-                    inputMode: "numeric",
-                    className: "form-control ".concat(formErrors.zipCode ? "border-danger" : ""),
-                    placeholder: "eg. 12345"
-                  })]
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                className: "row mx-0 px-3 mt-3",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                  className: "col-lg-6 col-12",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("label", {
-                    htmlFor: "",
-                    className: "mb-2",
-                    children: "Name on Card"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("input", {
-                    type: "text",
-                    name: "cardHolderName",
-                    value: formValues.cardHolderName,
-                    onChange: handleInputChange,
-                    className: "form-control ".concat(formErrors.cardHolderName ? "border-danger" : ""),
-                    placeholder: "eg. Baron Smith"
-                  })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                  className: "col-lg-6 col-12 mt-lg-0 mt-3",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("label", {
-                    htmlFor: "",
-                    className: "mb-2",
-                    children: "Card Holder Address"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("input", {
-                    type: "text",
-                    name: "address",
-                    value: formValues.address,
-                    onChange: handleInputChange,
-                    className: "form-control ".concat(formErrors.address ? "border-danger" : ""),
-                    placeholder: "House xyz, Street xyz ..."
-                  })]
-                })]
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-              className: "mx-3",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("button", {
-                className: "btn btn-primary bg__primary mt-3 text-white  text-uppercase w-100 py-3",
-                disabled: isSubmitting,
-                type: "submit",
-                children: [" ", "submit"]
-              })
-            })]
-          })]
-        })]
-      })]
-    })
-  });
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Payment);
-
-/***/ }),
-
 /***/ "./resources/js/Pages/Sequence/Step1.js":
 /*!**********************************************!*\
   !*** ./resources/js/Pages/Sequence/Step1.js ***!
@@ -3154,7 +2439,7 @@ var Step1 = function Step1() {
               headers: {
                 "Content-Type": "multipart/form-data",
                 // Set the correct content type for file uploads
-                Authorization: "puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2"
+                Authorization: "uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB"
               }
             });
           case 19:
@@ -3298,7 +2583,7 @@ var Step1 = function Step1() {
             _context2.next = 47;
             return _axios__WEBPACK_IMPORTED_MODULE_5__["default"].post(_apiRequest__WEBPACK_IMPORTED_MODULE_4__.ApiRequest.leads, formdata, {
               headers: {
-                Authorization: "puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2"
+                Authorization: "uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB"
               }
             });
           case 47:
@@ -3364,7 +2649,7 @@ var Step1 = function Step1() {
             _context2.next = 66;
             return _axios__WEBPACK_IMPORTED_MODULE_5__["default"].post("".concat(_apiRequest__WEBPACK_IMPORTED_MODULE_4__.ApiRequest.leadData), _payload, {
               headers: {
-                Authorization: "puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2"
+                Authorization: "uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB"
               }
             });
           case 66:
@@ -3865,7 +3150,7 @@ var Step2 = function Step2() {
             _context.next = 6;
             return _axios__WEBPACK_IMPORTED_MODULE_5__["default"].post(_apiRequest__WEBPACK_IMPORTED_MODULE_4__.ApiRequest.leadData, formData, {
               headers: {
-                Authorization: "puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2"
+                Authorization: "uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB"
               }
             });
           case 6:
@@ -5372,7 +4657,7 @@ var Step3 = function Step3() {
               data: filteredAnswers
             }, {
               headers: {
-                Authorization: "puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2"
+                Authorization: "uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB"
                 // "Content-Type": "application/json",
               }
             });
@@ -7822,7 +7107,7 @@ var Step4 = function Step4() {
               }]
             }, {
               headers: {
-                Authorization: "puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2"
+                Authorization: "uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB"
                 // "Content-Type": "application/json",
               }
             });
@@ -8190,7 +7475,7 @@ var Step5 = function Step5() {
               data: [leadData]
             }, {
               headers: {
-                Authorization: "puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2"
+                Authorization: "uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB"
                 // "Content-Type": "application/json",
               }
             });
@@ -9100,7 +8385,7 @@ var Step6 = function Step6() {
               // Spread the form values into the same object
             }, {
               headers: {
-                Authorization: "puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2"
+                Authorization: "uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB"
                 // "Content-Type": "application/json",
               }
             });
@@ -9339,6 +8624,718 @@ var Step6 = function Step6() {
   });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Step6);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/invoice/Payment.js":
+/*!***********************************************!*\
+  !*** ./resources/js/Pages/invoice/Payment.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_payment_inputs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-payment-inputs */ "./node_modules/react-payment-inputs/es/index.js");
+/* harmony import */ var react_payment_inputs_images__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-payment-inputs/images */ "./node_modules/react-payment-inputs/es/images/index.js");
+/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-hot-toast */ "./node_modules/react-hot-toast/dist/index.mjs");
+/* harmony import */ var _axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../axios */ "./resources/js/axios.js");
+/* harmony import */ var _invoice_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./invoice.css */ "./resources/js/Pages/invoice/invoice.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
+
+
+
+
+
+var Payment = function Payment() {
+  var _apiData$merchant2;
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+      cardHolderName: "",
+      cardNumber: undefined,
+      // expirationDate: "",
+      // cvv: "",
+      address: "",
+      city: "",
+      state: "",
+      zipCode: ""
+    }),
+    _useState2 = _slicedToArray(_useState, 2),
+    formValues = _useState2[0],
+    setFormValues = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
+    _useState4 = _slicedToArray(_useState3, 2),
+    formErrors = _useState4[0],
+    setFormErrors = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState6 = _slicedToArray(_useState5, 2),
+    isSubmitting = _useState6[0],
+    setIsSubmitting = _useState6[1];
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState8 = _slicedToArray(_useState7, 2),
+    apiData = _useState8[0],
+    setapiData = _useState8[1];
+  var url = window.location.href;
+  var urlObj = new URL(url);
+  var params = new URLSearchParams(urlObj.search);
+  var invoice_id = params.get("invoice");
+  var fetchData = /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+      var _yield$axios$get, data;
+      return _regeneratorRuntime().wrap(function _callee$(_context) {
+        while (1) switch (_context.prev = _context.next) {
+          case 0:
+            _context.prev = 0;
+            if (invoice_id) {
+              _context.next = 4;
+              break;
+            }
+            console.error("Invoice ID not found in URL.");
+            return _context.abrupt("return");
+          case 4:
+            _context.next = 6;
+            return _axios__WEBPACK_IMPORTED_MODULE_4__["default"].get("api/invoice/".concat(invoice_id), {
+              headers: {
+                Authorization: "uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB"
+              }
+            });
+          case 6:
+            _yield$axios$get = _context.sent;
+            data = _yield$axios$get.data;
+            if (data) {
+              setapiData(data === null || data === void 0 ? void 0 : data.invoice);
+              // console.log(data?.invoice);
+            }
+            _context.next = 14;
+            break;
+          case 11:
+            _context.prev = 11;
+            _context.t0 = _context["catch"](0);
+            console.error("Error fetching data:", _context.t0);
+          case 14:
+          case "end":
+            return _context.stop();
+        }
+      }, _callee, null, [[0, 11]]);
+    }));
+    return function fetchData() {
+      return _ref.apply(this, arguments);
+    };
+  }();
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    fetchData();
+  }, []);
+
+  // console.log(invoice_id, "INVOICE ID");
+  var handleInputChange = function handleInputChange(e) {
+    var _e$target = e.target,
+      name = _e$target.name,
+      value = _e$target.value;
+
+    // Create a temporary form object to store new values
+    var updatedValues = _objectSpread(_objectSpread({}, formValues), {}, _defineProperty({}, name, value));
+    if (name === "expiryDate") {
+      var _value$split$map = value.split("/").map(function (str) {
+          return str.trim();
+        }),
+        _value$split$map2 = _slicedToArray(_value$split$map, 2),
+        month = _value$split$map2[0],
+        year = _value$split$map2[1];
+
+      // Update the expiry month and year in one go along with the main form field
+      updatedValues = _objectSpread(_objectSpread({}, updatedValues), {}, {
+        expiry__month: month,
+        expiry__year: year
+      });
+    }
+    if (name === "cardNumber") {
+      // Replace all spaces in the card number
+      updatedValues = _objectSpread(_objectSpread({}, updatedValues), {}, _defineProperty({}, name, value.replace(/\s/g, "")));
+    }
+
+    // Finally, set all values in a single setState call
+    setFormValues(updatedValues);
+  };
+  function expDateValidate(expDate) {
+    var _expDate$split$map = expDate.split("/").map(function (str) {
+        return str.trim();
+      }),
+      _expDate$split$map2 = _slicedToArray(_expDate$split$map, 2),
+      month = _expDate$split$map2[0],
+      year = _expDate$split$map2[1]; // Split and remove spaces
+
+    var currentDate = new Date();
+    var currentYear = currentDate.getFullYear();
+    var currentMonth = currentDate.getMonth() + 1; // Months are 0-indexed in JS, so we add 1.
+
+    var expiryYear = Number("20".concat(year)); // Assuming year format is YY, so prefix '20'
+    var expiryMonth = Number(month);
+
+    // Check if the year is greater than 2035
+    if (expiryYear > 2035) {
+      return "Expiry Date Year cannot be greater than 2035";
+    }
+
+    // Check if the card is already expired
+    if (expiryYear < currentYear || expiryYear === currentYear && expiryMonth < currentMonth) {
+      return "Card is expired";
+    }
+
+    // If no validation error, return null or undefined
+    return;
+  }
+  var _usePaymentInputs = (0,react_payment_inputs__WEBPACK_IMPORTED_MODULE_1__.usePaymentInputs)(),
+    getCardNumberProps = _usePaymentInputs.getCardNumberProps,
+    getExpiryDateProps = _usePaymentInputs.getExpiryDateProps,
+    getCVCProps = _usePaymentInputs.getCVCProps,
+    wrapperProps = _usePaymentInputs.wrapperProps,
+    getCardImageProps = _usePaymentInputs.getCardImageProps;
+  var validate = function validate() {
+    var errors = {};
+
+    // Validate Card Holder Name
+    if (!formValues.cardHolderName.trim()) {
+      errors.cardHolderName = true;
+      react_hot_toast__WEBPACK_IMPORTED_MODULE_3__["default"].error("Please enter Card Holder Name");
+    }
+    if (!formValues.address.trim()) {
+      react_hot_toast__WEBPACK_IMPORTED_MODULE_3__["default"].error("Please enter Your Address");
+      errors.address = true;
+    }
+    // if (!formValues.state.trim()) {
+    //     toast.error("Please enter Your State");
+    //     errors.state = true;
+    // }
+    // if (!formValues.city.trim()) {
+    //     toast.error("Please enter Your City");
+    //     errors.city = true;
+    // }
+    // Validate Card Number (16 digits)
+    if (!formValues.cardNumber || formValues.cardNumber.replace(/\s/g, "").length < 15 || formValues.cardNumber.replace(/\s/g, "").length > 19) {
+      errors.cardNumber = true;
+      react_hot_toast__WEBPACK_IMPORTED_MODULE_3__["default"].error("Please enter Card Number Correctly");
+    }
+    // console.log(formValues.cardNumber, formValues.cardNumber.replace(/\s/g, "").length)
+    // console.log(formValues)
+    var validationMessage = expDateValidate(formValues.expiryDate);
+
+    // Validate Expiration Date (MM/YY)
+    if (validationMessage) {
+      errors.expiryDate = true;
+      react_hot_toast__WEBPACK_IMPORTED_MODULE_3__["default"].error(validationMessage);
+      // console.log(validationMessage); // Error message if invalid
+    } else {
+      console.log("Expiration date is valid");
+    }
+    if (!formValues.cvv && !formValues.cvc) {
+      react_hot_toast__WEBPACK_IMPORTED_MODULE_3__["default"].error("Please enter Your CVC");
+      errors.cvv = true;
+    }
+    // Validate Address
+
+    // Validate Zip Code (5 digits)
+    if (!formValues.zipCode || formValues.zipCode.length !== 5) {
+      react_hot_toast__WEBPACK_IMPORTED_MODULE_3__["default"].error("Please enter Your Zipcode");
+      errors.zipCode = true;
+    }
+    // console.log(errors)
+    return errors;
+  };
+  var handleSubmit = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2(e) {
+      var errors, response;
+      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+        while (1) switch (_context2.prev = _context2.next) {
+          case 0:
+            e.preventDefault();
+            errors = validate();
+            setFormErrors(errors);
+            // console.log(formErrors)
+            setIsSubmitting(true);
+            // toast.error(
+            //     "There was an error submitting the form. Please try again."
+            // );
+            // If no errors, submit the form
+            // console.log(Object.keys(errors).length)
+            if (!(Object.keys(errors).length === 0)) {
+              _context2.next = 17;
+              break;
+            }
+            _context2.prev = 5;
+            _context2.next = 8;
+            return _axios__WEBPACK_IMPORTED_MODULE_4__["default"].post("api/invoice/".concat(invoice_id),
+            // Replace with your actual API URL
+            {
+              card_num: formValues.cardNumber,
+              expiry: formValues.expiry__month + "/" + formValues.expiry__year,
+              cvv: formValues.cvc || formValues.cvv,
+              address: formValues.address,
+              zip: formValues.zipCode,
+              name: formValues.cardHolderName
+            }, {
+              headers: {
+                Authorization: "uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB"
+                // "Content-Type": "application/json",
+              }
+            });
+          case 8:
+            response = _context2.sent;
+            // console.log(response);
+
+            // Assuming a successful response has a status of "success" in its data
+            if (response.data.status == "success") {
+              // console.log("Payment done successfully", formValues);
+              react_hot_toast__WEBPACK_IMPORTED_MODULE_3__["default"].success("Payment done successfully");
+              // window.location.href = `/thank-you`;
+              window.location.reload();
+              // setFormValues({
+              //     cardHolderName: "",
+              //     cardNumber: "",
+              //     address: "",
+              //     city: "",
+              //     state: "",
+              //     zipCode: "",
+              //     expiryDate: "",
+              //     expiry__month: "",
+              //     expiry__year: "",
+              //     cvc: ""
+              // })
+              setIsSubmitting(false);
+            } else {
+              // console.log("Payment failed", formValues);
+              react_hot_toast__WEBPACK_IMPORTED_MODULE_3__["default"].error("Payment failed!");
+              setIsSubmitting(false);
+            }
+            _context2.next = 17;
+            break;
+          case 12:
+            _context2.prev = 12;
+            _context2.t0 = _context2["catch"](5);
+            console.error("Error processing payment:", _context2.t0);
+            setIsSubmitting(false);
+            // console.log("Payment failed", formValues);
+            react_hot_toast__WEBPACK_IMPORTED_MODULE_3__["default"].error("An error occurred while processing the payment. Please try again.");
+          case 17:
+          case "end":
+            return _context2.stop();
+        }
+      }, _callee2, null, [[5, 12]]);
+    }));
+    return function handleSubmit(_x) {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_hot_toast__WEBPACK_IMPORTED_MODULE_3__.Toaster, {
+      position: "top-right",
+      reverseOrder: false
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+      className: "mx-auto p-4 d-flex flex-column gap-4 placeholder-glow",
+      style: {
+        maxWidth: 600
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+        className: "p-3 rounded-4 mb-0",
+        role: "alert",
+        style: {
+          background: "#fff3cc"
+        },
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("p", {
+          className: "mb-0 text-dark fw-semibold font-xxs-15px",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+            className: "fw-bold",
+            children: " Note: "
+          }), "Please do not refresh or close this page while your payment is processing. Doing so may result in double charges or incomplete transactions. Additionally, avoid clicking the payment button multiple times as it may also cause duplicate charges. Your patience is appreciated as we securely process your payment. Thank you."]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+        className: " bg-white rounded-4 p-3 mx-n3 mb-n7",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("img", {
+          src: "/assets/images/site-logo.webp",
+          alt: "Logo",
+          width: 200,
+          height: 53,
+          className: " h-auto mb-3",
+          style: {
+            width: "clamp(150px, 12vw, 250px)"
+          }
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        className: "bg-white rounded-4 shadow p-2 pb-3",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+          className: "bg-primary p-3 rounded-3 mb-3 py-2 lh-lg",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+            className: "text-white m-0 font-xxs-15px font-sm-16px font-md-20px fw-semibold",
+            children: "Customer Details"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("ul", {
+          className: " d-flex flex-column gap-2 border_not-last-child px-3 overflow-hidden overflow-x-auto",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+            className: " d-flex align-items-center gap-2 pb-2 ",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+              className: " fw-semibold font-xxs-15px d-flex align-items-center gap-2",
+              style: {
+                minWidth: "clamp(80px,8vw,112px)"
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("img", {
+                src: "https://cdn-icons-png.flaticon.com/512/266/266134.png",
+                alt: "use icon",
+                width: 18,
+                height: 18,
+                className: "object-fit-contain"
+              }), " ", "Name:"]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              children: apiData !== null ? apiData.lead.name : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                  className: "placeholder",
+                  style: {
+                    minWidth: 130
+                  }
+                })
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+            className: " d-flex align-items-center gap-2 pb-2",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+              className: " fw-semibold font-xxs-15px d-flex align-items-center gap-2",
+              style: {
+                minWidth: "clamp(80px,8vw,112px)"
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("img", {
+                src: "https://cdn-icons-png.flaticon.com/512/646/646094.png",
+                alt: "use icon",
+                width: 18,
+                height: 18,
+                className: "object-fit-contain"
+              }), " ", "Email:"]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              children: apiData !== null ? apiData.lead.email : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                  className: "placeholder",
+                  style: {
+                    minWidth: 170
+                  }
+                })
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+            className: " d-flex align-items-center gap-2 pb-2",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+              className: " fw-semibold font-xxs-15px d-flex align-items-center gap-2",
+              style: {
+                minWidth: "clamp(80px,8vw,112px)"
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("img", {
+                src: "https://cdn-icons-png.flaticon.com/512/126/126509.png",
+                alt: "use icon",
+                width: 18,
+                height: 18,
+                className: "object-fit-contain"
+              }), " ", "Contact:"]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              children: apiData !== null ? apiData.lead.phone : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                  className: "placeholder",
+                  style: {
+                    minWidth: 140
+                  }
+                })
+              })
+            })]
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        className: "bg-white rounded-4 shadow p-2 pb-3",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          className: "bg-primary p-3 gap-2 rounded-3 mb-3 py-2 lh-lg d-flex flex-wrap justify-content-between align-items-center ",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+            className: "text-white m-0 font-xxs-15px font-sm-16px font-md-20px fw-semibold",
+            children: "Invoice Details"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+            className: "text-white m-0 font-xxs-15px font-sm-16px font-md-20px fw-semibold",
+            children: ["#", apiData !== null ? apiData === null || apiData === void 0 ? void 0 : apiData.invoice_no : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+              children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                className: "placeholder",
+                style: {
+                  minWidth: 170
+                }
+              })]
+            })]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("ul", {
+          className: "d-flex flex-column gap-2 border_not-last-child px-3 overflow-hidden overflow-x-auto",
+          children: [apiData !== null ? apiData === null || apiData === void 0 ? void 0 : apiData.invoice_items.map(function (items, index) {
+            var _apiData$merchant;
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+              className: " d-flex align-items-center justify-content-between gap-2 fw-semibold border-bottom border-1 pb-2",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                className: "show-line-4",
+                style: {
+                  maxWidth: 335
+                },
+                children: items === null || items === void 0 ? void 0 : items.service
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+                className: " fw-normal",
+                children: [apiData === null || apiData === void 0 || (_apiData$merchant = apiData.merchant) === null || _apiData$merchant === void 0 ? void 0 : _apiData$merchant.currency_symbol, items === null || items === void 0 ? void 0 : items.price]
+              })]
+            }, index);
+          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+              className: " d-flex align-items-center justify-content-between gap-2 flex-wrap fw-semibold border-bottom border-1 pb-2",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                className: "placeholder",
+                style: {
+                  width: 100
+                }
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                className: " fw-normal placeholder",
+                style: {
+                  width: 50
+                }
+              })]
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+            className: " d-flex align-items-center justify-content-between gap-2 flex-wrap fw-semibold font-md-18px px-3",
+            children: ["Total", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: " fw-semibold",
+              children: apiData !== null ? "".concat(apiData === null || apiData === void 0 || (_apiData$merchant2 = apiData.merchant) === null || _apiData$merchant2 === void 0 ? void 0 : _apiData$merchant2.currency_symbol).concat(apiData === null || apiData === void 0 ? void 0 : apiData.transaction_amount) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                className: "placeholder",
+                style: {
+                  width: 50
+                }
+              })
+            })]
+          })]
+        })]
+      }), apiData !== null && (apiData === null || apiData === void 0 ? void 0 : apiData.transaction_status) == "paid" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          className: "bg-white rounded-4 shadow p-2",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+            className: "bg-primary p-3 rounded-3 mb-2",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-white font-xxs-15px font-sm-16px font-md-20px fw-semibold",
+              children: "Transaction Details"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("ul", {
+            className: "d-flex flex-column gap-2 border_not-last-child px-3 overflow-hidden overflow-x-auto",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+              className: " d-flex align-items-center gap-2 pb-2 ",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+                className: " fw-semibold font-xxs-15px d-flex align-items-center gap-2",
+                style: {
+                  minWidth: "clamp(80px, 10vw, 125px)",
+                  maxWidth: 120
+                },
+                children: [" ", "Transaction ID:"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                children: "obLyORbyDyLDnOWn"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+              className: " d-flex align-items-center gap-2 pb-2 ",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+                className: " fw-semibold font-xxs-15px d-flex align-items-center gap-2",
+                style: {
+                  minWidth: "clamp(80px, 10vw, 125px)",
+                  maxWidth: 120
+                },
+                children: [" ", "Transaction Status ID:"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                className: " text-capitalize",
+                style: {
+                  color: "green"
+                },
+                children: "paid"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+              className: " d-flex align-items-center gap-2 pb-2 ",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+                className: " fw-semibold font-xxs-15px d-flex align-items-center gap-2",
+                style: {
+                  minWidth: "clamp(80px, 10vw, 125px)",
+                  maxWidth: 120
+                },
+                children: [" ", "Paid at:"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                children: "2025-02-10 04:04:07"
+              })]
+            })]
+          })]
+        })
+      }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        className: "bg-white rounded-4 shadow p-2 pb-3",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+          className: "bg-primary p-3 rounded-3 mb-3 py-2 lh-lg",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+            className: "text-white m-0 font-xxs-15px font-sm-16px font-md-20px fw-semibold",
+            children: "Payment Details"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("form", {
+          className: "px-3",
+          onSubmit: handleSubmit,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+            className: "mb-3 d-block text-uppercase text-dark fw-semibold",
+            children: [" ", "Pay with Card:"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "row g-2 g-md-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+              className: "col-sm-6",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("label", {
+                className: "mb-1 font-xxs-15px fw-medium",
+                children: ["Card Number", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                  className: " text-danger",
+                  children: "*"
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+                className: "position-relative",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("svg", _objectSpread({
+                  className: " flex-shrink-0 position-absolute top-50 translate-middle-y start-0 ms-3"
+                }, getCardImageProps({
+                  images: react_payment_inputs_images__WEBPACK_IMPORTED_MODULE_2__["default"]
+                }))), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", _objectSpread({
+                  className: "form-control ps-7 rounded-pill ".concat(formErrors.cardNumber && formErrors.cardNumber ? "border-danger" : ""),
+                  type: "text"
+                }, getCardNumberProps({
+                  onChange: function onChange(e) {
+                    return handleInputChange(e);
+                  }
+                })))]
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+              className: "col-sm-6",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("label", {
+                className: "mb-1 font-xxs-15px fw-medium",
+                children: ["Valid Thru", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                  className: " text-danger",
+                  children: "*"
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", _objectSpread({
+                type: "text",
+                className: "form-control rounded-pill ps-3 ps-md-4 ".concat(formErrors.expiryDate ? "border-1 border-danger" : "")
+              }, getExpiryDateProps({
+                onChange: function onChange(e) {
+                  return handleInputChange(e);
+                }
+              })))]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+              className: "col-sm-6",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("label", {
+                className: "mb-1 font-xxs-15px fw-medium",
+                children: ["CVV", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                  className: " text-danger",
+                  children: "*"
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", _objectSpread({
+                type: "text",
+                className: "form-control rounded-pill ps-3 ps-md-4 ".concat(formErrors.cvv && formErrors.cvc ? "border-1 border-danger" : "")
+              }, getCVCProps({
+                onChange: function onChange(e) {
+                  return handleInputChange(e);
+                }
+              })))]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+              className: "col-sm-6",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("label", {
+                className: "mb-1 font-xxs-15px fw-medium",
+                children: ["Zip Code", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                  className: " text-danger",
+                  children: "*"
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                type: "text",
+                name: "zipCode",
+                value: formValues.zipCode,
+                onChange: handleInputChange,
+                maxLength: 5,
+                pattern: "[0-9]*",
+                inputMode: "numeric",
+                className: "form-control rounded-pill ps-3 ps-md-4 ".concat(formErrors.zipCode ? "border-danger" : ""),
+                placeholder: "eg. 12345"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+              className: "col-sm-6",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("label", {
+                className: "mb-1 font-xxs-15px fw-medium",
+                children: ["Name on Card", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                  className: " text-danger",
+                  children: "*"
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                type: "text",
+                name: "cardHolderName",
+                value: formValues.cardHolderName,
+                onChange: handleInputChange,
+                className: "form-control rounded-pill ps-3 ps-md-4 ".concat(formErrors.cardHolderName ? "border-danger" : ""),
+                placeholder: "eg. Baron Smith"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+              className: "col-sm-6",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("label", {
+                className: "mb-1 font-xxs-15px fw-medium",
+                children: ["Card Holder Address", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                  className: " text-danger",
+                  children: "*"
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                type: "text",
+                name: "address",
+                value: formValues.address,
+                onChange: handleInputChange,
+                className: "form-control rounded-pill ps-3 ps-md-4 ".concat(formErrors.address ? "border-danger" : ""),
+                placeholder: "House xyz, Street xyz ..."
+              })]
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("button", {
+            className: "btn btn-primary mt-3 mt-lg-5 text-white text-uppercase w-100 py-2 font-md-20px fw-semibold rounded-pill",
+            disabled: isSubmitting,
+            type: "submit",
+            children: [" ", "submit"]
+          })]
+        })]
+      })]
+    })]
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Payment);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/invoice/app-invoice.js":
+/*!***************************************************!*\
+  !*** ./resources/js/Pages/invoice/app-invoice.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
+/* harmony import */ var _Payment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Payment */ "./resources/js/Pages/invoice/Payment.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+var invoice = document.getElementById("invoice");
+if (invoice) {
+  (0,react_dom_client__WEBPACK_IMPORTED_MODULE_0__.createRoot)(invoice).render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Payment__WEBPACK_IMPORTED_MODULE_1__["default"], {}));
+}
 
 /***/ }),
 
@@ -11958,9 +11955,9 @@ module.exports = function callBoundIntrinsic(name, allowMissing) {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-phone-input-2/lib/style.css":
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./node_modules/react-phone-input-2/lib/style.css":
 /*!******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-phone-input-2/lib/style.css ***!
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./node_modules/react-phone-input-2/lib/style.css ***!
   \******************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
@@ -11982,33 +11979,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, ".react-tel-input{font-family:'Roboto',
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/Pages/Invoice/invoice.css":
-/*!**********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/Pages/Invoice/invoice.css ***!
-  \**********************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root{\r\n    --primary-iz: #002537;\r\n}\r\n.padding__top__iz{\r\npadding-top: 15vh;\r\n}\r\n.padding__bottom__iz{\r\npadding-bottom: 15vh;\r\n}\r\n.bg-info{\r\n    background-color: #CFF4FC;\r\n}\r\n.bg__primary{\r\n    background-color: var(--primary-iz);\r\n}", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/sidebar.css":
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./resources/js/components/sidebar.css":
 /*!*******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/sidebar.css ***!
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./resources/js/components/sidebar.css ***!
   \*******************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
@@ -15308,6 +15281,19 @@ module.exports = function sign(number) {
 /*!*******************************!*\
   !*** ./resources/css/app.css ***!
   \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/invoice/invoice.css":
+/*!************************************************!*\
+  !*** ./resources/js/Pages/invoice/invoice.css ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -62740,7 +62726,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/react-phone-input-2/lib/style.css");
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!../../postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./node_modules/react-phone-input-2/lib/style.css");
 
             
 
@@ -62749,41 +62735,11 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
-
-/***/ }),
-
-/***/ "./resources/js/Pages/Invoice/invoice.css":
-/*!************************************************!*\
-  !*** ./resources/js/Pages/Invoice/invoice.css ***!
-  \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_invoice_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./invoice.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/Pages/Invoice/invoice.css");
-
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_invoice_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_invoice_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -62800,7 +62756,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_sidebar_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./sidebar.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/sidebar.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_sidebar_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./sidebar.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./resources/js/components/sidebar.css");
 
             
 
@@ -62809,11 +62765,11 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_sidebar_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_sidebar_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_sidebar_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_sidebar_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -63148,9 +63104,6 @@ var f="undefined"!=typeof process&&void 0!==process.env&&(process.env.REACT_APP_
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
-	"./Invoice/Payment": "./resources/js/Pages/Invoice/Payment.js",
-	"./Invoice/Payment.js": "./resources/js/Pages/Invoice/Payment.js",
-	"./Invoice/invoice.css": "./resources/js/Pages/Invoice/invoice.css",
 	"./Sequence/Step1": "./resources/js/Pages/Sequence/Step1.js",
 	"./Sequence/Step1.js": "./resources/js/Pages/Sequence/Step1.js",
 	"./Sequence/Step2": "./resources/js/Pages/Sequence/Step2.js",
@@ -63166,7 +63119,12 @@ var map = {
 	"./Sequence/Step6": "./resources/js/Pages/Sequence/Step6.js",
 	"./Sequence/Step6-bk": "./resources/js/Pages/Sequence/Step6-bk.js",
 	"./Sequence/Step6-bk.js": "./resources/js/Pages/Sequence/Step6-bk.js",
-	"./Sequence/Step6.js": "./resources/js/Pages/Sequence/Step6.js"
+	"./Sequence/Step6.js": "./resources/js/Pages/Sequence/Step6.js",
+	"./invoice/Payment": "./resources/js/Pages/invoice/Payment.js",
+	"./invoice/Payment.js": "./resources/js/Pages/invoice/Payment.js",
+	"./invoice/app-invoice": "./resources/js/Pages/invoice/app-invoice.js",
+	"./invoice/app-invoice.js": "./resources/js/Pages/invoice/app-invoice.js",
+	"./invoice/invoice.css": "./resources/js/Pages/invoice/invoice.css"
 };
 
 
@@ -74101,6 +74059,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"axios","version":"0.21.4","de
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
+/******/ 			"css/invoice": 0,
 /******/ 			"css/app": 0
 /******/ 		};
 /******/ 		
@@ -74156,8 +74115,9 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"axios","version":"0.21.4","de
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/invoice","css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/invoice","css/app"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/invoice","css/app"], () => (__webpack_require__("./resources/js/Pages/invoice/invoice.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

@@ -92,3 +92,4 @@ Route::get('/sequence/step3', [FrontendController::class, 'step3'])->name('step3
 Route::get('/sequence/step4', [FrontendController::class, 'step4'])->name('step4');
 Route::get('/sequence/step5', [FrontendController::class, 'step5'])->name('step5');
 Route::get('/sequence/step6', [FrontendController::class, 'step6'])->name('step6');
+Route::get('/invoice-payment', [FrontendController::class, 'invoicePayment'])->name('invoice.payment');

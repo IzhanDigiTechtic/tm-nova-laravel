@@ -29,7 +29,7 @@
         "headers": {
             "Accept": "application/json, text/plain, */*",
             "Content-Type": "application/json",
-            "Authorization": "puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2"
+            "Authorization": "uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB"
         },
         "baseURL": "https://book-brands.digitechtictest.com/",
         "transformRequest": [

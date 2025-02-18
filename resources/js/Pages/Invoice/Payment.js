@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { usePaymentInputs } from "react-payment-inputs";
 import images from "react-payment-inputs/images";
-import axios from "../../axios";
 import toast, { Toaster } from "react-hot-toast";
-import { ApiRequest } from "../../apiRequest";
+import axios from "../../axios";
 import "./invoice.css";
+
 const Payment = () => {
     const [formValues, setFormValues] = useState({
         cardHolderName: "",
@@ -23,40 +23,28 @@ const Payment = () => {
     const urlObj = new URL(url);
     const params = new URLSearchParams(urlObj.search);
     const invoice_id = params.get("invoice");
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                if (!invoice_id) {
-                    console.error("Invoice ID not found in URL.");
-                    return;
-                }
-
-                const response = await axios.get(
-                    `api/invoice/${invoice_id}`, // Insert invoice_id into the URL
-                    {
-                        headers: {
-                            Authorization: `Bearer puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2`,
-                            // "Content-Type": "application/json",
-                        },
-                    }
-                );
-
-                if (response) {
-                    // console.log(response.data.invoice);
-                    setapiData(response.data.invoice);
-                    console.log(response.data.invoice);
-                    console.log("iz");
-                }
-            } catch (error) {
-                console.error("Error fetching data:", error);
+    const fetchData = async () => {
+        try {
+            if (!invoice_id) {
+                console.error("Invoice ID not found in URL.");
+                return;
             }
-        };
+            const { data } = await axios.get(`api/invoice/${invoice_id}`, {
+                headers: {
+                    Authorization: `uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB`,
+                },
+            });
 
+            if (data) {
+                setapiData(data?.invoice);
+                // console.log(data?.invoice);
+            }
+        } catch (error) {
+            console.error("Error fetching data:", error);
+        }
+    };
+    useEffect(() => {
         fetchData();
-
-        return () => {
-            // cleanup code if necessary
-        };
     }, []);
 
     // console.log(invoice_id, "INVOICE ID");
@@ -162,19 +150,7 @@ const Payment = () => {
         } else {
             console.log("Expiration date is valid");
         }
-        // if (!expDateValidate(formValues.expiryDate)) {
-        //     errors.expirationDate = true;
-        // }
 
-        // Validate CVV (3 to 4 digits)
-        // if (
-        //     !formValues.cvv ||
-        //     formValues.cvv.length < 3 ||
-        //     formValues.cvv.length > 4 ||
-        //     !/^\d+$/.test(formValues.cvv)
-        // ) {
-        //     errors.cvv = true;
-        // }
         if (!formValues.cvv && !formValues.cvc) {
             toast.error("Please enter Your CVC");
             errors.cvv = true;
@@ -219,7 +195,7 @@ const Payment = () => {
                     },
                     {
                         headers: {
-                            Authorization: `Bearer puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2`,
+                            Authorization: `uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB`,
                             // "Content-Type": "application/json",
                         },
                     }
@@ -264,410 +240,414 @@ const Payment = () => {
 
     return (
         <>
-            <div className="row mx-0 justify-content-center padding__top__iz padding__bottom__iz">
-                <Toaster position="top-right" reverseOrder={false} />
-                <div className="col-lg-6">
-                    <div class="alert bg-info p-2 rounded-3 " role="alert">
-                        <p className="mb-0 text-dark">
-                            <span className="fw-bold"> Note: </span>
-                            Please do not refresh or close this page while your
-                            payment is processing. Doing so may result in double
-                            charges or incomplete transactions. Additionally,
-                            avoid clicking the payment button multiple times as
-                            it may also cause duplicate charges. Your patience
-                            is appreciated as we securely process your payment.
-                            Thank you.
-                        </p>
-                    </div>
-                    {apiData?.invoice_logo == "show_brand_logo" && (
-                        <div className="bg-light d-flex justify-content-lg-start justify-content-center px-lg-4  mt-3 shadow py-5 rounded-3">
-                            <img
-                                className="img-fluid"
-                                height="100"
-                                src={apiData?.brand?.mail_details?.logo}
-                            />
-                        </div>
-                    )}
-                    {apiData?.invoice_logo == "new_brand_logo" && (
-                        <div className="bg-light d-flex justify-content-lg-start justify-content-center px-lg-4  mt-3 shadow py-5 rounded-3">
-                            <img
-                                className="img-fluid"
-                                height="100"
-                                style={{ objectFit: "contain" }}
-                                src={apiData.invoice_photo}
-                            />
-                        </div>
-                    )}
-                    <div className="bg-light   mt-3 shadow py-3 rounded-3">
-                        <div className="bg__primary px-3 py-3 mx-2 rounded-3 ">
-                            <h5 className="text-white mb-0">
-                                Customer Details
-                            </h5>
-                        </div>
-                        {/* Customer Details */}
-                        <div className="mt-3">
-                            <div className="row mx-0 px-3">
-                                <div className="col-md-4 col-12">
-                                    <p className="fw-bold mb-0">Name:</p>
-                                </div>
-                                <div className="col-md-8 col-12">
-                                    <p
-                                        className="fw-light mb-0"
-                                        style={{ wordWrap: "break-word" }}
-                                    >
-                                        {apiData !== null
-                                            ? apiData.lead.name
-                                            : ""}
-                                    </p>
-                                </div>
-                            </div>
-                            <hr />
-                            <div className="row mx-0 px-3">
-                                <div className="col-md-4 col-12">
-                                    <p className="fw-bold mb-0">Email:</p>
-                                </div>
-                                <div className="col-md-8 col-12">
-                                    <p
-                                        className="fw-light mb-0"
-                                        style={{ wordWrap: "break-word" }}
-                                    >
-                                        {apiData !== null
-                                            ? apiData.lead.email
-                                            : ""}
-                                    </p>
-                                </div>
-                            </div>
-                            <hr />
-                            <div className="row mx-0 px-3">
-                                <div className="col-md-4 col-12">
-                                    <p className="fw-bold mb-0">Contact:</p>
-                                </div>
-                                <div className="col-md-8 col-12">
-                                    <p className="fw-light mb-0">
-                                        {apiData !== null
-                                            ? apiData.lead.phone
-                                            : ""}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="bg-light   mt-3 shadow py-3 rounded-3">
-                        <div className="bg__primary px-3 py-3 mx-2 rounded-3 d-flex flex-wrap justify-content-between align-items-center ">
-                            <h5 className="text-white mb-0">Invoice Details</h5>
-                            <h5 className="text-white mb-0">
-                                #{apiData !== null ? apiData.invoice_no : ""}
-                            </h5>
-                        </div>
-                        {/* Invoice Details */}
-                        <div className="mt-3">
-                            {apiData !== null ? (
-                                apiData.invoice_items.map((item) => (
-                                    <>
-                                        <div
-                                            className="row mx-0 px-3"
-                                            key={item.id}
-                                        >
-                                            <div className="col-md-8 col-12">
-                                                <p className="fw-bold mb-0">
-                                                    {item.service}
-                                                </p>{" "}
-                                                {/* Service name */}
-                                            </div>
-                                            <div className="col-md-4 col-12">
-                                                <p className="fw-light mb-0">
-                                                    {
-                                                        apiData.merchant
-                                                            .currency_symbol
-                                                    }
-                                                    {item.price}
-                                                </p>{" "}
-                                                {/* Price */}
-                                            </div>
-                                        </div>
+            <Toaster position="top-right" reverseOrder={false} />
+            <div
+                className="mx-auto p-4 d-flex flex-column gap-4 placeholder-glow"
+                style={{ maxWidth: 600 }}
+            >
+                <div
+                    className="p-3 rounded-4 mb-0"
+                    role="alert"
+                    style={{ background: "#fff3cc" }}
+                >
+                    <p className="mb-0 text-dark fw-semibold font-xxs-15px">
+                        <span className="fw-bold"> Note: </span>
+                        Please do not refresh or close this page while your
+                        payment is processing. Doing so may result in double
+                        charges or incomplete transactions. Additionally, avoid
+                        clicking the payment button multiple times as it may
+                        also cause duplicate charges. Your patience is
+                        appreciated as we securely process your payment. Thank
+                        you.
+                    </p>
+                </div>
 
-                                        <hr />
+                <div className=" bg-white rounded-4 p-3 mx-n3 mb-n7">
+                    <img
+                        src="/assets/images/site-logo.webp"
+                        alt="Logo"
+                        width={200}
+                        height={53}
+                        className=" h-auto mb-3"
+                        style={{ width: "clamp(150px, 12vw, 250px)" }}
+                    />
+                </div>
+
+                <div className="bg-white rounded-4 shadow p-2 pb-3">
+                    <div className="bg-primary p-3 rounded-3 mb-3 py-2 lh-lg">
+                        <span className="text-white m-0 font-xxs-15px font-sm-16px font-md-20px fw-semibold">
+                            Customer Details
+                        </span>
+                    </div>
+                    {/* Customer Details */}
+
+                    <ul className=" d-flex flex-column gap-2 border_not-last-child px-3 overflow-hidden overflow-x-auto">
+                        <li className=" d-flex align-items-center gap-2 pb-2 ">
+                            <span
+                                className=" fw-semibold font-xxs-15px d-flex align-items-center gap-2"
+                                style={{ minWidth: "clamp(80px,8vw,112px)" }}
+                            >
+                                <img
+                                    src="https://cdn-icons-png.flaticon.com/512/266/266134.png"
+                                    alt="use icon"
+                                    width={18}
+                                    height={18}
+                                    className="object-fit-contain"
+                                />{" "}
+                                Name:
+                            </span>
+                            <span>
+                                {apiData !== null ? (
+                                    apiData.lead.name
+                                ) : (
+                                    <>
+                                        <span
+                                            className="placeholder"
+                                            style={{ minWidth: 130 }}
+                                        ></span>
                                     </>
-                                ))
+                                )}
+                            </span>
+                        </li>
+                        <li className=" d-flex align-items-center gap-2 pb-2">
+                            <span
+                                className=" fw-semibold font-xxs-15px d-flex align-items-center gap-2"
+                                style={{ minWidth: "clamp(80px,8vw,112px)" }}
+                            >
+                                <img
+                                    src="https://cdn-icons-png.flaticon.com/512/646/646094.png"
+                                    alt="use icon"
+                                    width={18}
+                                    height={18}
+                                    className="object-fit-contain"
+                                />{" "}
+                                Email:
+                            </span>
+                            <span>
+                                {apiData !== null ? (
+                                    apiData.lead.email
+                                ) : (
+                                    <>
+                                        <span
+                                            className="placeholder"
+                                            style={{ minWidth: 170 }}
+                                        ></span>
+                                    </>
+                                )}
+                            </span>
+                        </li>
+                        <li className=" d-flex align-items-center gap-2 pb-2">
+                            <span
+                                className=" fw-semibold font-xxs-15px d-flex align-items-center gap-2"
+                                style={{ minWidth: "clamp(80px,8vw,112px)" }}
+                            >
+                                <img
+                                    src="https://cdn-icons-png.flaticon.com/512/126/126509.png"
+                                    alt="use icon"
+                                    width={18}
+                                    height={18}
+                                    className="object-fit-contain"
+                                />{" "}
+                                Contact:
+                            </span>
+                            <span>
+                                {apiData !== null ? (
+                                    apiData.lead.phone
+                                ) : (
+                                    <>
+                                        <span
+                                            className="placeholder"
+                                            style={{ minWidth: 140 }}
+                                        ></span>
+                                    </>
+                                )}
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="bg-white rounded-4 shadow p-2 pb-3">
+                    <div className="bg-primary p-3 gap-2 rounded-3 mb-3 py-2 lh-lg d-flex flex-wrap justify-content-between align-items-center ">
+                        <span className="text-white m-0 font-xxs-15px font-sm-16px font-md-20px fw-semibold">
+                            Invoice Details
+                        </span>
+                        <span className="text-white m-0 font-xxs-15px font-sm-16px font-md-20px fw-semibold">
+                            #
+                            {apiData !== null ? (
+                                apiData?.invoice_no
                             ) : (
                                 <>
-                                    <div className="row mx-0 px-3" key={0}>
-                                        <div className="col-md-8 col-12">
-                                            <p className="fw-bold mb-0">
-                                                service
-                                            </p>{" "}
-                                            {/* Service name */}
-                                        </div>
-                                        <div className="col-md-4 col-12">
-                                            <p className="fw-light mb-0">$0</p>{" "}
-                                            {/* Price */}
-                                        </div>
-                                    </div>
-
-                                    <hr />
+                                    {" "}
+                                    <span
+                                        className="placeholder"
+                                        style={{ minWidth: 170 }}
+                                    ></span>
                                 </>
                             )}
-
-                            <div className="row mx-0 px-5">
-                                <div className="col-md-8 col-12">
-                                    <p className="fw-bold mb-0 text-dark">
-                                        Total:
-                                    </p>
-                                </div>
-                                <div className="col-md-4 col-12">
-                                    <p className="fw-bold mb-0 text-dark">
-                                        {apiData !== null
-                                            ? apiData.merchant.currency_symbol
-                                            : "$"}
-
-                                        {apiData !== null
-                                            ? apiData.invoice_items.reduce(
-                                                  (acc, item) =>
-                                                      acc +
-                                                      parseFloat(item.price),
-                                                  0
-                                              )
-                                            : 0}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        </span>
                     </div>
-                    {/* {console.log(apiData)
+                    {/* Invoice Details */}
+                    <ul className="d-flex flex-column gap-2 border_not-last-child px-3 overflow-hidden overflow-x-auto">
+                        {apiData !== null ? (
+                            apiData?.invoice_items.map((items, index) => (
+                                <li
+                                    className=" d-flex align-items-center justify-content-between gap-2 fw-semibold border-bottom border-1 pb-2"
+                                    key={index}
+                                >
+                                    <span
+                                        className="show-line-4"
+                                        style={{ maxWidth: 335 }}
+                                    >
+                                        {items?.service}
+                                    </span>
+                                    <span className=" fw-normal">
+                                        {apiData?.merchant?.currency_symbol}
+                                        {items?.price}
+                                    </span>
+                                </li>
+                            ))
+                        ) : (
+                            <>
+                                <li className=" d-flex align-items-center justify-content-between gap-2 flex-wrap fw-semibold border-bottom border-1 pb-2">
+                                    <span
+                                        className="placeholder"
+                                        style={{ width: 100 }}
+                                    ></span>
+                                    <span
+                                        className=" fw-normal placeholder"
+                                        style={{ width: 50 }}
+                                    ></span>
+                                </li>
+                            </>
+                        )}
+
+                        <li className=" d-flex align-items-center justify-content-between gap-2 flex-wrap fw-semibold font-md-18px px-3">
+                            Total{" "}
+                            <span className=" fw-semibold">
+                                {apiData !== null ? (
+                                    `${apiData?.merchant?.currency_symbol}${apiData?.transaction_amount}`
+                                ) : (
+                                    <span
+                                        className="placeholder"
+                                        style={{ width: 50 }}
+                                    ></span>
+                                )}
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                {/* {console.log(apiData)
                     } */}
-                    {apiData !== null &&
-                    apiData?.transaction_status == "paid" ? (
-                        <>
-                            <div className="bg-light   mt-3 shadow py-3 rounded-3">
-                                <div className="bg__primary px-3 py-3 mx-2 rounded-3 ">
-                                    <h5 className="text-white mb-0">
-                                        Transaction Details
-                                    </h5>
-                                </div>
-                                {/* Customer Details */}
-                                <div className="mt-3">
-                                    <div className="row mx-0 px-3">
-                                        <div className="col-md-4 col-12">
-                                            <p className="fw-bold mb-0">
-                                                Transaction ID :
-                                            </p>
-                                        </div>
-                                        <div className="col-md-8 col-12">
-                                            <p
-                                                className="fw-light mb-0"
-                                                style={{
-                                                    wordWrap: "break-word",
-                                                }}
-                                            >
-                                                {apiData !== null
-                                                    ? apiData.transaction_id
-                                                    : ""}
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    <div className="row mx-0 px-3">
-                                        <div className="col-md-4 col-12">
-                                            <p className="fw-bold mb-0">
-                                                Transaction Status ID:
-                                            </p>
-                                        </div>
-                                        <div className="col-md-8 col-12">
-                                            <p
-                                                className="fw-light mb-0"
-                                                style={{
-                                                    wordWrap: "break-word",
-                                                }}
-                                            >
-                                                {apiData !== null
-                                                    ? apiData.transaction_status
-                                                    : ""}
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    <div className="row mx-0 px-3">
-                                        <div className="col-md-4 col-12">
-                                            <p className="fw-bold mb-0">
-                                                Paid at:
-                                            </p>
-                                        </div>
-                                        <div className="col-md-8 col-12">
-                                            <p className="fw-light mb-0">
-                                                {apiData !== null
-                                                    ? apiData.paid_at
-                                                    : ""}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                {apiData !== null && apiData?.transaction_status == "paid" ? (
+                    <>
+                        <div className="bg-white rounded-4 shadow p-2">
+                            <div className="bg-primary p-3 rounded-3 mb-2">
+                                <span className="text-white font-xxs-15px font-sm-16px font-md-20px fw-semibold">
+                                    Transaction Details
+                                </span>
                             </div>
-                        </>
-                    ) : (
-                        <div className="bg-light   mt-3 shadow py-3 rounded-3">
-                            <div className="bg__primary px-3 py-3 mx-2 rounded-3 ">
-                                <h5 className="text-white mb-0">
-                                    Payment Details
-                                </h5>
-                            </div>
-                            {/* Payment Details */}
-                            <form onSubmit={handleSubmit}>
-                                <div className="mt-3">
-                                    <p className="mb-2 text-uppercase text-dark px-3 py-4">
-                                        {" "}
-                                        Pay with Card:
-                                    </p>
-                                    <div className="row mx-0 px-3">
-                                        <div className="col-lg-6 col-12">
-                                            <label htmlFor="" className="mb-2">
-                                                Card Number
-                                            </label>
-                                            <div
-                                                style={{ height: "60px" }}
-                                                className={`form-control d-flex gap-2 align-items-center ${
-                                                    formErrors.cardNumber &&
-                                                    formErrors.cardNumber
-                                                        ? "border-danger"
-                                                        : ""
-                                                }`}
-                                            >
-                                                <svg
-                                                    {...getCardImageProps({
-                                                        images,
-                                                    })}
-                                                />
-                                                <input
-                                                    type="text"
-                                                    style={{
-                                                        border: "0px",
-                                                        padding: "0px",
-                                                        backgroundColor:
-                                                            "transparent",
-                                                        height: "20px",
-                                                    }}
-                                                    {...getCardNumberProps({
-                                                        onChange: (e) =>
-                                                            handleInputChange(
-                                                                e
-                                                            ),
-                                                    })}
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 col-12 mt-lg-0 mt-3">
-                                            <label htmlFor="" className="mb-2">
-                                                Valid Thru
-                                            </label>
-                                            <input
-                                                type="text"
-                                                className={`form-control ${
-                                                    formErrors.expiryDate
-                                                        ? "border-1 border-danger"
-                                                        : ""
-                                                }`}
-                                                {...getExpiryDateProps({
-                                                    onChange: (e) =>
-                                                        handleInputChange(e),
-                                                })}
-                                            />
-                                        </div>
-                                    </div>
+                            {/* Customer Details */}
 
-                                    <div className="row mx-0 px-3 mt-3">
-                                        <div className="col-lg-6 col-12">
-                                            <label htmlFor="" className="mb-2">
-                                                CVV
-                                            </label>
-                                            <input
-                                                type="text"
-                                                className={`form-control ${
-                                                    formErrors.cvv &&
-                                                    formErrors.cvc
-                                                        ? "border-1 border-danger"
-                                                        : ""
-                                                }`}
-                                                {...getCVCProps({
-                                                    onChange: (e) =>
-                                                        handleInputChange(e),
-                                                })}
-                                            />
-                                        </div>
-
-                                        <div className="col-lg-6 col-12 mt-lg-0 mt-3">
-                                            <label htmlFor="" className="mb-2">
-                                                Zip Code
-                                            </label>
-                                            <input
-                                                type="text"
-                                                name="zipCode"
-                                                value={formValues.zipCode}
-                                                onChange={handleInputChange}
-                                                maxLength={5}
-                                                pattern="[0-9]*"
-                                                inputMode="numeric"
-                                                className={`form-control ${
-                                                    formErrors.zipCode
-                                                        ? "border-danger"
-                                                        : ""
-                                                }`}
-                                                placeholder="eg. 12345"
-                                            />
-                                        </div>
-                                    </div>
-
-                                    <div className="row mx-0 px-3 mt-3">
-                                        <div className="col-lg-6 col-12">
-                                            <label htmlFor="" className="mb-2">
-                                                Name on Card
-                                            </label>
-                                            <input
-                                                type="text"
-                                                name="cardHolderName"
-                                                value={
-                                                    formValues.cardHolderName
-                                                }
-                                                onChange={handleInputChange}
-                                                className={`form-control ${
-                                                    formErrors.cardHolderName
-                                                        ? "border-danger"
-                                                        : ""
-                                                }`}
-                                                placeholder="eg. Baron Smith"
-                                            />
-                                        </div>
-                                        <div className="col-lg-6 col-12 mt-lg-0 mt-3">
-                                            <label htmlFor="" className="mb-2">
-                                                Card Holder Address
-                                            </label>
-                                            <input
-                                                type="text"
-                                                name="address"
-                                                value={formValues.address}
-                                                onChange={handleInputChange}
-                                                className={`form-control ${
-                                                    formErrors.address
-                                                        ? "border-danger"
-                                                        : ""
-                                                }`}
-                                                placeholder="House xyz, Street xyz ..."
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="mx-3">
-                                    <button
-                                        className="btn btn-primary bg__primary mt-3 text-white  text-uppercase w-100 py-3"
-                                        disabled={isSubmitting}
-                                        type="submit"
+                            <ul className="d-flex flex-column gap-2 border_not-last-child px-3 overflow-hidden overflow-x-auto">
+                                <li className=" d-flex align-items-center gap-2 pb-2 ">
+                                    <span
+                                        className=" fw-semibold font-xxs-15px d-flex align-items-center gap-2"
+                                        style={{
+                                            minWidth:
+                                                "clamp(80px, 10vw, 125px)",
+                                            maxWidth: 120,
+                                        }}
                                     >
                                         {" "}
-                                        submit
-                                    </button>
-                                </div>
-                            </form>
+                                        Transaction ID:
+                                    </span>
+                                    <span>obLyORbyDyLDnOWn</span>
+                                </li>
+                                <li className=" d-flex align-items-center gap-2 pb-2 ">
+                                    <span
+                                        className=" fw-semibold font-xxs-15px d-flex align-items-center gap-2"
+                                        style={{
+                                            minWidth:
+                                                "clamp(80px, 10vw, 125px)",
+                                            maxWidth: 120,
+                                        }}
+                                    >
+                                        {" "}
+                                        Transaction Status ID:
+                                    </span>
+                                    <span
+                                        className=" text-capitalize"
+                                        style={{ color: "green" }}
+                                    >
+                                        paid
+                                    </span>
+                                </li>
+                                <li className=" d-flex align-items-center gap-2 pb-2 ">
+                                    <span
+                                        className=" fw-semibold font-xxs-15px d-flex align-items-center gap-2"
+                                        style={{
+                                            minWidth:
+                                                "clamp(80px, 10vw, 125px)",
+                                            maxWidth: 120,
+                                        }}
+                                    >
+                                        {" "}
+                                        Paid at:
+                                    </span>
+                                    <span>2025-02-10 04:04:07</span>
+                                </li>
+                            </ul>
                         </div>
-                    )}
-                </div>
+                    </>
+                ) : (
+                    <div className="bg-white rounded-4 shadow p-2 pb-3">
+                        <div className="bg-primary p-3 rounded-3 mb-3 py-2 lh-lg">
+                            <span className="text-white m-0 font-xxs-15px font-sm-16px font-md-20px fw-semibold">
+                                Payment Details
+                            </span>
+                        </div>
+                        {/* Payment Details */}
+                        <form className="px-3" onSubmit={handleSubmit}>
+                            <span className="mb-3 d-block text-uppercase text-dark fw-semibold">
+                                {" "}
+                                Pay with Card:
+                            </span>
+                            <div className="row g-2 g-md-3">
+                                <div className="col-sm-6">
+                                    <label className="mb-1 font-xxs-15px fw-medium">
+                                        Card Number
+                                        <span className=" text-danger">*</span>
+                                    </label>
+                                    <div className="position-relative">
+                                        <svg
+                                            className=" flex-shrink-0 position-absolute top-50 translate-middle-y start-0 ms-3"
+                                            {...getCardImageProps({
+                                                images,
+                                            })}
+                                        />
+                                        <input
+                                            className={`form-control ps-7 rounded-pill ${
+                                                formErrors.cardNumber &&
+                                                formErrors.cardNumber
+                                                    ? "border-danger"
+                                                    : ""
+                                            }`}
+                                            type="text"
+                                            {...getCardNumberProps({
+                                                onChange: (e) =>
+                                                    handleInputChange(e),
+                                            })}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-sm-6">
+                                    <label className="mb-1 font-xxs-15px fw-medium">
+                                        Valid Thru
+                                        <span className=" text-danger">*</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        className={`form-control rounded-pill ps-3 ps-md-4 ${
+                                            formErrors.expiryDate
+                                                ? "border-1 border-danger"
+                                                : ""
+                                        }`}
+                                        {...getExpiryDateProps({
+                                            onChange: (e) =>
+                                                handleInputChange(e),
+                                        })}
+                                    />
+                                </div>
+                                <div className="col-sm-6">
+                                    <label className="mb-1 font-xxs-15px fw-medium">
+                                        CVV
+                                        <span className=" text-danger">*</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        className={`form-control rounded-pill ps-3 ps-md-4 ${
+                                            formErrors.cvv && formErrors.cvc
+                                                ? "border-1 border-danger"
+                                                : ""
+                                        }`}
+                                        {...getCVCProps({
+                                            onChange: (e) =>
+                                                handleInputChange(e),
+                                        })}
+                                    />
+                                </div>
+
+                                <div className="col-sm-6">
+                                    <label className="mb-1 font-xxs-15px fw-medium">
+                                        Zip Code
+                                        <span className=" text-danger">*</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="zipCode"
+                                        value={formValues.zipCode}
+                                        onChange={handleInputChange}
+                                        maxLength={5}
+                                        pattern="[0-9]*"
+                                        inputMode="numeric"
+                                        className={`form-control rounded-pill ps-3 ps-md-4 ${
+                                            formErrors.zipCode
+                                                ? "border-danger"
+                                                : ""
+                                        }`}
+                                        placeholder="eg. 12345"
+                                    />
+                                </div>
+
+                                <div className="col-sm-6">
+                                    <label className="mb-1 font-xxs-15px fw-medium">
+                                        Name on Card
+                                        <span className=" text-danger">*</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="cardHolderName"
+                                        value={formValues.cardHolderName}
+                                        onChange={handleInputChange}
+                                        className={`form-control rounded-pill ps-3 ps-md-4 ${
+                                            formErrors.cardHolderName
+                                                ? "border-danger"
+                                                : ""
+                                        }`}
+                                        placeholder="eg. Baron Smith"
+                                    />
+                                </div>
+                                <div className="col-sm-6">
+                                    <label className="mb-1 font-xxs-15px fw-medium">
+                                        Card Holder Address
+                                        <span className=" text-danger">*</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="address"
+                                        value={formValues.address}
+                                        onChange={handleInputChange}
+                                        className={`form-control rounded-pill ps-3 ps-md-4 ${
+                                            formErrors.address
+                                                ? "border-danger"
+                                                : ""
+                                        }`}
+                                        placeholder="House xyz, Street xyz ..."
+                                    />
+                                </div>
+                            </div>
+
+                            <button
+                                className="btn btn-primary mt-3 mt-lg-5 text-white text-uppercase w-100 py-2 font-md-20px fw-semibold rounded-pill"
+                                disabled={isSubmitting}
+                                type="submit"
+                            >
+                                {" "}
+                                submit
+                            </button>
+                        </form>
+                    </div>
+                )}
             </div>
         </>
     );

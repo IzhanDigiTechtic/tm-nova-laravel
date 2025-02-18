@@ -140,7 +140,7 @@
                 url: 'https://tm-brands.digitechtictest.com/api/leads',
                 method: 'POST',
                 headers: {
-                    'Authorization': 'puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2',
+                    'Authorization': 'uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB',
                     'Content-Type': 'application/json'
                 },
                 data: JSON.stringify({
@@ -170,7 +170,7 @@
                             url: 'https://tm-brands.digitechtictest.com/api/leadData',
                             method: 'POST',
                             headers: {
-                                'Authorization': 'puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2', // Replace 
+                                'Authorization': 'uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB', // Replace 
                                 'Content-Type': 'application/json'
                             },
                             data: JSON.stringify(leadData),
@@ -250,7 +250,7 @@
                 url: 'https://tm-brands.digitechtictest.com/api/leads',
                 method: 'POST',
                 headers: {
-                    'Authorization': 'puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2',
+                    'Authorization': 'uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB',
                     'Content-Type': 'application/json'
                 },
                 data: JSON.stringify({
@@ -280,7 +280,7 @@
                             url: 'https://tm-brands.digitechtictest.com/api/leadData',
                             method: 'POST',
                             headers: {
-                                'Authorization': 'puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2', // Replace 
+                                'Authorization': 'uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB', // Replace 
                                 'Content-Type': 'application/json'
                             },
                             data: JSON.stringify(leadData),

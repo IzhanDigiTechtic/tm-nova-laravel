@@ -121,7 +121,7 @@ const Step2 = () => {
         try {
             const data = await axios.post(ApiRequest.leadData, formData, {
                 headers: {
-                    Authorization: `puKaEJlva9adZeFPtUlKW17sODtHON2dWUMsFdX2`,
+                    Authorization: `uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB`,
                 },
             });
 
