@@ -4,5 +4,9 @@ export const ApiRequest = {
     uploadImg: "api/uploadImage",
     getLeadData: "api/getLeadData",
     leadPayment: "api/leadPayment",
-    Invoice: "api/invoice"
+    Invoice: "api/invoice",
+    Packages: "api/getPackages",
+    getCart: "api/getCart",
+    addToCart: "api/addToCart",
+    deleteFromCart: "api/deleteFromCart"
 };

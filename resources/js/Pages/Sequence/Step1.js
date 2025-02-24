@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import SequenceLayout from "../../Layouts/SequenceLayout";
 import { Sidebar } from "../../components/AllComponents";
 import { Themecontext } from "../../ThemeContext";
-import { ApiRequest } from "../../apiRequest";
+import { ApiRequest } from "../../ApiRequest";
 import axios from "../../axios";
 import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
@@ -14,11 +14,13 @@ import { Helmet } from "react-helmet-async";
 const Step1 = () => {
     const { isData, setData } = useContext(Themecontext);
     // const navigate = useNavigate();
+    const AuthToken = process.env.TOKEN;
     // const [tradeCheckbox, setTradeCheckbox] = useState(null)
     const [validationError, setValidationError] = useState(false);
     const [validationNameError, setValidationNameError] = useState(false);
     const [validationSloganError, setValidationSloganError] = useState(false);
     const [validationLogoError, setValidationLogoError] = useState(false);
+    const [validationLogoError2, setValidationLogoError2] = useState(false);
     const [validationContactNameError, setValidationContactNameError] =
         useState(false);
     const [validationContactEmailError, setValidationContactEmailError] =
@@ -96,6 +98,11 @@ const Step1 = () => {
                 setValidationSloganError(false);
                 setFormData((prev) => ({ ...prev, [name]: value }));
             }
+        } else if (name === "logoToProtect2") {
+            if (value) {
+                setValidationLogoError2(false);
+                setFormData((prev) => ({ ...prev, [name]: value }));
+            }
         }
         setFormData((prev) => ({ ...prev, [name]: value }));
         // else if (name === "logoToProtect") {
@@ -147,7 +154,7 @@ const Step1 = () => {
                     {
                         headers: {
                             "Content-Type": "multipart/form-data", // Set the correct content type for file uploads
-                            Authorization: `uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB`,
+                            Authorization: AuthToken,
                         },
                     }
                 );
@@ -199,6 +206,7 @@ const Step1 = () => {
         let nameError = false;
         let sloganError = false;
         let logoError = false;
+        let logoError2 = false;
         let contactName = false;
         let contactEmail = false;
         let contactPhone = false;
@@ -212,6 +220,9 @@ const Step1 = () => {
         }
         if (formData.servicesLogo && !formData.image) {
             logoError = true;
+        }
+        if (formData.servicesLogo && !formData.logoToProtect2) {
+            logoError2 = true;
         }
         if (!formData.userName) {
             contactName = true;
@@ -230,11 +241,12 @@ const Step1 = () => {
         setValidationNameError(nameError);
         setValidationSloganError(sloganError);
         setValidationLogoError(logoError);
+        setValidationLogoError2(logoError2);
         setValidationContactNameError(contactName);
         setValidationContactEmailError(contactEmail);
 
         // Check if any of the errors are true
-        if (nameError || sloganError || logoError) {
+        if (nameError || sloganError || logoError || logoError2) {
             toast.error("Please fill out the details of your brand");
             return; // Prevent form submission
         }
@@ -269,7 +281,7 @@ const Step1 = () => {
 
             const { data } = await axios.post(ApiRequest.leads, formdata, {
                 headers: {
-                    Authorization: `uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB`,
+                    Authorization: AuthToken,
                 },
             });
 
@@ -297,6 +309,12 @@ const Step1 = () => {
                     lead_type: "text",
                     lead_step: 1,
                 };
+                const LogoToProtectData2 = {
+                    question: "Enter the Logo Name you wish to protect *",
+                    answer: formData.logoToProtect2,
+                    lead_type: "text",
+                    lead_step: 1,
+                };
                 const answerParts = [];
                 if (formData.servicesName) {
                     answerParts.push("Name");
@@ -311,6 +329,7 @@ const Step1 = () => {
                     answerParts.length > 0 ? answerParts.join(", ") : "false";
                 const payload = {
                     lead_id: leadID, // Use lead ID directly
+                    lead_step: 1, // Use lead ID directly
                     data: [
                         {
                             question: "Select What You Are Trying To Protect?",
@@ -320,6 +339,7 @@ const Step1 = () => {
                         },
                         formData.nameToProtect ? NameToProtectData : null,
                         formData.sloganToProtect ? SloganToProtectData : null,
+                        formData.logoToProtect2 ? LogoToProtectData2 : null,
                         imageUrl ? LogoToProtectData : null,
                         {
                             question: "Quantity",
@@ -337,7 +357,7 @@ const Step1 = () => {
                     payload,
                     {
                         headers: {
-                            Authorization: `uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB`,
+                            Authorization: AuthToken,
                         },
                     }
                 );
@@ -379,7 +399,7 @@ const Step1 = () => {
     return (
         <SequenceLayout>
             <Helmet>
-                <title>Sequence Step 01 | Trademark Savior</title>
+                <title>Sequence Step 01 | Trademark Nova</title>
             </Helmet>
             <section>
                 <div className="container">
@@ -420,7 +440,7 @@ const Step1 = () => {
                                             htmlFor="servicesName"
                                         >
                                             <img
-                                                src="/sequence-assets/img/logo-types/logo-category-1.webp"
+                                                src="/assets/images/logo-types/logo-category-1.webp"
                                                 alt="Logo"
                                                 width="60"
                                                 height="40"
@@ -461,7 +481,7 @@ const Step1 = () => {
                                             htmlFor="servicesSlogan"
                                         >
                                             <img
-                                                src="/sequence-assets/img/logo-types/logo-category-2.webp"
+                                                src="/assets/images/logo-types/logo-category-2.webp"
                                                 alt="Logo"
                                                 width="60"
                                                 height="40"
@@ -502,7 +522,7 @@ const Step1 = () => {
                                             htmlFor="servicesLogo"
                                         >
                                             <img
-                                                src="/sequence-assets/img/logo-types/logo-category-3.webp"
+                                                src="/assets/images/logo-types/logo-category-3.webp"
                                                 alt="Logo"
                                                 width="60"
                                                 height="40"
@@ -563,29 +583,48 @@ const Step1 = () => {
                             )}
 
                             {formData.servicesLogo && (
-                                <div className="mt-5">
-                                    <label className="fw-semibold font-xxl-22px mb-2 d-block">
-                                        Enter The Logo You Wish To Protect
-                                    </label>
-                                    <input
-                                        type="file"
-                                        className={`form-control w-100 rounded-3 ps-4 ${
-                                            validationLogoError
-                                                ? "border-danger border-2"
-                                                : ""
-                                        }`}
-                                        accept="image/jpeg, image/png, image/jpg, image/gif, image/webp"
-                                        name="image"
-                                        onChange={handleFileChange}
-                                    />
-                                    {validationLogoError && (
-                                        <div className="text-danger">
-                                            Please upload a valid image file
-                                            (JPEG, PNG, JPG, GIF, WEBP) not
-                                            exceeding 5 MB.
-                                        </div>
-                                    )}
-                                </div>
+                                <>
+                                    <div className="mt-5">
+                                        <label className="fw-semibold font-xxl-22px mb-2 d-block">
+                                            Enter The Logo You Wish To Protect
+                                        </label>
+                                        <input
+                                            type="file"
+                                            className={`form-control w-100 rounded-3 ps-4 ${
+                                                validationLogoError
+                                                    ? "border-danger border-2"
+                                                    : ""
+                                            }`}
+                                            accept="image/jpeg, image/png, image/jpg, image/gif, image/webp"
+                                            name="image"
+                                            onChange={handleFileChange}
+                                        />
+                                        {validationLogoError && (
+                                            <div className="text-danger">
+                                                Please upload a valid image file
+                                                (JPEG, PNG, JPG, GIF, WEBP) not
+                                                exceeding 5 MB.
+                                            </div>
+                                        )}
+                                    </div>
+                                    <div className="mt-5">
+                                        <label className="fw-semibold font-xxl-22px mb-2 d-block">
+                                            Enter the Logo Name you wish to
+                                            protect *
+                                        </label>
+                                        <input
+                                            type="text"
+                                            className={`form-control w-100 rounded-3 ps-4 ${
+                                                validationLogoError2
+                                                    ? "border-danger border-2"
+                                                    : ""
+                                            }`}
+                                            name="logoToProtect2"
+                                            value={formData.logoToProtect2}
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                </>
                             )}
                         </div>
 
@@ -667,7 +706,8 @@ const Step1 = () => {
                                         Phone*
                                     </label>
                                     <PhoneInput
-                                        country={"us"} // Set the default country code
+                                        country={"us"}
+                                        countryCodeEditable={false} // Set the default country code
                                         inputClass={`form-control w-100 rounded-3 ps-7 ${
                                             validationContactPhoneError
                                                 ? "border-danger border-2"

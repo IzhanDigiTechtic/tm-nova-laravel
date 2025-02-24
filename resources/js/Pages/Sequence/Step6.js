@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import SequenceLayout from "../../Layouts/SequenceLayout";
 import { Sidebar, SidebarCard } from "../../components/AllComponents";
 // import { useCreditCardValidator, images } from 'react-creditcard-validator';
@@ -6,9 +6,10 @@ import { usePaymentInputs } from "react-payment-inputs";
 import images from "react-payment-inputs/images";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "../../axios";
-import { ApiRequest } from "../../apiRequest";
+import { ApiRequest } from "../../ApiRequest";
 import { Helmet } from "react-helmet-async";
 const Step6 = () => {
+    const AuthToken = process.env.TOKEN;
     const [formValues, setFormValues] = useState({
         cardHolderName: "",
         cardNumber: undefined,
@@ -22,20 +23,21 @@ const Step6 = () => {
     // const inputRef = useRef(null);
     const [formErrors, setFormErrors] = useState({});
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const retrievedStep4Data = JSON.parse(localStorage.getItem("step4"));
-    const retrievedStep4Dataprice = JSON.parse(
-        localStorage.getItem("step4")
-    ).find((item) => item.lead_key === "Total Price");
-    const totalPriceValue = retrievedStep4Dataprice
-        ? retrievedStep4Dataprice.lead_value
-        : 1;
+    const [cardData, setCartData] = useState(null);
+    // const retrievedStep4Data = JSON.parse(localStorage.getItem("step4"));
+    // const retrievedStep4Dataprice = JSON.parse(
+    //     localStorage.getItem("step4")
+    // ).find((item) => item.lead_key === "Total Price");
+    // const totalPriceValue = retrievedStep4Dataprice
+    //     ? retrievedStep4Dataprice.lead_value
+    //     : 1;
     const retrievedStep1Data2 = JSON.parse(localStorage.getItem("step1.2"));
     const quantityData = retrievedStep1Data2.data.find(
         (item) => item.lead_key === "Quantity"
     );
     const quantityValue = quantityData ? quantityData.lead_value : 1;
-    const retrievedStep5Data = JSON.parse(localStorage.getItem("step5"));
-    const jsonString = JSON.parse(retrievedStep5Data[0].lead_value);
+    // const retrievedStep5Data = JSON.parse(localStorage.getItem("step5"));
+    // const jsonString = JSON.parse(retrievedStep5Data[0].lead_value);
     const url = window.location.href;
     const urlObj = new URL(url);
     const params = new URLSearchParams(urlObj.search);
@@ -232,7 +234,36 @@ const Step6 = () => {
         // console.log(errors)
         return errors;
     };
+    useEffect(() => {
+        const fetchCart = async () => {
+            try {
+                // window.alert("Fetching packages...");
+                const CartData = await axios.post(
+                    `${ApiRequest.getCart}`,
+                    {
+                        lead_id: lead_id,
+                    },
+                    {
+                        headers: {
+                            Authorization: AuthToken,
+                        },
+                    }
+                );
 
+                if (CartData && CartData.data) {
+                    console.warn("Cart Fetched:", CartData.data);
+                    setCartData(CartData.data);
+                } else {
+                    console.log("No cart found.");
+                }
+            } catch (error) {
+                console.error("Error fetching cart:", error);
+                // window.alert("Failed to get packages");
+            }
+        };
+
+        fetchCart();
+    }, []);
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -253,7 +284,8 @@ const Step6 = () => {
                     ApiRequest.leadPayment, // Replace with your actual API URL
                     {
                         lead_id: lead_id, // Include lead_id
-                        amount: jsonString.Total_Price, // Include total_amount
+                        lead_step: 6,
+                        amount: cardData.total, // Include total_amount
                         card_num: formValues.cardNumber,
                         card_expiry_month: formValues.expiry__month,
                         card_expiry_year: formValues.expiry__year,
@@ -270,21 +302,24 @@ const Step6 = () => {
                     },
                     {
                         headers: {
-                            Authorization: `uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB`,
+                            Authorization: AuthToken,
                             // "Content-Type": "application/json",
                         },
                     }
                 );
 
-                if (response.status == "success") {
+                if (response.data.status === "success") {
                     console.log("Payment done successfully", formValues);
                     toast.success("Payment done successfully");
-                    window.location.href = `/thank-you?id=${lead_id}`;
+                    window.location.href = `/thankyou?id=${lead_id}`;
                 } else {
+                    console.log(response.data.status);
                     // console.log("Payment failed", formValues);
                     toast.error("Payment failed!");
                     setIsSubmitting(false);
                 }
+            } else {
+                setIsSubmitting(false);
             }
         } catch (error) {
             toast.error("Payment failed!");
@@ -301,7 +336,7 @@ const Step6 = () => {
         <>
             <SequenceLayout>
                 <Helmet>
-                    <title>Sequence Step 06 | Trademark Savior</title>
+                    <title>Sequence Step 06 | Trademark Nova</title>
                 </Helmet>
                 <section>
                     <div className="container">
@@ -328,16 +363,29 @@ const Step6 = () => {
                             </div>
                             <div className="col-lg-9">
                                 <div className="d-flex align-items-center justify-content-between">
-                                    <h2 className=" fw-semibold font-xxs-25px font-md-40px mb-4">
+                                    <h2 className=" fw-semibold  font-xxs-25px font-md-40px mb-4">
                                         <span className=" text-primary">
                                             Payment
                                         </span>{" "}
                                         Details
                                     </h2>
+                                    <span className="fw-bold  font-xxs-40px font-md-50px fst-italic">
+                                        {/* ${jsonString.Total_Price} */}
+                                        {cardData?.total
+                                            ? "$" + cardData.total
+                                            : "...loading"}
+                                    </span>
                                 </div>
                                 <form onSubmit={handleSubmit}>
                                     <div className="row g-3">
                                         <div className="col-12">
+                                            {/* <img
+                                                src="/assets-updated/img/payment.png"
+                                                alt="payment image"
+                                                width="234"
+                                                height="35"
+                                                className="object-fit-contain ms-auto mb-3"
+                                            /> */}
                                             <input
                                                 type="text"
                                                 name="cardHolderName"
@@ -345,11 +393,10 @@ const Step6 = () => {
                                                     formValues.cardHolderName
                                                 }
                                                 onChange={handleInputChange}
-                                                className={`form-control rounded-3 ps-4 font-xxxl-20px default-input ${
-                                                    formErrors.cardHolderName
+                                                className={`form-control rounded-3 ps-4 font-xxxl-20px default-input ${formErrors.cardHolderName
                                                         ? "border-danger"
                                                         : ""
-                                                }`}
+                                                    }`}
                                                 placeholder="Card Holder Name"
                                             />
                                         </div>
@@ -360,11 +407,10 @@ const Step6 = () => {
                                                 name="address"
                                                 value={formValues.address}
                                                 onChange={handleInputChange}
-                                                className={`form-control rounded-3 ps-4 font-xxxl-20px default-input ${
-                                                    formErrors.address
+                                                className={`form-control rounded-3 ps-4 font-xxxl-20px default-input ${formErrors.address
                                                         ? "border-danger"
                                                         : ""
-                                                }`}
+                                                    }`}
                                                 placeholder="Address"
                                             />
                                         </div>
@@ -374,11 +420,10 @@ const Step6 = () => {
                                                 name="city"
                                                 value={formValues.city}
                                                 onChange={handleInputChange}
-                                                className={`form-control rounded-3 ps-4 font-xxxl-20px default-input ${
-                                                    formErrors.city
+                                                className={`form-control rounded-3 ps-4 font-xxxl-20px default-input ${formErrors.city
                                                         ? "border-danger"
                                                         : ""
-                                                }`}
+                                                    }`}
                                                 placeholder="City"
                                             />
                                         </div>
@@ -388,36 +433,33 @@ const Step6 = () => {
                                                 name="state"
                                                 value={formValues.state}
                                                 onChange={handleInputChange}
-                                                className={`form-control rounded-3 ps-4 font-xxxl-20px default-input ${
-                                                    formErrors.state
+                                                className={`form-control rounded-3 ps-4 font-xxxl-20px default-input ${formErrors.state
                                                         ? "border-danger"
                                                         : ""
-                                                }`}
+                                                    }`}
                                                 placeholder="State"
                                             />
                                         </div>
                                         <div className="col-lg-3">
                                             <input
-                                                type="text"
+                                                type="number"
                                                 name="zipCode"
                                                 value={formValues.zipCode}
                                                 onChange={handleInputChange}
-                                                className={`form-control rounded-3 ps-4 font-xxxl-20px default-input ${
-                                                    formErrors.zipCode
+                                                className={`form-control rounded-3 ps-4 font-xxxl-20px default-input ${formErrors.zipCode
                                                         ? "border-danger"
                                                         : ""
-                                                }`}
+                                                    }`}
                                                 placeholder="Zip Code"
                                             />
                                         </div>
                                         <div className="col-lg-6">
                                             <div
-                                                className={`form-control rounded-3 ps-4 font-xxxl-20px paymentcard-number py-0 d-flex gap-2 align-items-center ${
-                                                    formErrors.cardNumber &&
-                                                    formErrors.cardNumber
+                                                className={`form-control rounded-3 ps-4 font-xxxl-20px paymentcard-number py-0 d-flex gap-2 align-items-center ${formErrors.cardNumber &&
+                                                        formErrors.cardNumber
                                                         ? "border-danger"
                                                         : ""
-                                                }`}
+                                                    }`}
                                             >
                                                 <svg
                                                     {...getCardImageProps({
@@ -445,22 +487,21 @@ const Step6 = () => {
                                                                 e
                                                             ),
                                                     })}
-                                                    // name="cardNumber"
-                                                    // value={formValues.cardNumber}
+                                                // name="cardNumber"
+                                                // value={formValues.cardNumber}
 
-                                                    // placeholder="xxxxxxxxxxxxxx"
+                                                // placeholder="xxxxxxxxxxxxxx"
                                                 />
                                             </div>
                                         </div>
                                         <div className="col-lg-6">
                                             <div
-                                                className={`rounded-3 px-3 bg-white d-flex align-items-center justify-content-between ${
-                                                    formErrors.expiryDate ||
-                                                    (formErrors.cvv &&
-                                                        formErrors.cvc)
+                                                className={`rounded-3 px-3 bg-white d-flex align-items-center justify-content-between ${formErrors.expiryDate ||
+                                                        (formErrors.cvv &&
+                                                            formErrors.cvc)
                                                         ? "border border-1 border-danger"
                                                         : ""
-                                                }`}
+                                                    }`}
                                             >
                                                 <input
                                                     // type="text"
@@ -478,11 +519,10 @@ const Step6 = () => {
                                                                 e
                                                             ),
                                                     })}
-                                                    className={`border-0 bg-transparent payment-expiration-date ${
-                                                        formErrors.expiryDate
+                                                    className={`border-0 bg-transparent payment-expiration-date ${formErrors.expiryDate
                                                             ? "border-1 border-danger"
                                                             : ""
-                                                    }`}
+                                                        }`}
                                                 />
                                                 <div
                                                     className="bg-dark opacity-25"
@@ -496,11 +536,10 @@ const Step6 = () => {
                                                     // name="cvv"
                                                     // value={formValues.cvv}
                                                     // onChange={handleInputChange}
-                                                    className={`border-0 bg-transparent payment-cvv-code ${
-                                                        formErrors.cvv
+                                                    className={`border-0 bg-transparent payment-cvv-code ${formErrors.cvv
                                                             ? "border-danger"
                                                             : ""
-                                                    }`}
+                                                        }`}
                                                     // style={{ width: "100px" }}
                                                     // placeholder="CVV"
                                                     // {...getCVCProps()}
@@ -517,11 +556,10 @@ const Step6 = () => {
                                         <div className="col-12">
                                             <button
                                                 type="submit"
-                                                className={`btn btn-primary py-3 px-4 fw-semibold font-md-17px text-white lh-base d-inline-flex align-items-center gap-4 text-nowrap justify-content-between text-uppercase paymentFormValidation ${
-                                                    isSubmitting
+                                                className={`btn btn-primary py-3 px-4 fw-semibold font-md-17px  lh-base d-inline-flex align-items-center gap-4 text-nowrap justify-content-between text-uppercase paymentFormValidation ${isSubmitting
                                                         ? "disabled"
                                                         : ""
-                                                }`}
+                                                    }`}
                                                 onClick={handleSubmit}
                                                 aria-disabled={isSubmitting}
                                             >
@@ -533,24 +571,10 @@ const Step6 = () => {
                             </div>
                             <div className="col-lg-3">
                                 <SidebarCard
-                                    title={retrievedStep4Data[0].lead_key}
-                                    price={totalPriceValue}
+                                    // title={retrievedStep4Data[0].lead_key}
+                                    // price={totalPriceValue}
                                     timesmultiplied={quantityValue}
                                     step={6}
-                                    package2={{
-                                        PackageName: jsonString.Package_name,
-                                        PackagePrice: jsonString.Package_Price,
-                                        AmazonBrand:
-                                            jsonString.Amazon_Brand ==
-                                            "Amazon Brand Registry"
-                                                ? true
-                                                : false,
-                                        rushFilling:
-                                            jsonString.rush_filled ==
-                                            "Rush fill"
-                                                ? true
-                                                : false,
-                                    }}
                                 />
                             </div>
                         </div>

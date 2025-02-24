@@ -3,7 +3,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { Sidebar } from "../../components/AllComponents";
 import SequenceLayout from "../../Layouts/SequenceLayout";
 import { Themecontext, ThemeProvider } from "../../ThemeContext";
-import { ApiRequest } from "../../apiRequest";
+import { ApiRequest } from "../../ApiRequest";
 import axios from "../../axios";
 import { fromJSON } from "postcss";
 import toast, { Toaster } from "react-hot-toast";
@@ -11,12 +11,12 @@ const Step3 = () => {
     const url = window.location.href;
     const urlObj = new URL(url);
     const params = new URLSearchParams(urlObj.search);
-    const lead_id = params.get("id");
+    const lead_id = params.get('id');
     const [owners, setOwners] = useState([]);
     const [isOrganization, setIsOrganization] = useState(false);
     const [showUSState, setShowUSState] = useState(false);
     const [showNonUSState, setShowNonUSState] = useState(false);
-    // const [first, setfirst] = useState(second)
+// const [first, setfirst] = useState(second)
     const [formData, setFormData] = useState({
         lead_id: lead_id,
         data: [
@@ -160,6 +160,7 @@ const Step3 = () => {
         ],
     });
 
+    
     const handleOwnershipChange = (value, questionIndex) => {
         setFormData((prevFormData) => {
             const updatedData = prevFormData.data.map((item) => {
@@ -171,32 +172,30 @@ const Step3 = () => {
                 }
                 return item;
             });
-
+    
             return {
                 ...prevFormData,
                 data: updatedData,
             };
         });
-
+        
         // questionIndex == 0 ? setIsOrganization(value === "Organization") : '';
 
-        if (questionIndex == 0) {
+        if(questionIndex == 0){
             setIsOrganization(value === "Organization");
 
             setFormData((prevState) => ({
                 ...prevState,
-                data: prevState.data.map((item) =>
-                    ["1", "2", "3", "4", "5", "7"].includes(item.index)
-                        ? { ...item, required: isOrganization }
-                        : item
+                data: prevState.data.map((item) => 
+                    ["1", "2", "3", "4", "5", "7"].includes(item.index) ? { ...item, required: isOrganization } : item
                 ),
             }));
         }
-
-        if (questionIndex == 1) {
+        
+        if(questionIndex == 1){
             setShowUSState(value === "US-Based");
             setShowNonUSState(value === "Non-US-Based");
-        }
+        };
     };
 
     const handleChange = (e, index) => {
@@ -224,23 +223,24 @@ const Step3 = () => {
                 error: !item.answer, // Set error to true if the answer is empty
             };
         });
-
+    
         setFormData((prev) => ({
             ...prev,
             data: updatedData,
         }));
-
+    
         // Return true if all answers are filled, false otherwise
         return updatedData.every((item) => !item.error);
     };
+    
+    
 
     const handleAddOwner = () => {
-        const newOwner = {
-            name: formData.data.find((item) => item.index == 6)?.answer || "",
-            email: formData.data.find((item) => item.index == 14)?.answer || "",
-            phone: formData.data.find((item) => item.index == 13)?.answer || "",
-            country:
-                formData.data.find((item) => item.index == 9)?.answer || "",
+        const newOwner =  {
+                name: formData.data.find(item => item.index == 6)?.answer || "",
+                email: formData.data.find(item => item.index == 14)?.answer || "",
+                phone: formData.data.find(item => item.index == 13)?.answer || "",
+                country: formData.data.find(item => item.index == 9)?.answer || "",
         };
         setOwners((prev) => [...prev, newOwner]);
     };
@@ -248,38 +248,36 @@ const Step3 = () => {
     const handleDeleteOwner = (index) => {
         setOwners((prev) => prev.filter((_, i) => i !== index));
     };
-
+ 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         try {
-            const filteredAnswers = formData.data.filter(
-                (item) => item.answer != ""
-            );
+        
+            const filteredAnswers = formData.data.filter(item => item.answer != "");
 
             const isValid = validateForm(formData.data);
-
+    
             if (!isValid) {
                 // Handle invalid form (e.g., show an alert or display error messages)
-                toast.error("Please submit all the required fields");
+                toast.error('Please submit all the required fields');
                 return;
             }
             return;
             const data = await axios.post(
-                ApiRequest.leadData,
-                {
+                ApiRequest.leadData,{
                     lead_id: lead_id,
-                    data: filteredAnswers,
+                    data: filteredAnswers
                 },
                 {
                     headers: {
-                        Authorization: `uaywhQLVdlwRmIFbg4ebOKSGu94WyJoCKRk09ZZB`,
+                        Authorization: `u84XOG2H62rjXldNHraUdb2zAtVnxutWnjo3IVYn`,
                         // "Content-Type": "application/json",
                     },
                 }
             );
             if (data) {
-                if (data?.data?.status == "success") {
+                if(data?.data?.status == 'success'){
                     handleAddOwner();
                 }
                 // window.location.href = `/sequence/step4?id=${lead_id}`;
@@ -295,7 +293,10 @@ const Step3 = () => {
         <SequenceLayout>
             <section>
                 <div className="container">
-                    <Toaster position="top-right" reverseOrder={false} />
+                <Toaster
+                        position="top-right"
+                        reverseOrder={false}
+                    />
                     <div className="row g-3">
                         <Sidebar />
                         <div className="col-lg-10">
@@ -326,22 +327,9 @@ const Step3 = () => {
                                                     name="ownership"
                                                     id="Individual"
                                                     value="Individual"
-                                                    checked={
-                                                        formData.data[0]
-                                                            .answer ==
-                                                        "Individual"
-                                                    }
-                                                    required={
-                                                        formData.data[0]
-                                                            .required
-                                                    }
-                                                    onChange={(e) =>
-                                                        handleOwnershipChange(
-                                                            e.target.value,
-                                                            formData.data[0]
-                                                                .index
-                                                        )
-                                                    }
+                                                    checked={formData.data[0].answer == "Individual"}
+                                                    required={formData.data[0].required}
+                                                    onChange={(e) => handleOwnershipChange(e.target.value, formData.data[0].index)}
                                                     style={{
                                                         width: "20px",
                                                         height: "20px",
@@ -363,22 +351,9 @@ const Step3 = () => {
                                                     name="ownership"
                                                     id="Organization"
                                                     value="Organization"
-                                                    checked={
-                                                        formData.data[0]
-                                                            .answer ==
-                                                        "Organization"
-                                                    }
-                                                    required={
-                                                        formData.data[0]
-                                                            .required
-                                                    }
-                                                    onChange={(e) =>
-                                                        handleOwnershipChange(
-                                                            e.target.value,
-                                                            formData.data[0]
-                                                                .index
-                                                        )
-                                                    }
+                                                    checked={formData.data[0].answer == "Organization"}
+                                                    required={formData.data[0].required}
+                                                    onChange={(e) => handleOwnershipChange(e.target.value, formData.data[0].index)}
                                                     style={{
                                                         width: "20px",
                                                         height: "20px",
@@ -414,19 +389,8 @@ const Step3 = () => {
                                                             name="Formation"
                                                             id="US-Based"
                                                             value="US-Based"
-                                                            required={
-                                                                formData.data[1]
-                                                                    .required
-                                                            }
-                                                            onChange={(e) =>
-                                                                handleOwnershipChange(
-                                                                    e.target
-                                                                        .value,
-                                                                    formData
-                                                                        .data[1]
-                                                                        .index
-                                                                )
-                                                            }
+                                                            required={formData.data[1].required}
+                                                            onChange={(e) => handleOwnershipChange(e.target.value, formData.data[1].index)}
                                                             style={{
                                                                 width: "20px",
                                                                 height: "20px",
@@ -453,19 +417,8 @@ const Step3 = () => {
                                                             name="Formation"
                                                             id="Non-US-Based"
                                                             value="Non-US-Based"
-                                                            required={
-                                                                formData.data[1]
-                                                                    .required
-                                                            }
-                                                            onChange={(e) =>
-                                                                handleOwnershipChange(
-                                                                    e.target
-                                                                        .value,
-                                                                    formData
-                                                                        .data[1]
-                                                                        .index
-                                                                )
-                                                            }
+                                                            required={formData.data[1].required}
+                                                            onChange={(e) => handleOwnershipChange(e.target.value, formData.data[1].index)}
                                                             style={{
                                                                 width: "20px",
                                                                 height: "20px",
@@ -493,18 +446,9 @@ const Step3 = () => {
                                                                 ? "border border-danger"
                                                                 : ""
                                                         }`}
-                                                        required={
-                                                            formData.data[2]
-                                                                .required
-                                                        }
+                                                        required={formData.data[2].required}
                                                         placeholder="Organization Name *"
-                                                        onChange={(e) =>
-                                                            handleChange(
-                                                                e,
-                                                                formData.data[2]
-                                                                    .index
-                                                            )
-                                                        }
+                                                        onChange={(e) =>handleChange(e,formData.data[2].index)}
                                                     />
                                                 </div>
                                                 <div className="col-md-6 col-lg-4">
@@ -516,17 +460,8 @@ const Step3 = () => {
                                                                 ? "border border-danger"
                                                                 : ""
                                                         }`}
-                                                        required={
-                                                            formData.data[3]
-                                                                .required
-                                                        }
-                                                        onChange={(e) =>
-                                                            handleChange(
-                                                                e,
-                                                                formData.data[3]
-                                                                    .index
-                                                            )
-                                                        }
+                                                        required={formData.data[3].required}
+                                                        onChange={(e) =>handleChange(e,formData.data[3].index)}
                                                     >
                                                         <option
                                                             value="0"
@@ -587,17 +522,8 @@ const Step3 = () => {
                                                             formData.data[5]
                                                                 .answer
                                                         }
-                                                        required={
-                                                            formData.data[5]
-                                                                .required
-                                                        }
-                                                        onChange={(e) =>
-                                                            handleChange(
-                                                                e,
-                                                                formData.data[5]
-                                                                    .index
-                                                            )
-                                                        }
+                                                        required={formData.data[5].required}
+                                                        onChange={(e) =>handleChange(e,formData.data[5].index)}
                                                     >
                                                         <option
                                                             value="0"
@@ -636,17 +562,8 @@ const Step3 = () => {
                                                             formData.data[4]
                                                                 .answer
                                                         }
-                                                        required={
-                                                            formData.data[4]
-                                                                .required
-                                                        }
-                                                        onChange={(e) =>
-                                                            handleChange(
-                                                                e,
-                                                                formData.data[4]
-                                                                    .index
-                                                            )
-                                                        }
+                                                        required={formData.data[4].required}
+                                                        onChange={(e) =>handleChange(e,formData.data[4].index)}
                                                     >
                                                         <option
                                                             value="0"
@@ -686,12 +603,7 @@ const Step3 = () => {
                                                 }}
                                                 placeholder="Name *"
                                                 value={formData.data[6].answer}
-                                                onChange={(e) =>
-                                                    handleChange(
-                                                        e,
-                                                        formData.data[6].index
-                                                    )
-                                                }
+                                                onChange={(e) =>handleChange(e,formData.data[6].index)}
                                             />
                                         </div>
                                         {isOrganization && (
@@ -711,13 +623,7 @@ const Step3 = () => {
                                                     value={
                                                         formData.data[7].answer
                                                     }
-                                                    onChange={(e) =>
-                                                        handleChange(
-                                                            e,
-                                                            formData.data[7]
-                                                                .index
-                                                        )
-                                                    }
+                                                    onChange={(e) =>handleChange(e,formData.data[7].index)}
                                                 />
                                             </div>
                                         )}
@@ -735,12 +641,7 @@ const Step3 = () => {
                                                 }}
                                                 placeholder="Address *"
                                                 value={formData.data[8].answer}
-                                                onChange={(e) =>
-                                                    handleChange(
-                                                        e,
-                                                        formData.data[8].index
-                                                    )
-                                                }
+                                                onChange={(e) =>handleChange(e,formData.data[8].index)}
                                             />
                                         </div>
                                         <div className="col-lg-4">
@@ -757,14 +658,9 @@ const Step3 = () => {
                                                 defaultValue={
                                                     formData.data[9].answer
                                                 }
-                                                onChange={(e) =>
-                                                    handleChange(
-                                                        e,
-                                                        formData.data[9].index
-                                                    )
-                                                }
+                                                onChange={(e) =>handleChange(e,formData.data[9].index)}
                                             >
-                                                <option value="">
+                                                <option value="" >
                                                     Select Country
                                                 </option>
                                                 <option value="Pakistan">
@@ -790,12 +686,7 @@ const Step3 = () => {
                                                 }}
                                                 placeholder="State*"
                                                 value={formData.state}
-                                                onChange={(e) =>
-                                                    handleChange(
-                                                        e,
-                                                        formData.data[10].index
-                                                    )
-                                                }
+                                                onChange={(e) =>handleChange(e,formData.data[10].index)}
                                             />
                                         </div>
                                         <div className="col-lg-4">
@@ -812,12 +703,7 @@ const Step3 = () => {
                                                 }}
                                                 placeholder="City*"
                                                 value={formData.data[11].answer}
-                                                onChange={(e) =>
-                                                    handleChange(
-                                                        e,
-                                                        formData.data[11].index
-                                                    )
-                                                }
+                                                onChange={(e) =>handleChange(e,formData.data[11].index)}
                                             />
                                         </div>
                                         <div className="col-lg-4">
@@ -834,12 +720,7 @@ const Step3 = () => {
                                                 }}
                                                 placeholder="Zip/Postal Code*"
                                                 value={formData.data[12].answer}
-                                                onChange={(e) =>
-                                                    handleChange(
-                                                        e,
-                                                        formData.data[12].index
-                                                    )
-                                                }
+                                                onChange={(e) =>handleChange(e,formData.data[12].index)}
                                             />
                                         </div>
                                         <div className="col-lg-4">
@@ -856,12 +737,7 @@ const Step3 = () => {
                                                 }}
                                                 placeholder="Phone*"
                                                 value={formData.data[13].answer}
-                                                onChange={(e) =>
-                                                    handleChange(
-                                                        e,
-                                                        formData.data[13].index
-                                                    )
-                                                }
+                                                onChange={(e) =>handleChange(e,formData.data[13].index)}
                                             />
                                         </div>
                                         <div className="col-lg-4">
@@ -878,65 +754,53 @@ const Step3 = () => {
                                                 }}
                                                 placeholder="Email*"
                                                 value={formData.data[14].answer}
-                                                onChange={(e) =>
-                                                    handleChange(
-                                                        e,
-                                                        formData.data[14].index
-                                                    )
-                                                }
+                                                onChange={(e) =>handleChange(e,formData.data[14].index)}
                                             />
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="p-3 rounded-4 bg-white mt-5">
-                                    <table
-                                        className="table align-middle m-0"
-                                        style={{ "--cstm-table-bg": "white" }}
-                                    >
-                                        <thead>
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>Email</th>
-                                                <th>Phone</th>
-                                                <th>Country</th>
-                                                <th className="text-center">
-                                                    Action
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            {owners.map((owner, index) => (
-                                                <tr key={index}>
-                                                    <td>{owner.name}</td>
-                                                    <td>{owner.email}</td>
-                                                    <td>{owner.phone}</td>
-                                                    <td>{owner.country}</td>
-                                                    <td className="text-center">
-                                                        <button
-                                                            onClick={() =>
-                                                                handleDeleteOwner(
-                                                                    index
-                                                                )
-                                                            }
-                                                            className="rounded-2 p-2 d-inline-flex align-items-center justify-content-center hover_opacity-08"
-                                                            style={{
-                                                                background:
-                                                                    "#FFEBEB",
-                                                                border: "none",
-                                                                cursor: "pointer",
-                                                            }}
-                                                        >
-                                                            <img
-                                                                src="assets-updated/img/icons/trash.svg"
-                                                                alt="trash"
-                                                            />
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                            ))}
-                                        </tbody>
-                                    </table>
+                                <table
+            className="table align-middle m-0"
+            style={{ "--cstm-table-bg": "white" }}
+        >
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Country</th>
+                    <th className="text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {owners.map((owner, index) => (
+                    <tr key={index}>
+                        <td>{owner.name}</td>
+                        <td>{owner.email}</td>
+                        <td>{owner.phone}</td>
+                        <td>{owner.country}</td>
+                        <td className="text-center">
+                            <button
+                                onClick={() => handleDeleteOwner(index)}
+                                className="rounded-2 p-2 d-inline-flex align-items-center justify-content-center hover_opacity-08"
+                                style={{
+                                    background: "#FFEBEB",
+                                    border: "none",
+                                    cursor: "pointer"
+                                }}
+                            >
+                                <img
+                                    src="assets-updated/img/icons/trash.svg"
+                                    alt="trash"
+                                />
+                            </button>
+                        </td>
+                    </tr>
+                ))}
+            </tbody>
+        </table>
                                 </div>
 
                                 <button
